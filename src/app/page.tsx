@@ -1,13 +1,15 @@
 import Link from "next/link";
-import { getFeaturedGames, getPopularGames } from "@/lib/games";
+import { getFeaturedGames, getPopularGames, getAllGames } from "@/lib/games";
 import { CATEGORIES } from "@/lib/categories";
 import GameGrid from "@/components/game/GameGrid";
 import AdSlot from "@/components/ads/AdSlot";
 import HeroBanner from "@/components/home/HeroBanner";
+import RecentlyPlayed from "@/components/home/RecentlyPlayed";
 
 export default function HomePage() {
   const featured = getFeaturedGames(6);
   const popular = getPopularGames(10);
+  const allGames = getAllGames();
   const heroGame = featured[0];
 
   return (
@@ -65,6 +67,9 @@ export default function HomePage() {
         </div>
         <GameGrid games={popular} priorityCount={0} />
       </section>
+
+      {/* Recently played — client component, only shows if localStorage has data */}
+      <RecentlyPlayed allGames={allGames} />
     </div>
   );
 }

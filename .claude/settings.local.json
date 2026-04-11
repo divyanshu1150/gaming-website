@@ -1,7 +1,22 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-git)"
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-git)",
+      "Bash(npm run:*)",
+      "WebFetch(domain:gamedistribution.com)",
+      "WebFetch(domain:img.gamedistribution.com)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"http://localhost:3000/api/img/ee798269399449d0b1acb60f81dff1fc\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"http://localhost:3000/api/img/659090e00bfc4650899550d63f8a130d\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"http://localhost:3000/api/img/03f124074b0049f89fdace0cacf8ead5\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"http://localhost:3000/api/img/cd71a6d56b514239b279f07f7cb7694f\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"http://localhost:3000/api/img/a2cd0ba0848b49b98ade7d2b8553f09d\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"http://localhost:3000/api/img/34c651d768404d11a564d2aa0cc96bca\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"http://localhost:3000/api/img/7819e64f52bd4486b35b2af5b3b090fa\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"http://localhost:3000/api/img/61309e3152e5404caafe008bfad24d7a\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"http://localhost:3000/api/img/a127628e377942019fff0170802dca66\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"http://localhost:3000/api/img/4c01c6605396430bad69a395d80951d9\")",
+      "WebFetch(domain:gaming-website-git-master-divyanshu1150gmailcoms-projects.vercel.app)",
+      "WebFetch(domain:freeplayarena.com)"
     ]
   }
 }

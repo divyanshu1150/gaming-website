@@ -37,3 +37,17 @@ export function getAllCategorySlugs(): { slug: string }[] {
   const slugs = [...new Set(games.map((g) => g.category))];
   return slugs.map((slug) => ({ slug }));
 }
+
+export function getGamesByTag(tag: string): Game[] {
+  return games.filter((g) => g.tags.includes(tag));
+}
+
+export function getAllTags(): string[] {
+  const tagSet = new Set<string>();
+  games.forEach((g) => g.tags.forEach((t) => tagSet.add(t)));
+  return [...tagSet].sort();
+}
+
+export function getAllTagSlugs(): { tag: string }[] {
+  return getAllTags().map((tag) => ({ tag }));
+}
