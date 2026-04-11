@@ -1,0 +1,39 @@
+import { Game } from "@/types/game";
+import gamesData from "@/data/games.json";
+
+const games: Game[] = gamesData.games as Game[];
+
+export function getAllGames(): Game[] {
+  return games;
+}
+
+export function getGameBySlug(slug: string): Game | undefined {
+  return games.find((g) => g.slug === slug);
+}
+
+export function getFeaturedGames(limit = 6): Game[] {
+  return games.filter((g) => g.featured).slice(0, limit);
+}
+
+export function getPopularGames(limit = 8): Game[] {
+  return [...games].sort((a, b) => b.plays - a.plays).slice(0, limit);
+}
+
+export function getGamesByCategory(categorySlug: string): Game[] {
+  return games.filter((g) => g.category === categorySlug);
+}
+
+export function getRelatedGames(relatedSlugs: string[]): Game[] {
+  return relatedSlugs
+    .map((slug) => games.find((g) => g.slug === slug))
+    .filter(Boolean) as Game[];
+}
+
+export function getAllGameSlugs(): { slug: string }[] {
+  return games.map((g) => ({ slug: g.slug }));
+}
+
+export function getAllCategorySlugs(): { slug: string }[] {
+  const slugs = [...new Set(games.map((g) => g.category))];
+  return slugs.map((slug) => ({ slug }));
+}
