@@ -25,7 +25,7 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-2 shrink-0">
           <span className="text-2xl">🎮</span>
           <span className="font-bold text-white text-lg hidden sm:block">
-            GameZone
+            FreePlayArena
           </span>
         </Link>
 

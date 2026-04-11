@@ -3,16 +3,30 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://freeplayarena.com";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(BASE_URL),
   title: {
-    default: "GameZone — Play Free Online Games",
-    template: "%s | GameZone",
+    default: "FreePlayArena — Play Free Online Games",
+    template: "%s | FreePlayArena",
   },
   description:
-    "Play hundreds of free online games instantly — no download required. Action, puzzle, racing, sports, and more.",
+    "Play hundreds of free online games instantly at FreePlayArena — no download required. Action, puzzle, racing, sports, adventure and more.",
+  keywords: ["free online games", "play games online", "browser games", "no download games", "html5 games"],
   openGraph: {
-    siteName: "GameZone",
+    siteName: "FreePlayArena",
     type: "website",
+    url: BASE_URL,
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@freeplayarena",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
   },
 };
 

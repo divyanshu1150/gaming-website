@@ -10,10 +10,10 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-3">
               <span className="text-2xl">🎮</span>
-              <span className="font-bold text-white text-lg">GameZone</span>
+              <span className="font-bold text-white text-lg">FreePlayArena</span>
             </div>
             <p className="text-gray-400 text-sm">
-              Play hundreds of free online games — no download required.
+              Play hundreds of free online games instantly — no download, no sign-up required.
             </p>
           </div>
 
@@ -67,7 +67,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 pt-6 border-t border-white/10 text-center text-gray-500 text-sm">
-          <p>© {new Date().getFullYear()} GameZone. Games are property of their respective owners.</p>
+          <p>© {new Date().getFullYear()} FreePlayArena.com — All games are property of their respective owners.</p>
         </div>
       </div>
     </footer>

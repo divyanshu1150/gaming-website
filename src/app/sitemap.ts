@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 import { getAllGameSlugs, getAllCategorySlugs } from "@/lib/games";
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://yourgamezone.com";
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://freeplayarena.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const gameSlugs = getAllGameSlugs();
