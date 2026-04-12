@@ -12,9 +12,29 @@ export default function Footer() {
               <span className="text-2xl">🎮</span>
               <span className="font-bold text-white text-lg">FreePlayArena</span>
             </div>
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-400 text-sm mb-4">
               Play hundreds of free online games instantly — no download, no sign-up required.
             </p>
+            <div className="flex gap-3">
+              <a
+                href="https://twitter.com/freeplayarena"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="FreePlayArena on Twitter/X"
+                className="w-8 h-8 flex items-center justify-center bg-white/10 hover:bg-violet-600 rounded-lg transition-colors text-gray-400 hover:text-white text-sm"
+              >
+                𝕏
+              </a>
+              <a
+                href="https://youtube.com/@freeplayarena"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="FreePlayArena on YouTube"
+                className="w-8 h-8 flex items-center justify-center bg-white/10 hover:bg-red-600 rounded-lg transition-colors text-gray-400 hover:text-white text-sm"
+              >
+                ▶
+              </a>
+            </div>
           </div>
 
           {/* Categories */}

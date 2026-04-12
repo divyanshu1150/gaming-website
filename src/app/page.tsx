@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getFeaturedGames, getPopularGames, getAllGames } from "@/lib/games";
+import { getFeaturedGames, getPopularGames, getAllGames, getNewGames } from "@/lib/games";
 import { CATEGORIES } from "@/lib/categories";
 import GameGrid from "@/components/game/GameGrid";
 import AdSlot from "@/components/ads/AdSlot";
@@ -9,6 +9,7 @@ import RecentlyPlayed from "@/components/home/RecentlyPlayed";
 export default function HomePage() {
   const featured = getFeaturedGames(6);
   const popular = getPopularGames(10);
+  const newGames = getNewGames(8);
   const allGames = getAllGames();
   const heroGame = featured[0];
   const gameCount = allGames.length;
@@ -94,6 +95,17 @@ export default function HomePage() {
           </Link>
         </div>
         <GameGrid games={popular} priorityCount={0} />
+      </section>
+
+      {/* New games */}
+      <section>
+        <div className="flex items-center justify-between mb-5">
+          <h2 className="text-white font-bold text-xl">🆕 New Games</h2>
+          <Link href="/games" className="text-violet-400 hover:text-violet-300 text-sm">
+            View all →
+          </Link>
+        </div>
+        <GameGrid games={newGames} priorityCount={0} />
       </section>
 
       {/* Recently played — client component, only shows if localStorage has data */}

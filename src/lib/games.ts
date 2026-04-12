@@ -51,3 +51,8 @@ export function getAllTags(): string[] {
 export function getAllTagSlugs(): { tag: string }[] {
   return getAllTags().map((tag) => ({ tag }));
 }
+
+// Last N games added to the array — treated as "new"
+export function getNewGames(limit = 8): Game[] {
+  return [...games].slice(-limit).reverse();
+}

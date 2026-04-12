@@ -16,7 +16,18 @@
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"http://localhost:3000/api/img/a127628e377942019fff0170802dca66\")",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"http://localhost:3000/api/img/4c01c6605396430bad69a395d80951d9\")",
       "WebFetch(domain:gaming-website-git-master-divyanshu1150gmailcoms-projects.vercel.app)",
-      "WebFetch(domain:freeplayarena.com)"
+      "WebFetch(domain:freeplayarena.com)",
+      "WebSearch",
+      "WebFetch(domain:html5.gamedistribution.com)",
+      "WebFetch(domain:lagged.com)",
+      "WebFetch(domain:www.miniplay.com)",
+      "WebFetch(domain:gamezap.com)",
+      "Bash(git add:*)",
+      "Bash(git commit -m ':*)",
+      "Bash(git push:*)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(f'Total games: {len\\(d[\\\\\"games\\\\\"]\\)}'\\); print\\('Slugs:'\\); [print\\(g['slug']\\) for g in d['games']]\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); g=d['games'][0]; print\\(json.dumps\\({k:g[k] for k in ['title','description','instructions','tags','category','developer']}, indent=2\\)\\)\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); games=d['games']; print\\([g.get\\('addedAt','NO_DATE'\\) for g in games[:10]]\\)\")"
     ]
   }
 }
