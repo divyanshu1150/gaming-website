@@ -29,6 +29,13 @@ function incrementPlayCount(slug: string) {
   } catch {}
 }
 
+function getEmbedUrl(game: Game): string {
+  if (game.embedType !== "gamedistribution") return game.embedUrl;
+  const base = game.embedUrl.replace(/\?.*$/, "").replace(/\/$/, "") + "/";
+  const referrer = "https://freeplayarena.com/games/" + game.slug + "/";
+  return base + "?gd_sdk_referrer_url=" + encodeURIComponent(referrer);
+}
+
 export default function GameEmbed({ game }: GameEmbedProps) {
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const [loaded, setLoaded] = useState(false);
@@ -91,7 +98,7 @@ export default function GameEmbed({ game }: GameEmbedProps) {
 
         <iframe
           ref={iframeRef}
-          src={game.embedUrl}
+          src={getEmbedUrl(game)}
           title={game.title}
           className="absolute inset-0 w-full h-full border-0"
           onLoad={handleLoad}
