@@ -16,6 +16,9 @@ function getCandidateUrls(hash: string): string[] {
     `https://img.gamedistribution.com/${hash}-512x384.jpg`,
     `https://img.gamedistribution.com/${hash}-200x120.jpeg`,
     `https://img.gamedistribution.com/${hash}-200x120.jpg`,
+    `https://img.gamedistribution.com/${hash}.jpg`,
+    `https://img.gamedistribution.com/${hash}.jpeg`,
+    `https://img.gamedistribution.com/${hash}.png`,
   ];
 }
 
