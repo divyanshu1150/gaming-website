@@ -9,6 +9,9 @@ const ADSENSE_ID = process.env.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID ?? "";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
+  other: {
+    "google-adsense-account": "ca-pub-9318459431952179",
+  },
   title: {
     default: "FreePlayArena — Play Free Online Games",
     template: "%s | FreePlayArena",
