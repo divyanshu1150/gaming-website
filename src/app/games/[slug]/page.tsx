@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getGameBySlug, getAllGameSlugs, getRelatedGames } from "@/lib/games";
+import { getGameBySlug, getAllGameSlugs, getRelatedGames, getAllGames } from "@/lib/games";
 import GameEmbed from "@/components/game/GameEmbed";
 import RelatedGames from "@/components/game/RelatedGames";
 import AdSlot from "@/components/ads/AdSlot";
@@ -49,6 +49,12 @@ export default async function GamePage({ params }: GamePageProps) {
   const related = getRelatedGames(game.relatedSlugs);
   const pageUrl = `${BASE_URL}/games/${slug}`;
   const thumbUrl = `${BASE_URL}${game.thumbnail}`;
+
+  // Pick a few random other games for "More games you might like" if not enough related
+  const allGames = getAllGames();
+  const moreGames = allGames
+    .filter((g) => g.slug !== slug && !game.relatedSlugs.includes(g.slug) && g.category === game.category)
+    .slice(0, 6);
 
   return (
     <>
@@ -111,10 +117,116 @@ export default async function GamePage({ params }: GamePageProps) {
 
               {/* Instructions */}
               <div className="border-t border-white/10 pt-4">
-                <h3 className="text-white font-semibold text-sm mb-1">How to Play</h3>
-                <p className="text-gray-400 text-sm">{game.instructions}</p>
+                <h2 className="text-white font-semibold text-sm mb-1">How to Play {game.title}</h2>
+                <p className="text-gray-400 text-sm leading-relaxed">{game.instructions}</p>
               </div>
             </div>
+
+            {/* About this game — richer SEO content */}
+            <div className="bg-[#1a1a2e] rounded-xl p-6 space-y-5">
+              <h2 className="text-white font-semibold text-lg">About {game.title}</h2>
+
+              <p className="text-gray-300 text-sm leading-relaxed">
+                <strong className="text-white">{game.title}</strong> is a free{" "}
+                <Link href={`/category/${game.category}`} className="text-violet-400 hover:underline capitalize">
+                  {game.category}
+                </Link>{" "}
+                game developed by <strong className="text-white">{game.developer}</strong>. You can play it
+                directly in your browser — no download or installation required. The game is fully
+                compatible with desktop and mobile devices, so you can enjoy it on your phone, tablet, or
+                computer.
+              </p>
+
+              <p className="text-gray-300 text-sm leading-relaxed">
+                {game.description}
+              </p>
+
+              {/* Game details table */}
+              <div className="border border-white/10 rounded-lg overflow-hidden">
+                <table className="w-full text-sm">
+                  <tbody>
+                    {[
+                      { label: "Developer", value: game.developer },
+                      { label: "Category", value: <Link href={`/category/${game.category}`} className="text-violet-400 hover:underline capitalize">{game.category}</Link> },
+                      { label: "Platform", value: "Browser (HTML5)" },
+                      { label: "Release Year", value: game.releaseYear ?? "N/A" },
+                      { label: "Rating", value: `★ ${game.rating.toFixed(1)} / 5` },
+                      { label: "Price", value: "Free" },
+                    ].map(({ label, value }) => (
+                      <tr key={label} className="border-b border-white/10 last:border-0">
+                        <td className="px-4 py-3 text-gray-400 bg-white/[0.02] w-1/3 font-medium">{label}</td>
+                        <td className="px-4 py-3 text-gray-200">{value}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+
+              {/* Tips section */}
+              <div>
+                <h3 className="text-white font-semibold mb-2 text-sm">Tips &amp; Tricks</h3>
+                <ul className="space-y-2 text-gray-400 text-sm">
+                  <li className="flex gap-2">
+                    <span className="text-violet-400 flex-shrink-0">•</span>
+                    <span>Use the fullscreen button for the best experience on desktop.</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-violet-400 flex-shrink-0">•</span>
+                    <span>If the game doesn&apos;t load, try refreshing the page or switching browsers.</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-violet-400 flex-shrink-0">•</span>
+                    <span>
+                      {game.category === "puzzle"
+                        ? "Take your time — rushing through puzzles often leads to mistakes. Plan several moves ahead."
+                        : game.category === "racing"
+                        ? "Learn the track layout first. Smooth steering beats aggressive braking every time."
+                        : game.category === "action"
+                        ? "Master the controls before diving into harder levels. Muscle memory is key."
+                        : game.category === "sports"
+                        ? "Timing is everything — watch the movement patterns before making your move."
+                        : game.category === "adventure"
+                        ? "Explore every corner of the map — hidden items and shortcuts are often off the beaten path."
+                        : "Practice the basic mechanics first and build up your skills gradually."}
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* More games in same category */}
+            {moreGames.length > 0 && (
+              <div className="bg-[#1a1a2e] rounded-xl p-6">
+                <div className="flex items-center justify-between mb-4">
+                  <h2 className="text-white font-semibold">
+                    More <span className="capitalize">{game.category}</span> Games
+                  </h2>
+                  <Link href={`/category/${game.category}`} className="text-violet-400 hover:text-violet-300 text-sm">
+                    View all →
+                  </Link>
+                </div>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                  {moreGames.map((g) => (
+                    <Link
+                      key={g.slug}
+                      href={`/games/${g.slug}`}
+                      className="group flex flex-col bg-white/5 hover:bg-white/10 rounded-lg overflow-hidden transition-colors"
+                    >
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={g.thumbnail}
+                        alt={g.title}
+                        className="w-full aspect-video object-cover"
+                        loading="lazy"
+                      />
+                      <span className="px-2 py-1.5 text-gray-300 group-hover:text-white text-xs font-medium leading-tight">
+                        {g.title}
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
 
             {/* Ad below game info */}
             <AdSlot format="banner" className="w-full" />
