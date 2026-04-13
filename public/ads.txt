@@ -1,3 +1,4 @@
+# GameMonetize
 headerlift.com, 36263, DIRECT
 improvedigital.com, 545_36263, DIRECT
 improvedigital.com, 545, RESELLER
@@ -45,3 +46,6 @@ openx.com, 540274407, RESELLER, 6a698e2ec38604c6
 smaato.com, 1100047713, RESELLER, 07bcf65f187117b4
 smartadserver.com, 4342, RESELLER
 smartadserver.com, 4012, RESELLER
+
+# Google AdSense
+google.com, pub-9318459431952179, DIRECT, f08c47fec0942fa0

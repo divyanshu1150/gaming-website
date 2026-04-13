@@ -30,10 +30,12 @@ function incrementPlayCount(slug: string) {
 }
 
 function getEmbedUrl(game: Game): string {
-  if (game.embedType !== "gamedistribution") return game.embedUrl;
-  const base = game.embedUrl.replace(/\?.*$/, "").replace(/\/$/, "") + "/";
-  const referrer = "https://freeplayarena.com/games/" + game.slug + "/";
-  return base + "?gd_sdk_referrer_url=" + encodeURIComponent(referrer);
+  if (game.embedType === "gamedistribution") {
+    const base = game.embedUrl.replace(/\?.*$/, "").replace(/\/$/, "") + "/";
+    const referrer = "https://freeplayarena.com/games/" + game.slug + "/";
+    return base + "?gd_sdk_referrer_url=" + encodeURIComponent(referrer);
+  }
+  return game.embedUrl;
 }
 
 export default function GameEmbed({ game }: GameEmbedProps) {

@@ -1,4 +1,4 @@
-export type EmbedType = "gamedistribution" | "itch" | "self-hosted" | "other";
+export type EmbedType = "gamedistribution" | "gamemonetize" | "itch" | "self-hosted" | "other";
 export type AspectRatio = "16/9" | "4/3" | "1/1";
 
 export interface Game {
