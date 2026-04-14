@@ -40,6 +40,12 @@ export default function Header() {
               {cat.name}
             </Link>
           ))}
+          <Link
+            href="/unblocked-games"
+            className="px-3 py-1.5 text-sm font-semibold text-green-400 hover:text-white hover:bg-green-600/20 rounded-md transition-colors"
+          >
+            🔓 Unblocked
+          </Link>
         </nav>
 
         {/* Search */}

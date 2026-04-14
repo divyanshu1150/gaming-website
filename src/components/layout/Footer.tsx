@@ -68,6 +68,14 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/unblocked-games"
+                  className="text-green-400 hover:text-green-300 text-sm transition-colors"
+                >
+                  🔓 Unblocked Games
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/games?sort=popular"
                   className="text-gray-400 hover:text-violet-400 text-sm transition-colors"
                 >
