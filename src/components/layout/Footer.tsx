@@ -59,35 +59,33 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-3">Browse</h3>
             <ul className="space-y-1.5">
               <li>
-                <Link
-                  href="/games"
-                  className="text-gray-400 hover:text-violet-400 text-sm transition-colors"
-                >
+                <Link href="/games" className="text-gray-400 hover:text-violet-400 text-sm transition-colors">
                   All Games
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/unblocked-games"
-                  className="text-green-400 hover:text-green-300 text-sm transition-colors"
-                >
+                <Link href="/unblocked-games" className="text-green-400 hover:text-green-300 text-sm transition-colors">
                   🔓 Unblocked Games
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/games?sort=popular"
-                  className="text-gray-400 hover:text-violet-400 text-sm transition-colors"
-                >
-                  Most Popular
+                <Link href="/puzzle-games" className="text-gray-400 hover:text-violet-400 text-sm transition-colors">
+                  Puzzle Games
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/games?featured=true"
-                  className="text-gray-400 hover:text-violet-400 text-sm transition-colors"
-                >
-                  Featured
+                <Link href="/no-download-games" className="text-gray-400 hover:text-violet-400 text-sm transition-colors">
+                  No Download Games
+                </Link>
+              </li>
+              <li>
+                <Link href="/games-to-play-when-bored" className="text-gray-400 hover:text-violet-400 text-sm transition-colors">
+                  Games When Bored
+                </Link>
+              </li>
+              <li>
+                <Link href="/games?sort=popular" className="text-gray-400 hover:text-violet-400 text-sm transition-colors">
+                  Most Popular
                 </Link>
               </li>
             </ul>
