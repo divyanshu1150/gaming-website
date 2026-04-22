@@ -52,6 +52,12 @@ export default function Header() {
           >
             ✓ Ad Free
           </Link>
+          <Link
+            href="/blog"
+            className="px-3 py-1.5 text-sm text-gray-300 hover:text-white hover:bg-white/10 rounded-md transition-colors"
+          >
+            📝 Blog
+          </Link>
         </nav>
 
         {/* Search */}
@@ -99,6 +105,13 @@ export default function Header() {
               {cat.icon} {cat.name}
             </Link>
           ))}
+          <Link
+            href="/blog"
+            onClick={() => setMenuOpen(false)}
+            className="px-3 py-1.5 text-sm text-gray-300 hover:text-white bg-white/10 rounded-md"
+          >
+            📝 Blog
+          </Link>
         </div>
       )}
     </header>

@@ -1,0 +1,129 @@
+[
+  {
+    "title": "Online Taxi Simulator",
+    "category": "Racing",
+    "tags": "carparking, Simulation, Taxi",
+    "url": "https://html5.gamemonetize.co/dxx6hd8bgffy3onznooyb7ikugv5ilmy/",
+    "token": "dxx6hd8bgffy3onznooyb7ikugv5ilmy",
+    "unity_indicators": [
+      "unity"
+    ],
+    "is_unity": true,
+    "scripts": []
+  },
+  {
+    "title": "Music Tile Game",
+    "category": "Puzzles",
+    "tags": "2026 games, amazing, Casual, Fun, Music",
+    "url": "https://html5.gamemonetize.co/wstmnin6hc4zoq4zsqn93oyvdzpaxxbg/",
+    "token": "wstmnin6hc4zoq4zsqn93oyvdzpaxxbg",
+    "unity_indicators": [
+      "unity"
+    ],
+    "is_unity": true,
+    "scripts": []
+  },
+  {
+    "title": "TechTiles",
+    "category": "Puzzles",
+    "tags": "Best, Machine, Match 3, Puzzle",
+    "url": "https://html5.gamemonetize.co/5es063fsitn5xnztm28bfcr25piz0uyy/",
+    "token": "5es063fsitn5xnztm28bfcr25piz0uyy",
+    "unity_indicators": [],
+    "is_unity": false,
+    "scripts": [
+      "scripts/modernjscheck.js",
+      "scripts/supportcheck.js",
+      "scripts/offlineclient.js",
+      "scripts/main.js",
+      "scripts/register-sw.js"
+    ]
+  },
+  {
+    "title": "Monster Truck Racing Game",
+    "category": "Racing",
+    "tags": "Car, city, Driving, Monster, monstertruck, Race, Racing",
+    "url": "https://html5.gamemonetize.co/1az3dmc5l928uspjpx12zdkb5ppbh4gd/",
+    "token": "1az3dmc5l928uspjpx12zdkb5ppbh4gd",
+    "unity_indicators": [
+      "unity"
+    ],
+    "is_unity": true,
+    "scripts": []
+  },
+  {
+    "title": "ChickZ Stack",
+    "category": "Hypercasual",
+    "tags": "Bird, Chicken, fly, Stack",
+    "url": "https://html5.gamemonetize.co/qxc5w4jz7hxfaj9i2r9o7li1slmvwt19/",
+    "token": "qxc5w4jz7hxfaj9i2r9o7li1slmvwt19",
+    "unity_indicators": [],
+    "is_unity": false,
+    "scripts": [
+      "src/settings.4d59c.js",
+      "main.2d44d.js"
+    ]
+  },
+  {
+    "title": "Roof Rush 3D",
+    "category": "Hypercasual",
+    "tags": "3D, running",
+    "url": "https://html5.gamemonetize.co/u9617teqt4pn9co9thzlrrfxs2zsrw2a/",
+    "token": "u9617teqt4pn9co9thzlrrfxs2zsrw2a",
+    "unity_indicators": [],
+    "is_unity": false,
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"
+    ]
+  },
+  {
+    "title": "Bamboo Panda",
+    "category": "Hypercasual",
+    "tags": "Action, Adventure, Animal, Bomb, Boy, Fight, Fighting, Fun, Funny, Kid, Kids, Kill, Killing, Shoot, Shooter",
+    "url": "https://html5.gamemonetize.co/l8bum0wy23964s56z4dow48ri5ir237o/",
+    "token": "l8bum0wy23964s56z4dow48ri5ir237o",
+    "unity_indicators": [],
+    "is_unity": false,
+    "scripts": [
+      "js/splashScreenFix.js",
+      "js/isoLang.js",
+      "js/eventToFire.js",
+      "js/c2toJs.js",
+      "js/loadSaveData.js"
+    ]
+  },
+  {
+    "title": "Magic Water Sort: Color Puzzle",
+    "category": "Puzzles",
+    "tags": "bottle, Fun, Funny, Logic, Matching, sort, sorting, water",
+    "url": "https://html5.gamemonetize.co/41xsdnxxv9zcj69f9j0qhfeguoce059e/",
+    "token": "41xsdnxxv9zcj69f9j0qhfeguoce059e",
+    "unity_indicators": [],
+    "is_unity": false,
+    "scripts": [
+      "index.js"
+    ]
+  },
+  {
+    "title": "Gem Runner",
+    "category": "Racing",
+    "tags": "Arcade, Collecting, endless, Road, running, Skill, Skills",
+    "url": "https://html5.gamemonetize.co/oqb0sn6kv4qfmcqzqo5hjzpy2w9vplxu/",
+    "token": "oqb0sn6kv4qfmcqzqo5hjzpy2w9vplxu",
+    "unity_indicators": [],
+    "is_unity": false,
+    "scripts": []
+  },
+  {
+    "title": "Hoppy Stacky",
+    "category": "Puzzles",
+    "tags": "2026 games, Adventure, amazing, Casual, Fun",
+    "url": "https://html5.gamemonetize.co/e7gvf2n0jk2vlfu4ykretouip8n5ldti/",
+    "token": "e7gvf2n0jk2vlfu4ykretouip8n5ldti",
+    "unity_indicators": [
+      "unity"
+    ],
+    "is_unity": true,
+    "scripts": []
+  }
+]

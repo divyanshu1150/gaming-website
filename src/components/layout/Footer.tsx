@@ -89,8 +89,18 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/games?sort=popular" className="text-gray-400 hover:text-violet-400 text-sm transition-colors">
-                  Most Popular
+                <Link href="/blog" className="text-violet-400 hover:text-violet-300 text-sm transition-colors">
+                  📝 Game Guides & Blog
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog/best-free-online-games" className="text-gray-400 hover:text-violet-400 text-sm transition-colors">
+                  Best Free Online Games
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog/unblocked-games-guide" className="text-gray-400 hover:text-violet-400 text-sm transition-colors">
+                  Unblocked Games Guide
                 </Link>
               </li>
             </ul>

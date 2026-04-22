@@ -1,0 +1,439 @@
+{
+  "posts": [
+    {
+      "slug": "best-free-online-games",
+      "type": "editorial",
+      "title": "50 Best Free Online Games You Can Play Right Now",
+      "metaTitle": "50 Best Free Online Games in 2025 — No Download Needed",
+      "metaDescription": "Looking for the best free online games? We picked 50 must-play browser games across action, puzzle, racing, adventure, and more — all free, no download or sign-up required.",
+      "excerpt": "We combed through our entire library and hand-picked the very best free online games worth your time — no downloads, no accounts, just instant fun.",
+      "publishedAt": "2025-01-10",
+      "category": "roundups",
+      "tags": ["best games", "free online games", "browser games", "top picks", "no download"],
+      "featured": true,
+      "sections": [
+        {
+          "heading": "Why Browser Games Are Better Than Ever",
+          "body": "HTML5 browser games have come a long way. Today you can play stunning 3D games, deep puzzle experiences, and fast-paced action titles entirely in your browser — no plugins, no downloads, no sign-up. Whether you have five minutes or five hours, there is a free online game here that fits the moment."
+        },
+        {
+          "heading": "Best Free Action Games",
+          "body": "Action games reward quick reflexes, sharp timing, and strategic thinking under pressure. These picks deliver non-stop excitement with tight controls that work perfectly in a browser window.",
+          "gameSlugs": ["bullet-man-master-3d", "air-battles", "noobs-crazy-combo", "forest-wing", "skyfury", "hydrasword", "plane-runner-3d", "not-drunk-yet"],
+          "listItems": [
+            "Bullet Man Master 3D — sniper-style shooting with clever level design",
+            "Air Battles — dogfight action with smooth 3D movement",
+            "Noobs Crazy Combo — chaotic multiplayer-style mayhem",
+            "Forest Wing — fast aerial combat through dense environments",
+            "Skyfury — classic shoot-em-up with modern polish"
+          ]
+        },
+        {
+          "heading": "Best Free Puzzle Games",
+          "body": "Puzzle games are perfect when you want to exercise your brain without the pressure of a timer. These titles range from satisfying sorting challenges to fiendishly clever logic problems.",
+          "gameSlugs": ["2048", "neon-circuit", "ball-sort-2d", "goods-sorting-shopping-master", "panda-adventure", "torn-pieces"],
+          "listItems": [
+            "2048 — the classic sliding number puzzle, endlessly replayable",
+            "Neon Circuit — trace the path through glowing circuit boards",
+            "Ball Sort 2D — satisfying colour-sorting with escalating difficulty",
+            "Goods Sorting — warehouse logistics turned into an addictive puzzle"
+          ]
+        },
+        {
+          "heading": "Best Free Casual Games",
+          "body": "Sometimes you just want to zone out and enjoy something relaxing and satisfying. These casual games are easy to pick up, hard to put down, and perfect for a quick break.",
+          "gameSlugs": ["minecraft-flappy-creeper", "hyper-wave-trial", "sugar-rush-tower", "spike-rush", "roof-rush-3d", "orbit-rush-3d"],
+          "listItems": [
+            "Minecraft Flappy Creeper — the flappy formula meets the Minecraft universe",
+            "Hyper Wave Trial — rhythmic wave-dodging with slick visuals",
+            "Sugar Rush Tower — stacking and balancing with a sweet theme",
+            "Spike Rush — dodge incoming spikes in increasingly frantic waves"
+          ]
+        },
+        {
+          "heading": "Best Free Racing Games",
+          "body": "Racing games in the browser have evolved dramatically. These titles deliver genuine speed, satisfying drifts, and tight track design — all without a single download.",
+          "gameSlugs": ["skill-driver-game", "subway-spider-kid-game", "hexgl", "catch-reindeer"],
+          "listItems": [
+            "HexGL — a futuristic racing game inspired by WipeOut, completely free",
+            "Skill Driver — precision parking and driving challenges",
+            "Subway Spider Kid — endless-runner-style racing through city streets"
+          ]
+        },
+        {
+          "heading": "Best Free Adventure Games",
+          "body": "Adventure games let you explore worlds, solve environmental puzzles, and follow a narrative — all at your own pace. These browser picks deliver that sense of exploration without any install.",
+          "gameSlugs": ["helicopter-rescue-games-3d", "zombie-highway-car-game", "endless-space-pilot-2d"],
+          "listItems": [
+            "Helicopter Rescue — navigate tight spaces in dramatic rescue missions",
+            "Zombie Highway — drive through post-apocalyptic roads and survive",
+            "Endless Space Pilot — explore an infinite procedurally generated galaxy"
+          ]
+        },
+        {
+          "heading": "Are These Games Really Free?",
+          "body": "Yes — every game on FreePlayArena is completely free to play in your browser. No credit card, no account creation, no hidden fees. Some games include in-game advertisements from their developers, but the gameplay itself is always free and fully accessible from the moment you click Play."
+        }
+      ]
+    },
+    {
+      "slug": "best-free-action-games-online",
+      "type": "editorial",
+      "title": "Best Free Action Games to Play Online — No Download",
+      "metaTitle": "Best Free Online Action Games 2025 — Play Instantly, No Download",
+      "metaDescription": "Discover the best free action games you can play online right now. Fast-paced shooters, platformers, and combat games — no download, no sign-up required.",
+      "excerpt": "The best free action games online, hand-picked for tight controls, exciting gameplay, and instant browser play — zero downloads needed.",
+      "publishedAt": "2025-01-12",
+      "category": "action",
+      "tags": ["action games", "free action games online", "browser action games", "shooting games", "no download"],
+      "featured": true,
+      "sections": [
+        {
+          "heading": "What Makes a Great Free Action Game?",
+          "body": "The best free action games share a few key traits: responsive controls that feel good immediately, a difficulty curve that keeps you engaged without frustrating you, and enough variety to stay fresh after multiple sessions. Browser action games have the extra challenge of working well with mouse-and-keyboard or touch input — the games below nail all of it."
+        },
+        {
+          "heading": "Top Free Shooter Games",
+          "body": "Shooter games test your accuracy, reaction time, and tactical awareness. These browser picks deliver satisfying gunplay without requiring a high-end PC or any installation.",
+          "gameSlugs": ["bullet-man-master-3d", "air-battles", "skyfury", "plane-runner-3d", "forest-wing"],
+          "listItems": [
+            "Bullet Man Master 3D — sniper challenges with puzzle-like level design",
+            "Air Battles — aerial dogfights with smooth 3D controls",
+            "Skyfury — a classic vertical shoot-em-up with a modern look",
+            "Plane Runner 3D — weave through obstacles at high speed",
+            "Forest Wing — low-altitude aerial combat through tight corridors"
+          ]
+        },
+        {
+          "heading": "Top Free Combat & Fighting Games",
+          "body": "Combat games pit you directly against enemies in close-quarters battles. Timing, positioning, and reading enemy patterns are the keys to victory in these free online picks.",
+          "gameSlugs": ["noobs-crazy-combo", "hydrasword", "long-neck-runner-game", "not-drunk-yet"],
+          "listItems": [
+            "Noobs Crazy Combo — chaotic brawler-style action with absurd combos",
+            "Hydrasword — slash through waves of enemies with satisfying sword mechanics",
+            "Not Drunk Yet — physics-based combat with wobbly, hilarious character movement"
+          ]
+        },
+        {
+          "heading": "Tips for Playing Action Games in the Browser",
+          "body": "For the best experience, play action games in a full-screen browser window and make sure your browser is up to date. Chrome and Firefox both offer excellent performance for HTML5 action games. If a game feels laggy, closing other tabs can free up memory and smooth out gameplay significantly."
+        }
+      ]
+    },
+    {
+      "slug": "free-puzzle-games-no-download",
+      "type": "editorial",
+      "title": "20 Best Free Puzzle Games Online — No Download Required",
+      "metaTitle": "Best Free Online Puzzle Games 2025 — Play Instantly in Browser",
+      "metaDescription": "The best free puzzle games you can play online instantly. Logic puzzles, number games, sorting challenges, and more — no download, no account needed.",
+      "excerpt": "Brain-teasing puzzle games you can play for free in your browser — from classic number sliders to clever logic challenges and satisfying sorting games.",
+      "publishedAt": "2025-01-14",
+      "category": "puzzle",
+      "tags": ["puzzle games", "free puzzle games online", "brain games", "logic games", "no download puzzle games"],
+      "featured": false,
+      "sections": [
+        {
+          "heading": "Why Puzzle Games Are Great for the Brain",
+          "body": "Puzzle games aren't just entertaining — they actively exercise your working memory, pattern recognition, and spatial reasoning. Regular puzzle play has been linked to improved concentration and slower cognitive decline. Best of all, browser puzzle games let you get those benefits without spending a penny or installing anything."
+        },
+        {
+          "heading": "Classic Number & Logic Puzzles",
+          "body": "These games are inspired by timeless puzzle formats — sliding tiles, number patterns, and pure logic — updated with modern visuals and smooth browser controls.",
+          "gameSlugs": ["2048", "neon-circuit", "get-rich-in", "torn-pieces"],
+          "listItems": [
+            "2048 — slide tiles to combine numbers and reach the 2048 tile",
+            "Neon Circuit — connect the dots across glowing circuit boards",
+            "Get Rich In — financial strategy disguised as an addictive puzzle"
+          ]
+        },
+        {
+          "heading": "Sorting & Organising Puzzles",
+          "body": "Sorting puzzles have exploded in popularity because they're deeply satisfying — the moment everything clicks into the right place is genuinely rewarding. These free browser picks are some of the best in the genre.",
+          "gameSlugs": ["ball-sort-2d", "goods-sorting-shopping-master", "mini-sky-helicopter"],
+          "listItems": [
+            "Ball Sort 2D — sort coloured balls into tubes, gets fiendishly tricky",
+            "Goods Sorting Shopping Master — warehouse logistics as a stress-free puzzle",
+            "Mini Sky Helicopter — sort and navigate in a compact puzzle format"
+          ]
+        },
+        {
+          "heading": "Adventure Puzzle Hybrids",
+          "body": "Some of the most engaging puzzle games blend exploration with brain-teasing challenges, giving you a world to discover alongside the logic problems to solve.",
+          "gameSlugs": ["panda-adventure", "trump-the-ragdoll", "slime-jelly-bouncer"],
+          "listItems": [
+            "Panda Adventure — guide a panda through physics-based puzzles",
+            "Slime Jelly Bouncer — bounce and stretch through obstacle courses"
+          ]
+        },
+        {
+          "heading": "How to Get Better at Puzzle Games",
+          "body": "The key to improving at puzzle games is to slow down and observe before acting. Most puzzles have a solution that becomes obvious once you understand the rules fully. Take time to understand what each element does, work backwards from the goal state when stuck, and don't be afraid to restart — restarts teach you more than fumbling forward."
+        }
+      ]
+    },
+    {
+      "slug": "best-free-racing-games-browser",
+      "type": "editorial",
+      "title": "Best Free Racing Games You Can Play in Your Browser",
+      "metaTitle": "Best Free Online Racing Games 2025 — Play in Browser, No Download",
+      "metaDescription": "Speed, drifts, and adrenaline — the best free online racing games you can play instantly in your browser. No downloads, no installs, just pure racing.",
+      "excerpt": "The fastest free browser racing games available right now — from futuristic circuits to street racing and skill-based driving challenges.",
+      "publishedAt": "2025-01-16",
+      "category": "racing",
+      "tags": ["racing games", "free racing games online", "browser racing games", "car games", "driving games"],
+      "featured": false,
+      "sections": [
+        {
+          "heading": "Futuristic & Arcade Racing",
+          "body": "Futuristic racing games strip away real-world physics in favour of blistering speed and outrageous tracks. These browser picks deliver the thrill of games like WipeOut and F-Zero entirely for free.",
+          "gameSlugs": ["hexgl", "skill-driver-game"],
+          "listItems": [
+            "HexGL — a WebGL futuristic racer that genuinely looks stunning in the browser",
+            "Skill Driver — sharp turns and precision driving across challenging stages"
+          ]
+        },
+        {
+          "heading": "Street & Endless Racing",
+          "body": "Street racing games and endless runners blend racing with dodging, collecting, and survival. These free browser titles are instantly accessible and surprisingly deep.",
+          "gameSlugs": ["subway-spider-kid-game", "catch-reindeer"],
+          "listItems": [
+            "Subway Spider Kid — web-slinging meets endless running in a city environment",
+            "Catch Reindeer — festive endless-chase racing with escalating speed"
+          ]
+        },
+        {
+          "heading": "Tips for Browser Racing Games",
+          "body": "For the smoothest racing experience in a browser, use keyboard arrow keys for steering rather than mouse controls where possible — the response is more precise. Enabling hardware acceleration in your browser settings (usually found under Advanced settings) can significantly boost frame rates in 3D racing games."
+        }
+      ]
+    },
+    {
+      "slug": "unblocked-games-guide",
+      "type": "editorial",
+      "title": "Unblocked Games: What They Are & the Best Ones to Play",
+      "metaTitle": "Unblocked Games Guide 2025 — Best Free Games at School & Work",
+      "metaDescription": "What are unblocked games and where can you find the best ones? Our guide explains everything plus lists the top free browser games that work anywhere.",
+      "excerpt": "Everything you need to know about unblocked games — what they are, why they work at school and work, and which ones are worth your time.",
+      "publishedAt": "2025-01-18",
+      "category": "guides",
+      "tags": ["unblocked games", "unblocked games at school", "free unblocked games", "games at school", "browser games"],
+      "featured": true,
+      "sections": [
+        {
+          "heading": "What Are Unblocked Games?",
+          "body": "Unblocked games are browser-based games that can be accessed on networks with content filters — like school Wi-Fi or workplace networks. They work because they are hosted on general-purpose websites (not dedicated gaming portals that network filters flag) and run entirely in the browser using standard HTML5 technology, requiring no downloads or external plugins."
+        },
+        {
+          "heading": "Why Do Games Get Blocked at School?",
+          "body": "Schools and workplaces use network-level content filters to block categories of websites they consider distracting or inappropriate. Gaming websites are often blocked wholesale. However, individual browser-based games on general websites may slip through because they are not categorised as gaming sites by the filter software. FreePlayArena uses HTTPS and standard web technology, making it accessible on most networks."
+        },
+        {
+          "heading": "Best Games to Play at School or Work",
+          "body": "These games are lightweight, fast-loading, and playable in short sessions — perfect for a break between classes or during lunch.",
+          "gameSlugs": ["2048", "neon-circuit", "ball-sort-2d", "slime-jelly-bouncer", "minecraft-flappy-creeper", "hyper-wave-trial", "bullet-man-master-3d", "hexgl"],
+          "listItems": [
+            "2048 — plays entirely offline once loaded, no ongoing network requests",
+            "Neon Circuit — quiet, focused, and perfect for short sessions",
+            "Ball Sort 2D — deeply engaging without needing sound to enjoy",
+            "HexGL — stunning racer that runs in under 2 seconds",
+            "Minecraft Flappy Creeper — instant fun, playable in 30-second bursts"
+          ]
+        },
+        {
+          "heading": "Tips for Playing at School",
+          "body": "Always respect your school's acceptable use policy. If gaming is not permitted during class time, save it for breaks and lunch periods. Many games on FreePlayArena can be played without sound — just mute the tab — which keeps things low-profile. Using a private browser tab also means no browsing history is left behind."
+        }
+      ]
+    },
+    {
+      "slug": "best-games-when-bored",
+      "type": "editorial",
+      "title": "Best Games to Play When Bored Online — 30 Quick Picks",
+      "metaTitle": "Best Games to Play When Bored Online 2025 — Instant Free Fun",
+      "metaDescription": "Bored and looking for something fun? These are the best free online games to play when bored — instant browser games that cure boredom in seconds.",
+      "excerpt": "The best instant-play browser games for when boredom strikes — quick to load, easy to start, and impossible to stop playing.",
+      "publishedAt": "2025-01-20",
+      "category": "roundups",
+      "tags": ["games when bored", "bored games online", "free games to play when bored", "instant games", "quick games"],
+      "featured": true,
+      "sections": [
+        {
+          "heading": "Games for a 5-Minute Break",
+          "body": "Some games are perfectly designed for short sessions — you can pick them up, enjoy a satisfying round, and put them down without feeling like you abandoned anything. These are ideal for killing five minutes between tasks.",
+          "gameSlugs": ["minecraft-flappy-creeper", "spike-rush", "hyper-wave-trial", "ball-sort-2d", "2048"],
+          "listItems": [
+            "Flappy Creeper — one attempt lasts 30 seconds to 3 minutes",
+            "Spike Rush — fast-paced, instantly restartable",
+            "Hyper Wave Trial — short wave-based sessions with clear progress",
+            "Ball Sort 2D — satisfying to complete a level in under 2 minutes"
+          ]
+        },
+        {
+          "heading": "Games That Are Hard to Put Down",
+          "body": "These games have a quality that makes you say 'just one more round' — escalating difficulty, progression systems, or pure addictive loops that keep you coming back.",
+          "gameSlugs": ["cube-rush-3d-survive-the-rush", "roof-rush-3d", "orbit-rush-3d", "sugar-rush-tower", "object-73-survival-clicker"],
+          "listItems": [
+            "Cube Rush 3D — survival running that gets faster and more chaotic",
+            "Roof Rush 3D — jump across rooftops in a satisfying endless format",
+            "Object 73 Survival Clicker — idle progression that rewards patience",
+            "Sugar Rush Tower — tower stacking with physics-based tension"
+          ]
+        },
+        {
+          "heading": "Games to Play in a Lunch Break",
+          "body": "Thirty minutes is enough time to make meaningful progress in these games. They reward focus and skill development without requiring a multi-hour session to enjoy.",
+          "gameSlugs": ["hexgl", "neon-circuit", "air-battles", "panda-adventure", "goods-sorting-shopping-master"],
+          "listItems": [
+            "HexGL — master one track in 20 minutes of racing",
+            "Neon Circuit — work through progressively harder levels",
+            "Air Battles — genuine skill development over multiple sessions"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "free-casual-games-online",
+      "type": "editorial",
+      "title": "Best Free Casual Games to Play Online — Easy & Addictive",
+      "metaTitle": "Best Free Casual Games Online 2025 — Relax & Play Instantly",
+      "metaDescription": "The best free casual games online — easy to learn, hard to put down. Play instantly in your browser with no download and no sign-up required.",
+      "excerpt": "Easy-to-learn, hard-to-stop casual games you can play free in your browser. Perfect for winding down or filling a spare few minutes.",
+      "publishedAt": "2025-01-22",
+      "category": "casual",
+      "tags": ["casual games", "free casual games online", "relaxing games", "easy games", "casual browser games"],
+      "featured": false,
+      "sections": [
+        {
+          "heading": "What Makes a Game Casual?",
+          "body": "Casual games are defined by their accessibility — simple controls you can learn in seconds, forgiving difficulty that does not require precise skill to enjoy, and satisfying feedback loops that make every session feel rewarding. They are designed to be picked up and put down without losing progress or missing context."
+        },
+        {
+          "heading": "Best Endless & Survival Casual Games",
+          "body": "Endless runner and survival games are the ultimate casual format — your only goal is to last as long as possible, and every run teaches you something new.",
+          "gameSlugs": ["minecraft-flappy-creeper", "hyper-wave-trial", "spike-rush", "roof-rush-3d", "orbit-rush-3d"],
+          "listItems": [
+            "Minecraft Flappy Creeper — beloved flappy format with Minecraft visuals",
+            "Hyper Wave Trial — dodge waves with increasing intensity",
+            "Spike Rush — simple premise, surprisingly deep skill ceiling",
+            "Roof Rush 3D — rooftop jumping with a satisfying flow state"
+          ]
+        },
+        {
+          "heading": "Best Clicker & Idle Casual Games",
+          "body": "Clicker games reward patience and optimisation. You can play them actively or let them run in the background — either way, there is always something satisfying happening.",
+          "gameSlugs": ["object-73-survival-clicker", "sugar-rush-tower"],
+          "listItems": [
+            "Object 73 Survival Clicker — escalating idle progression with survival elements",
+            "Sugar Rush Tower — build and balance with satisfying physics"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "html5-games-no-flash",
+      "type": "editorial",
+      "title": "HTML5 Browser Games: The Best Flash-Free Online Games in 2025",
+      "metaTitle": "Best HTML5 Games 2025 — Flash-Free Browser Games That Actually Work",
+      "metaDescription": "Flash is dead but browser gaming is better than ever. Discover the best HTML5 games you can play in any modern browser — no plugins, no downloads.",
+      "excerpt": "Adobe Flash died in 2020, but HTML5 browser gaming is thriving. Here are the best modern browser games that work in any device, no plugins needed.",
+      "publishedAt": "2025-01-24",
+      "category": "guides",
+      "tags": ["html5 games", "flash games alternative", "browser games no flash", "modern browser games", "html5"],
+      "featured": false,
+      "sections": [
+        {
+          "heading": "The End of Flash and the Rise of HTML5",
+          "body": "Adobe Flash Player was officially discontinued on 31 December 2020. For years it was the backbone of browser gaming — millions of classic games ran on it. HTML5 (combined with WebGL for 3D graphics) has fully replaced it, and in many ways surpassed it. HTML5 games load faster, run on mobile devices natively, require no plugins, and are more secure."
+        },
+        {
+          "heading": "The Best HTML5 Games Right Now",
+          "body": "These games showcase what HTML5 browser gaming is capable of — from polished 3D visuals to smooth physics simulations, all running in your browser tab with zero installs.",
+          "gameSlugs": ["hexgl", "bullet-man-master-3d", "air-battles", "2048", "neon-circuit", "ball-sort-2d", "boom-chain", "slime-jelly-bouncer"],
+          "listItems": [
+            "HexGL — WebGL racing that demonstrates just how good browser 3D has become",
+            "Bullet Man Master 3D — full 3D shooter running at 60fps in the browser",
+            "Air Battles — 3D aerial combat using nothing but JavaScript and WebGL",
+            "2048 — the modern HTML5 classic that started a puzzle genre"
+          ]
+        },
+        {
+          "heading": "Playing HTML5 Games on Mobile",
+          "body": "One of HTML5's biggest advantages over Flash is native mobile support. All games on FreePlayArena are built with HTML5 and work on iOS Safari and Android Chrome without any additional setup. Some action games benefit from a physical controller connected via Bluetooth for the best experience."
+        }
+      ]
+    },
+    {
+      "slug": "best-free-sports-games-online",
+      "type": "editorial",
+      "title": "Best Free Sports Games Online — Football, Basketball & More",
+      "metaTitle": "Best Free Online Sports Games 2025 — Play in Browser, No Download",
+      "metaDescription": "The best free sports games online — football, basketball, golf, poker and more. Play instantly in your browser with no download required.",
+      "excerpt": "Free browser sports games that actually feel good to play — from football kick simulators to card games and precision golf.",
+      "publishedAt": "2025-01-26",
+      "category": "sports",
+      "tags": ["sports games", "free sports games online", "browser sports games", "football games", "basketball games"],
+      "featured": false,
+      "sections": [
+        {
+          "heading": "Free Football & Soccer Games",
+          "body": "Football is the world's most popular sport, and browser football games capture the excitement of the beautiful game in compact, instantly playable formats.",
+          "gameSlugs": ["soccer-drop-game", "ultra-kick-goal-crazy"],
+          "listItems": [
+            "Soccer Drop Game — physics-based football with satisfying ball control",
+            "Ultra Kick Goal Crazy — power shots and precision aiming in a fun arcade format"
+          ]
+        },
+        {
+          "heading": "Free Card & Strategy Sports Games",
+          "body": "Card games and strategy sports titles are perfect for players who prefer thinking over reflexes. These free browser picks offer depth and replayability.",
+          "gameSlugs": ["vr-poker"],
+          "listItems": [
+            "VR Poker — classic Texas Hold'em poker with clean, modern visuals"
+          ]
+        },
+        {
+          "heading": "Tips for Sports Games in the Browser",
+          "body": "Sports games often benefit from precise timing. Practise the core mechanic of each game in isolation — in a football game, spend the first few rounds just mastering the shot timing before worrying about positioning. The muscle memory you build in the first five minutes pays dividends throughout your session."
+        }
+      ]
+    },
+    {
+      "slug": "free-adventure-games-browser",
+      "type": "editorial",
+      "title": "Best Free Online Adventure Games — Explore Without Downloading",
+      "metaTitle": "Best Free Browser Adventure Games 2025 — No Download, Play Instantly",
+      "metaDescription": "The best free online adventure games you can play in your browser right now. Exploration, survival, and story-driven games — no download required.",
+      "excerpt": "Free browser adventure games that deliver exploration, survival, and that sense of discovery — all without installing a single file.",
+      "publishedAt": "2025-01-28",
+      "category": "adventure",
+      "tags": ["adventure games", "free adventure games online", "browser adventure games", "exploration games", "survival games"],
+      "featured": false,
+      "sections": [
+        {
+          "heading": "Exploration & Survival Adventure Games",
+          "body": "Survival adventure games challenge you to adapt to hostile environments, manage limited resources, and find a way to thrive against the odds. These browser picks capture that feeling of tension and discovery.",
+          "gameSlugs": ["zombie-highway-car-game", "object-73-survival-clicker", "endless-space-pilot-2d"],
+          "listItems": [
+            "Zombie Highway Car Game — survive the undead apocalypse from behind the wheel",
+            "Object 73 Survival Clicker — long-term survival strategy as an idle game",
+            "Endless Space Pilot 2D — infinite galaxy exploration with procedural challenges"
+          ]
+        },
+        {
+          "heading": "Action Adventure & Rescue Games",
+          "body": "Action-adventure games blend combat or vehicle mechanics with exploration and mission objectives. These free browser titles are some of the most cinematic experiences you can have without a download.",
+          "gameSlugs": ["helicopter-rescue-games-3d", "forest-wing", "plane-runner-3d"],
+          "listItems": [
+            "Helicopter Rescue 3D — dramatic rescue missions in tight mountain corridors",
+            "Forest Wing — aerial adventure through dense, atmospheric forest environments",
+            "Plane Runner 3D — obstacle-course flying with an adventurous sense of speed"
+          ]
+        },
+        {
+          "heading": "Getting the Most from Adventure Games",
+          "body": "Adventure games reward patience and observation. Before charging forward, take a moment to scan the environment — most well-designed adventure games telegraph their challenges visually. Playing with headphones significantly enhances the experience, as sound design often provides critical cues about incoming threats or hidden paths."
+        }
+      ]
+    }
+  ]
+}

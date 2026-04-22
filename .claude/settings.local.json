@@ -27,7 +27,12 @@
       "Bash(git push:*)",
       "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(f'Total games: {len\\(d[\\\\\"games\\\\\"]\\)}'\\); print\\('Slugs:'\\); [print\\(g['slug']\\) for g in d['games']]\")",
       "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); g=d['games'][0]; print\\(json.dumps\\({k:g[k] for k in ['title','description','instructions','tags','category','developer']}, indent=2\\)\\)\")",
-      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); games=d['games']; print\\([g.get\\('addedAt','NO_DATE'\\) for g in games[:10]]\\)\")"
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); games=d['games']; print\\([g.get\\('addedAt','NO_DATE'\\) for g in games[:10]]\\)\")",
+      "Bash(node -e \"const g = require\\('./src/data/games.json'\\); console.log\\('Total games:', g.games.length\\); const unity = g.games.filter\\(x => x.embedUrl && x.embedUrl.includes\\('gamemonetize'\\)\\); console.log\\('GM games:', unity.length\\);\")",
+      "Bash(node -e \"const g = require\\('./src/data/games.json'\\); const game = g.games.find\\(x => x.slug === 'bullet-man-master-3d'\\); console.log\\(JSON.stringify\\(game, null, 2\\)\\);\")",
+      "Bash(node -e \"const g = require\\('./src/data/games.json'\\); const game = g.games.find\\(x => x.slug === 'bullet-man-master-3d'\\); console.log\\('Found:', !!game\\); console.log\\('hasAdSdk field:', game?.hasAdSdk\\);\")",
+      "Bash(node -e \"const g = require\\('./src/data/games.json'\\); const cats = {}; g.games.forEach\\(x => { cats[x.category] = \\(cats[x.category]||[]\\); cats[x.category].push\\(x.slug\\); }\\); Object.entries\\(cats\\).forEach\\(\\([c,s]\\) => console.log\\(c, s.length, s.slice\\(0,3\\).join\\(', '\\)\\)\\);\")",
+      "Bash(node -e \"const g = require\\('./src/data/games.json'\\); const featured = g.games.filter\\(x => x.featured\\).map\\(x => x.slug\\); console.log\\('Featured:', featured.join\\(', '\\)\\); const topAction = g.games.filter\\(x=>x.category==='action'\\).sort\\(\\(a,b\\)=>b.plays-a.plays\\).slice\\(0,8\\).map\\(x=>x.slug\\); console.log\\('Top action:', topAction.join\\(', '\\)\\); const topPuzzle = g.games.filter\\(x=>x.category==='puzzle'\\).sort\\(\\(a,b\\)=>b.plays-a.plays\\).slice\\(0,8\\).map\\(x=>x.slug\\); console.log\\('Top puzzle:', topPuzzle.join\\(', '\\)\\); const topCasual = g.games.filter\\(x=>x.category==='casual'\\).sort\\(\\(a,b\\)=>b.plays-a.plays\\).slice\\(0,8\\).map\\(x=>x.slug\\); console.log\\('Top casual:', topCasual.join\\(', '\\)\\);\")"
     ]
   }
 }

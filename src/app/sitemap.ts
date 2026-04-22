@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
 import { getAllGameSlugs, getAllCategorySlugs, getAllTagSlugs } from "@/lib/games";
+import { getAllPostSlugs } from "@/lib/blog";
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://freeplayarena.com";
 
@@ -7,11 +8,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const gameSlugs = getAllGameSlugs();
   const categorySlugs = getAllCategorySlugs();
   const tagSlugs = getAllTagSlugs();
+  const postSlugs = getAllPostSlugs();
 
   // Static pages — manually maintained
   const staticPages = [
     { url: BASE_URL,                                    priority: 1.0, changeFrequency: "daily" as const },
     { url: `${BASE_URL}/games`,                         priority: 0.9, changeFrequency: "daily" as const },
+    { url: `${BASE_URL}/blog`,                          priority: 0.9, changeFrequency: "daily" as const },
     { url: `${BASE_URL}/unblocked-games`,               priority: 0.9, changeFrequency: "weekly" as const },
     { url: `${BASE_URL}/ad-free-games`,                 priority: 0.9, changeFrequency: "weekly" as const },
     { url: `${BASE_URL}/puzzle-games`,                  priority: 0.8, changeFrequency: "weekly" as const },
@@ -35,6 +38,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "weekly" as const,
       priority: 0.8,
+    })),
+    ...postSlugs.map(({ slug }) => ({
+      url: `${BASE_URL}/blog/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: slug.startsWith("how-to-play-") ? 0.6 : 0.75,
     })),
     ...categorySlugs.map(({ slug }) => ({
       url: `${BASE_URL}/category/${slug}`,
