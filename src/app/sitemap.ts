@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: BASE_URL,                                    priority: 1.0, changeFrequency: "daily" as const },
     { url: `${BASE_URL}/games`,                         priority: 0.9, changeFrequency: "daily" as const },
     { url: `${BASE_URL}/unblocked-games`,               priority: 0.9, changeFrequency: "weekly" as const },
+    { url: `${BASE_URL}/ad-free-games`,                 priority: 0.9, changeFrequency: "weekly" as const },
     { url: `${BASE_URL}/puzzle-games`,                  priority: 0.8, changeFrequency: "weekly" as const },
     { url: `${BASE_URL}/no-download-games`,             priority: 0.8, changeFrequency: "weekly" as const },
     { url: `${BASE_URL}/games-to-play-when-bored`,      priority: 0.8, changeFrequency: "weekly" as const },

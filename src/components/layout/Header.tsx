@@ -46,6 +46,12 @@ export default function Header() {
           >
             🔓 Unblocked
           </Link>
+          <Link
+            href="/ad-free-games"
+            className="px-3 py-1.5 text-sm font-semibold text-emerald-400 hover:text-white hover:bg-emerald-600/20 rounded-md transition-colors"
+          >
+            ✓ Ad Free
+          </Link>
         </nav>
 
         {/* Search */}

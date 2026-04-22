@@ -69,6 +69,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/ad-free-games" className="text-emerald-400 hover:text-emerald-300 text-sm transition-colors">
+                  ✓ Ad Free Games
+                </Link>
+              </li>
+              <li>
                 <Link href="/puzzle-games" className="text-gray-400 hover:text-violet-400 text-sm transition-colors">
                   Puzzle Games
                 </Link>
