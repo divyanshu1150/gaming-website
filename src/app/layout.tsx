@@ -1,4 +1,4 @@
-// v2
+// v3
 import type { Metadata } from "next";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
