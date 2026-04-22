@@ -32,6 +32,11 @@ export default function GameCard({ game, priority = false }: GameCardProps) {
             Featured
           </span>
         )}
+        {game.embedType === "gamemonetize" && (
+          <span className="absolute bottom-2 right-2 bg-black/70 text-gray-300 text-[10px] px-1.5 py-0.5 rounded flex items-center gap-1">
+            📢 Has Ads
+          </span>
+        )}
       </div>
 
       {/* Info */}

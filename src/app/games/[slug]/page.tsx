@@ -89,6 +89,11 @@ export default async function GamePage({ params }: GamePageProps) {
                     </Link>
                     <span className="text-gray-500 text-sm">by {game.developer}</span>
                     <span className="text-gray-500 text-sm">{game.releaseYear}</span>
+                    {game.embedType === "gamemonetize" && (
+                      <span className="text-xs bg-yellow-500/10 border border-yellow-500/20 text-yellow-400 px-2 py-0.5 rounded-full">
+                        📢 Contains in-game ads
+                      </span>
+                    )}
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
