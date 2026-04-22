@@ -37,6 +37,11 @@ export default function GameCard({ game, priority = false }: GameCardProps) {
             📢 Has Ads
           </span>
         )}
+        {game.embedType === "other" && (
+          <span className="absolute bottom-2 right-2 bg-green-600/80 text-white text-[10px] px-1.5 py-0.5 rounded flex items-center gap-1">
+            ✓ Ad Free
+          </span>
+        )}
       </div>
 
       {/* Info */}

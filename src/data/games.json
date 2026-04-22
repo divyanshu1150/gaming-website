@@ -11535,6 +11535,174 @@
         "object-73-survival-clicker",
         "cube-rush-3d-survive-the-rush"
       ]
+    },
+    {
+      "id": "free-2048",
+      "slug": "2048",
+      "title": "2048",
+      "description": "Slide numbered tiles on a grid to combine them and create a tile with the number 2048. A simple but deeply addictive puzzle game that's easy to learn and hard to master.",
+      "shortDescription": "Slide tiles and combine numbers to reach 2048.",
+      "category": "puzzle",
+      "tags": [
+        "2048",
+        "numbers",
+        "puzzle",
+        "logic",
+        "sliding",
+        "classic"
+      ],
+      "thumbnail": "https://gabrielecirulli.github.io/2048/meta/og_image.png",
+      "thumbnailAlt": "2048 \u2014 free number puzzle game",
+      "embedUrl": "https://gabrielecirulli.github.io/2048/",
+      "embedType": "other",
+      "source": "Open Source",
+      "aspectRatio": "4/3",
+      "featured": true,
+      "plays": 150000,
+      "rating": 4.9,
+      "releaseYear": 2014,
+      "developer": "Gabriele Cirulli",
+      "instructions": "Use arrow keys or swipe to slide tiles. When two tiles with the same number touch, they merge into one. Reach 2048 to win!",
+      "relatedSlugs": [
+        "slime-jelly-bouncer",
+        "numeral-crawl-easy",
+        "ball-sort-2d",
+        "happy-cat"
+      ]
+    },
+    {
+      "id": "free-hexgl",
+      "slug": "hexgl",
+      "title": "HexGL",
+      "description": "A stunning futuristic racing game built with HTML5, WebGL and JavaScript. Race through neon-lit tracks at insane speeds in this open-source racing masterpiece. One of the most impressive browser games ever made.",
+      "shortDescription": "Futuristic WebGL racing game \u2014 no ads, stunning visuals.",
+      "category": "racing",
+      "tags": [
+        "racing",
+        "webgl",
+        "3d",
+        "futuristic",
+        "fast",
+        "neon"
+      ],
+      "thumbnail": "https://img.gamemonetize.com/xaq0qn86b1g1qa04gkux2qyj7kscd6d6/512x384.jpg",
+      "thumbnailAlt": "HexGL \u2014 futuristic racing game",
+      "embedUrl": "https://hexgl.bkcore.com/play/",
+      "embedType": "other",
+      "source": "Open Source",
+      "aspectRatio": "16/9",
+      "featured": true,
+      "plays": 80000,
+      "rating": 4.8,
+      "releaseYear": 2013,
+      "developer": "Thibaut Despoulain",
+      "instructions": "Use arrow keys or WASD to steer. Hold X or Down to brake. Race through the track without hitting the walls.",
+      "relatedSlugs": [
+        "catch-reindeer",
+        "subway-spider-kid-game",
+        "skill-driver-game",
+        "neon-dash-survive-the-dash"
+      ]
+    },
+    {
+      "id": "free-wordl",
+      "slug": "hello-wordl",
+      "title": "Hello Wordl",
+      "description": "A fun and addictive word guessing game \u2014 guess the hidden word in 6 tries. Each guess reveals which letters are correct and in the right position. A clean, ad-free Wordle experience.",
+      "shortDescription": "Guess the hidden word in 6 tries \u2014 ad-free Wordle.",
+      "category": "puzzle",
+      "tags": [
+        "word",
+        "wordle",
+        "letters",
+        "puzzle",
+        "brain",
+        "daily"
+      ],
+      "thumbnail": "https://img.gamemonetize.com/fxn4paqjk3u1yap268sqfi571d40pmre/512x384.jpg",
+      "thumbnailAlt": "Hello Wordl \u2014 word guessing game",
+      "embedUrl": "https://hellowordl.net",
+      "embedType": "other",
+      "source": "Open Source",
+      "aspectRatio": "4/3",
+      "featured": false,
+      "plays": 60000,
+      "rating": 4.7,
+      "releaseYear": 2022,
+      "developer": "Lynn Fisher",
+      "instructions": "Type a 5-letter word and press Enter. Green means correct letter in correct spot. Yellow means correct letter in wrong spot. Grey means letter not in the word.",
+      "relatedSlugs": [
+        "slime-jelly-bouncer",
+        "numeral-crawl-easy",
+        "ball-sort-2d",
+        "happy-cat"
+      ]
+    },
+    {
+      "id": "free-trust",
+      "slug": "evolution-of-trust",
+      "title": "The Evolution of Trust",
+      "description": "An interactive game-theory comic exploring why people cooperate and cheat. Play through scenarios with different personalities and discover the best strategies for building trust. Genuinely eye-opening and beautifully designed.",
+      "shortDescription": "An interactive game about trust, cooperation and betrayal.",
+      "category": "casual",
+      "tags": [
+        "interactive",
+        "educational",
+        "strategy",
+        "unique",
+        "story"
+      ],
+      "thumbnail": "https://img.gamemonetize.com/1y99emuy48db6fj22jllf24fk7apcsta/512x384.jpg",
+      "thumbnailAlt": "The Evolution of Trust \u2014 interactive game theory",
+      "embedUrl": "https://ncase.me/trust/",
+      "embedType": "other",
+      "source": "Open Source",
+      "aspectRatio": "16/9",
+      "featured": false,
+      "plays": 40000,
+      "rating": 4.9,
+      "releaseYear": 2017,
+      "developer": "Nicky Case",
+      "instructions": "Click to interact. Read through the story and make choices. No wrong answers \u2014 just explore and learn.",
+      "relatedSlugs": [
+        "minecraft-flappy-creeper",
+        "boom-chain",
+        "object-73-survival-clicker",
+        "cube-rush-3d-survive-the-rush"
+      ]
+    },
+    {
+      "id": "free-emberwind",
+      "slug": "emberwind",
+      "title": "Emberwind",
+      "description": "A classic HTML5 canvas platformer adventure. Fight through waves of enemies, collect loot, and battle your way through challenging levels. One of the earliest and most impressive HTML5 games ever built.",
+      "shortDescription": "Classic HTML5 platformer \u2014 fight enemies and collect loot.",
+      "category": "adventure",
+      "tags": [
+        "platformer",
+        "adventure",
+        "action",
+        "classic",
+        "html5"
+      ],
+      "thumbnail": "https://img.gamemonetize.com/t9usazpd800zm786qh2g21p0khxjfka7/512x384.jpg",
+      "thumbnailAlt": "Emberwind \u2014 HTML5 platformer game",
+      "embedUrl": "https://operasoftware.github.io/Emberwind/",
+      "embedType": "other",
+      "source": "Open Source",
+      "aspectRatio": "16/9",
+      "featured": false,
+      "plays": 30000,
+      "rating": 4.6,
+      "releaseYear": 2011,
+      "developer": "Opera Software",
+      "instructions": "Use arrow keys to move and jump. Press Z to attack. Defeat enemies and reach the end of each level.",
+      "relatedSlugs": [
+        "helicopter-rescue-games-3d",
+        "zombie-highway-car-game",
+        "endless-space-pilot-2d",
+        "jetspire"
+      ]
     }
   ]
 }

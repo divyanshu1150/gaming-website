@@ -94,6 +94,11 @@ export default async function GamePage({ params }: GamePageProps) {
                         📢 Contains in-game ads
                       </span>
                     )}
+                    {game.embedType === "other" && (
+                      <span className="text-xs bg-green-500/10 border border-green-500/20 text-green-400 px-2 py-0.5 rounded-full">
+                        ✓ Ad Free
+                      </span>
+                    )}
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
