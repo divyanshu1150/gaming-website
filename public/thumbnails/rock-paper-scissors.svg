@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="384" viewBox="0 0 512 384">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0a15;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="384" fill="url(#bg)"/>
+  <rect x="4" y="4" width="504" height="376" rx="8" fill="none" stroke="#f97316" stroke-opacity="0.3" stroke-width="2"/>
+  <!-- Three choice boxes -->
+  <rect x="60" y="90" width="110" height="110" rx="16" fill="#1a1a2e" stroke="#374151" stroke-width="2"/>
+  <rect x="201" y="90" width="110" height="110" rx="16" fill="#1a1a2e" stroke="#374151" stroke-width="2"/>
+  <rect x="342" y="90" width="110" height="110" rx="16" fill="#1a1a2e" stroke="#374151" stroke-width="2"/>
+  <!-- Emojis -->
+  <text x="115" y="162" font-family="system-ui,sans-serif" font-size="60" text-anchor="middle">🪨</text>
+  <text x="256" y="162" font-family="system-ui,sans-serif" font-size="60" text-anchor="middle">📄</text>
+  <text x="397" y="162" font-family="system-ui,sans-serif" font-size="60" text-anchor="middle">✂️</text>
+  <!-- Labels -->
+  <text x="115" y="222" font-family="system-ui,sans-serif" font-size="13" text-anchor="middle" fill="#6b7280">ROCK</text>
+  <text x="256" y="222" font-family="system-ui,sans-serif" font-size="13" text-anchor="middle" fill="#6b7280">PAPER</text>
+  <text x="397" y="222" font-family="system-ui,sans-serif" font-size="13" text-anchor="middle" fill="#6b7280">SCISSORS</text>
+  <text x="256" y="285" font-family="system-ui,sans-serif" font-size="26" font-weight="900" text-anchor="middle" fill="white">Rock Paper Scissors</text>
+  <text x="256" y="322" font-family="system-ui,sans-serif" font-size="16" text-anchor="middle" fill="#f97316" fill-opacity="0.8">Free · No Ads · Play Instantly</text>
+</svg>

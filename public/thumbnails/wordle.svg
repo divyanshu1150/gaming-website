@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="384" viewBox="0 0 512 384">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0a15;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="384" fill="url(#bg)"/>
+  <rect x="4" y="4" width="504" height="376" rx="8" fill="none" stroke="#4ade80" stroke-opacity="0.3" stroke-width="2"/>
+  <!-- Wordle grid row 1 (grey - past guess) -->
+  <rect x="116" y="60" width="52" height="52" rx="6" fill="#374151"/>
+  <rect x="176" y="60" width="52" height="52" rx="6" fill="#374151"/>
+  <rect x="236" y="60" width="52" height="52" rx="6" fill="#374151"/>
+  <rect x="296" y="60" width="52" height="52" rx="6" fill="#92400e"/>
+  <rect x="356" y="60" width="52" height="52" rx="6" fill="#374151"/>
+  <!-- Row 1 letters -->
+  <text x="142" y="97" font-family="system-ui,sans-serif" font-size="28" font-weight="900" text-anchor="middle" fill="#6b7280">C</text>
+  <text x="202" y="97" font-family="system-ui,sans-serif" font-size="28" font-weight="900" text-anchor="middle" fill="#6b7280">R</text>
+  <text x="262" y="97" font-family="system-ui,sans-serif" font-size="28" font-weight="900" text-anchor="middle" fill="#6b7280">A</text>
+  <text x="322" y="97" font-family="system-ui,sans-serif" font-size="28" font-weight="900" text-anchor="middle" fill="white">N</text>
+  <text x="382" y="97" font-family="system-ui,sans-serif" font-size="28" font-weight="900" text-anchor="middle" fill="#6b7280">E</text>
+  <!-- Row 2 (green/yellow) -->
+  <rect x="116" y="122" width="52" height="52" rx="6" fill="#15803d"/>
+  <rect x="176" y="122" width="52" height="52" rx="6" fill="#92400e"/>
+  <rect x="236" y="122" width="52" height="52" rx="6" fill="#15803d"/>
+  <rect x="296" y="122" width="52" height="52" rx="6" fill="#15803d"/>
+  <rect x="356" y="122" width="52" height="52" rx="6" fill="#15803d"/>
+  <text x="142" y="159" font-family="system-ui,sans-serif" font-size="28" font-weight="900" text-anchor="middle" fill="white">P</text>
+  <text x="202" y="159" font-family="system-ui,sans-serif" font-size="28" font-weight="900" text-anchor="middle" fill="white">L</text>
+  <text x="262" y="159" font-family="system-ui,sans-serif" font-size="28" font-weight="900" text-anchor="middle" fill="white">A</text>
+  <text x="322" y="159" font-family="system-ui,sans-serif" font-size="28" font-weight="900" text-anchor="middle" fill="white">N</text>
+  <text x="382" y="159" font-family="system-ui,sans-serif" font-size="28" font-weight="900" text-anchor="middle" fill="white">T</text>
+  <!-- Empty rows -->
+  <rect x="116" y="184" width="52" height="52" rx="6" fill="none" stroke="#2d2d4e" stroke-width="2"/>
+  <rect x="176" y="184" width="52" height="52" rx="6" fill="none" stroke="#2d2d4e" stroke-width="2"/>
+  <rect x="236" y="184" width="52" height="52" rx="6" fill="none" stroke="#2d2d4e" stroke-width="2"/>
+  <rect x="296" y="184" width="52" height="52" rx="6" fill="none" stroke="#2d2d4e" stroke-width="2"/>
+  <rect x="356" y="184" width="52" height="52" rx="6" fill="none" stroke="#2d2d4e" stroke-width="2"/>
+  <text x="256" y="298" font-family="system-ui,sans-serif" font-size="32" font-weight="900" text-anchor="middle" fill="white">WORDLE</text>
+  <text x="256" y="338" font-family="system-ui,sans-serif" font-size="16" text-anchor="middle" fill="#4ade80" fill-opacity="0.8">Free · No Ads · Play Instantly</text>
+</svg>

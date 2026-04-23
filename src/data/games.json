@@ -11798,8 +11798,8 @@
     },
     {
       "id": "free-2048",
-      "slug": "2048",
-      "title": "2048",
+      "slug": "2048-classic",
+      "title": "2048 Classic",
       "description": "Slide numbered tiles on a grid to combine them and create a tile with the number 2048. A simple but deeply addictive puzzle game that's easy to learn and hard to master.",
       "shortDescription": "Slide tiles and combine numbers to reach 2048.",
       "category": "puzzle",
@@ -11811,7 +11811,7 @@
         "sliding",
         "classic"
       ],
-      "thumbnail": "https://gabrielecirulli.github.io/2048/meta/og_image.png",
+      "thumbnail": "/thumbnails/2048-classic.svg",
       "thumbnailAlt": "2048 — free number puzzle game",
       "embedUrl": "https://gabrielecirulli.github.io/2048/",
       "embedType": "other",
@@ -11845,7 +11845,7 @@
         "fast",
         "neon"
       ],
-      "thumbnail": "https://hexgl.bkcore.com/image.png",
+      "thumbnail": "/thumbnails/hexgl.svg",
       "thumbnailAlt": "HexGL — futuristic racing game",
       "embedUrl": "https://hexgl.bkcore.com/play/",
       "embedType": "other",
@@ -11879,7 +11879,7 @@
         "brain",
         "daily"
       ],
-      "thumbnail": "https://hellowordl.net/logo192.png",
+      "thumbnail": "/thumbnails/hello-wordl.svg",
       "thumbnailAlt": "Hello Wordl — word guessing game",
       "embedUrl": "https://hellowordl.net",
       "embedType": "other",
@@ -11912,7 +11912,7 @@
         "unique",
         "story"
       ],
-      "thumbnail": "https://ncase.me/trust/social/thumbnail.png",
+      "thumbnail": "/thumbnails/evolution-of-trust.svg",
       "thumbnailAlt": "The Evolution of Trust — interactive game theory",
       "embedUrl": "https://ncase.me/trust/",
       "embedType": "other",
@@ -11945,7 +11945,7 @@
         "classic",
         "html5"
       ],
-      "thumbnail": "https://operasoftware.github.io/Emberwind/icon_114x114.png",
+      "thumbnail": "/thumbnails/emberwind.svg",
       "thumbnailAlt": "Emberwind — HTML5 platformer game",
       "embedUrl": "https://operasoftware.github.io/Emberwind/",
       "embedType": "other",
@@ -11963,6 +11963,271 @@
         "endless-space-pilot-2d",
         "jetspire"
       ]
+    },
+    {
+      "id": "self-tic-tac-toe-01",
+      "slug": "tic-tac-toe",
+      "title": "Tic-Tac-Toe",
+      "description": "Challenge an unbeatable AI in the ultimate battle of Xs and Os. Our minimax-powered computer opponent plays perfect Tic-Tac-Toe every time — can you force a draw? Track your wins, losses, and draws across as many rounds as you like. Simple to play, surprisingly deep to master.",
+      "shortDescription": "Classic 3x3 Tic-Tac-Toe vs an unbeatable AI.",
+      "category": "puzzle",
+      "tags": [
+        "tic-tac-toe",
+        "classic",
+        "puzzle",
+        "strategy",
+        "no-ads",
+        "self-hosted"
+      ],
+      "thumbnail": "/thumbnails/tic-tac-toe.svg",
+      "thumbnailAlt": "Tic-Tac-Toe — free online game, no ads",
+      "embedUrl": "/games/tic-tac-toe/index.html",
+      "embedType": "self-hosted",
+      "aspectRatio": "16/9",
+      "featured": false,
+      "plays": 0,
+      "rating": 4.3,
+      "developer": "FreePlayArena",
+      "source": "FreePlayArena",
+      "instructions": "Click any empty cell to place your X. The AI plays O. Three in a row wins!",
+      "relatedSlugs": [
+        "rock-paper-scissors",
+        "wordle",
+        "sudoku"
+      ],
+      "adFree": true
+    },
+    {
+      "id": "self-tetris-01",
+      "slug": "tetris",
+      "title": "Tetris",
+      "description": "The legendary block-stacking game reborn in smooth HTML5. Drop all 7 classic tetrominoes, clear lines to score, and survive as the speed ramps up with every level. Hard-drop for speed, rotate to fit, and watch for the ghost piece to place blocks perfectly. A timeless test of spatial thinking and reflexes.",
+      "shortDescription": "Stack blocks, clear lines — the legendary Tetris.",
+      "category": "puzzle",
+      "tags": [
+        "tetris",
+        "classic",
+        "puzzle",
+        "arcade",
+        "no-ads",
+        "self-hosted"
+      ],
+      "thumbnail": "/thumbnails/tetris.svg",
+      "thumbnailAlt": "Tetris — free online game, no ads",
+      "embedUrl": "/games/tetris/index.html",
+      "embedType": "self-hosted",
+      "aspectRatio": "16/9",
+      "featured": true,
+      "plays": 0,
+      "rating": 4.7,
+      "developer": "FreePlayArena",
+      "source": "FreePlayArena",
+      "instructions": "Arrow keys to move and rotate. Space for hard drop. On mobile: swipe to move, tap to rotate.",
+      "relatedSlugs": [
+        "2048",
+        "sudoku",
+        "breakout"
+      ],
+      "adFree": true
+    },
+    {
+      "id": "self-2048-01",
+      "slug": "2048",
+      "title": "2048",
+      "description": "Slide numbered tiles and merge matching pairs to build the legendary 2048 tile. Every swipe matters in this deceptively simple but endlessly addictive number puzzle. Beat your best score, push past 2048, and see how high you can go. Full swipe support for mobile.",
+      "shortDescription": "Slide tiles, merge numbers, reach 2048.",
+      "category": "puzzle",
+      "tags": [
+        "2048",
+        "puzzle",
+        "numbers",
+        "strategy",
+        "no-ads",
+        "self-hosted"
+      ],
+      "thumbnail": "/thumbnails/2048.svg",
+      "thumbnailAlt": "2048 — free online number puzzle game, no ads",
+      "embedUrl": "/games/2048/index.html",
+      "embedType": "self-hosted",
+      "aspectRatio": "16/9",
+      "featured": true,
+      "plays": 0,
+      "rating": 4.5,
+      "developer": "FreePlayArena",
+      "source": "FreePlayArena",
+      "instructions": "Use arrow keys or WASD to slide tiles. Merge tiles with the same number. Reach 2048 to win!",
+      "relatedSlugs": [
+        "tetris",
+        "sudoku",
+        "minesweeper"
+      ],
+      "adFree": true
+    },
+    {
+      "id": "self-wordle-01",
+      "slug": "wordle",
+      "title": "Wordle",
+      "description": "Guess the hidden 5-letter word in 6 attempts. Green tiles mean the letter is in the right spot. Yellow means it's in the word but in the wrong position. Grey means it's not in the word at all. A new random word every time you click New Game — no account or sign-in needed.",
+      "shortDescription": "Guess the 5-letter word in 6 tries — Wordle clone.",
+      "category": "puzzle",
+      "tags": [
+        "wordle",
+        "word",
+        "puzzle",
+        "classic",
+        "no-ads",
+        "self-hosted"
+      ],
+      "thumbnail": "/thumbnails/wordle.svg",
+      "thumbnailAlt": "Wordle — free online word guessing game, no ads",
+      "embedUrl": "/games/wordle/index.html",
+      "embedType": "self-hosted",
+      "aspectRatio": "16/9",
+      "featured": true,
+      "plays": 0,
+      "rating": 4.6,
+      "developer": "FreePlayArena",
+      "source": "FreePlayArena",
+      "instructions": "Type a 5-letter word and press Enter. Green = correct, Yellow = wrong position, Grey = not in word.",
+      "relatedSlugs": [
+        "tic-tac-toe",
+        "sudoku",
+        "minesweeper"
+      ],
+      "adFree": true
+    },
+    {
+      "id": "self-simon-says-01",
+      "slug": "simon-says",
+      "title": "Simon Says",
+      "description": "Watch the sequence of coloured flashes and repeat them perfectly. Each round adds one more step to the pattern — how long can your memory hold out? Authentic button tones powered by Web Audio API, smooth light-up animations, and a high score to chase. A digital memory challenge that never gets old.",
+      "shortDescription": "Watch the pattern, repeat it — Simon memory game.",
+      "category": "casual",
+      "tags": [
+        "simon",
+        "memory",
+        "classic",
+        "casual",
+        "no-ads",
+        "self-hosted"
+      ],
+      "thumbnail": "/thumbnails/simon-says.svg",
+      "thumbnailAlt": "Simon Says — free online memory game, no ads",
+      "embedUrl": "/games/simon-says/index.html",
+      "embedType": "self-hosted",
+      "aspectRatio": "16/9",
+      "featured": false,
+      "plays": 0,
+      "rating": 4.3,
+      "developer": "FreePlayArena",
+      "source": "FreePlayArena",
+      "instructions": "Watch the coloured buttons light up, then click them in the same order. Each round adds one more step.",
+      "relatedSlugs": [
+        "memory-match",
+        "whack-a-mole",
+        "color-match"
+      ],
+      "adFree": true
+    },
+    {
+      "id": "self-rock-paper-scissors-01",
+      "slug": "rock-paper-scissors",
+      "title": "Rock Paper Scissors",
+      "description": "The ultimate hand game goes digital — you vs the computer in a best-of-5 showdown. Rock crushes scissors, scissors cuts paper, paper covers rock. Pick your weapon, watch the animated reveal, and chase the match win. Polished, fast, and endlessly fun.",
+      "shortDescription": "Rock, Paper, Scissors — best of 5 vs the computer.",
+      "category": "casual",
+      "tags": [
+        "rock-paper-scissors",
+        "classic",
+        "casual",
+        "strategy",
+        "no-ads",
+        "self-hosted"
+      ],
+      "thumbnail": "/thumbnails/rock-paper-scissors.svg",
+      "thumbnailAlt": "Rock Paper Scissors — free online game, no ads",
+      "embedUrl": "/games/rock-paper-scissors/index.html",
+      "embedType": "self-hosted",
+      "aspectRatio": "16/9",
+      "featured": false,
+      "plays": 0,
+      "rating": 4.1,
+      "developer": "FreePlayArena",
+      "source": "FreePlayArena",
+      "instructions": "Click Rock, Paper, or Scissors. First to 3 wins takes the match!",
+      "relatedSlugs": [
+        "tic-tac-toe",
+        "simon-says",
+        "whack-a-mole"
+      ],
+      "adFree": true
+    },
+    {
+      "id": "self-platformer-01",
+      "slug": "platformer",
+      "title": "Platformer",
+      "description": "Run, jump, and leap across an endlessly scrolling world of procedurally generated platforms. Collect every coin you can before the speed gets too intense or you tumble into the void. A satisfying 2D platformer built entirely in HTML5 with smooth canvas rendering and full mobile touch controls.",
+      "shortDescription": "Run, jump, collect coins — endless scrolling platformer.",
+      "category": "action",
+      "tags": [
+        "platformer",
+        "action",
+        "arcade",
+        "endless",
+        "no-ads",
+        "self-hosted"
+      ],
+      "thumbnail": "/thumbnails/platformer.svg",
+      "thumbnailAlt": "Platformer — free online game, no ads",
+      "embedUrl": "/games/platformer/index.html",
+      "embedType": "self-hosted",
+      "aspectRatio": "16/9",
+      "featured": false,
+      "plays": 0,
+      "rating": 4.2,
+      "developer": "FreePlayArena",
+      "source": "FreePlayArena",
+      "instructions": "Arrow keys or WASD to move and jump. Collect yellow coins. Don't fall off the screen!",
+      "relatedSlugs": [
+        "flappy-block",
+        "breakout",
+        "snake"
+      ],
+      "adFree": true
+    },
+    {
+      "id": "self-color-match-01",
+      "slug": "color-match",
+      "title": "Color Match",
+      "description": "A fast-paced Stroop effect reaction game that tricks your brain. A colour name appears on screen — but it is printed in a different colour. You must click the button that matches the font colour, not the word. Score points for speed and accuracy before 30 seconds runs out. Can your brain beat the confusion?",
+      "shortDescription": "Match the font color, not the word — Stroop effect game.",
+      "category": "casual",
+      "tags": [
+        "color",
+        "reaction",
+        "reflex",
+        "casual",
+        "brain",
+        "no-ads",
+        "self-hosted"
+      ],
+      "thumbnail": "/thumbnails/color-match.svg",
+      "thumbnailAlt": "Color Match — free online reaction game, no ads",
+      "embedUrl": "/games/color-match/index.html",
+      "embedType": "self-hosted",
+      "aspectRatio": "16/9",
+      "featured": false,
+      "plays": 0,
+      "rating": 4.4,
+      "developer": "FreePlayArena",
+      "source": "FreePlayArena",
+      "instructions": "Click the button that matches the COLOR of the text font — not what the word says! 30 seconds on the clock.",
+      "relatedSlugs": [
+        "simon-says",
+        "whack-a-mole",
+        "memory-match"
+      ],
+      "adFree": true
     }
   ]
 }

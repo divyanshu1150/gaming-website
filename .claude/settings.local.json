@@ -32,7 +32,13 @@
       "Bash(node -e \"const g = require\\('./src/data/games.json'\\); const game = g.games.find\\(x => x.slug === 'bullet-man-master-3d'\\); console.log\\(JSON.stringify\\(game, null, 2\\)\\);\")",
       "Bash(node -e \"const g = require\\('./src/data/games.json'\\); const game = g.games.find\\(x => x.slug === 'bullet-man-master-3d'\\); console.log\\('Found:', !!game\\); console.log\\('hasAdSdk field:', game?.hasAdSdk\\);\")",
       "Bash(node -e \"const g = require\\('./src/data/games.json'\\); const cats = {}; g.games.forEach\\(x => { cats[x.category] = \\(cats[x.category]||[]\\); cats[x.category].push\\(x.slug\\); }\\); Object.entries\\(cats\\).forEach\\(\\([c,s]\\) => console.log\\(c, s.length, s.slice\\(0,3\\).join\\(', '\\)\\)\\);\")",
-      "Bash(node -e \"const g = require\\('./src/data/games.json'\\); const featured = g.games.filter\\(x => x.featured\\).map\\(x => x.slug\\); console.log\\('Featured:', featured.join\\(', '\\)\\); const topAction = g.games.filter\\(x=>x.category==='action'\\).sort\\(\\(a,b\\)=>b.plays-a.plays\\).slice\\(0,8\\).map\\(x=>x.slug\\); console.log\\('Top action:', topAction.join\\(', '\\)\\); const topPuzzle = g.games.filter\\(x=>x.category==='puzzle'\\).sort\\(\\(a,b\\)=>b.plays-a.plays\\).slice\\(0,8\\).map\\(x=>x.slug\\); console.log\\('Top puzzle:', topPuzzle.join\\(', '\\)\\); const topCasual = g.games.filter\\(x=>x.category==='casual'\\).sort\\(\\(a,b\\)=>b.plays-a.plays\\).slice\\(0,8\\).map\\(x=>x.slug\\); console.log\\('Top casual:', topCasual.join\\(', '\\)\\);\")"
+      "Bash(node -e \"const g = require\\('./src/data/games.json'\\); const featured = g.games.filter\\(x => x.featured\\).map\\(x => x.slug\\); console.log\\('Featured:', featured.join\\(', '\\)\\); const topAction = g.games.filter\\(x=>x.category==='action'\\).sort\\(\\(a,b\\)=>b.plays-a.plays\\).slice\\(0,8\\).map\\(x=>x.slug\\); console.log\\('Top action:', topAction.join\\(', '\\)\\); const topPuzzle = g.games.filter\\(x=>x.category==='puzzle'\\).sort\\(\\(a,b\\)=>b.plays-a.plays\\).slice\\(0,8\\).map\\(x=>x.slug\\); console.log\\('Top puzzle:', topPuzzle.join\\(', '\\)\\); const topCasual = g.games.filter\\(x=>x.category==='casual'\\).sort\\(\\(a,b\\)=>b.plays-a.plays\\).slice\\(0,8\\).map\\(x=>x.slug\\); console.log\\('Top casual:', topCasual.join\\(', '\\)\\);\")",
+      "Bash(node -e \"const g = require\\('./src/data/games.json'\\); g.games.filter\\(x => x.embedType === 'self-hosted' || x.embedType === 'other'\\).forEach\\(x => console.log\\(x.slug, x.embedType, x.embedUrl\\)\\)\")",
+      "Bash(node -e ' *)",
+      "Bash(node add-games.mjs)",
+      "Bash(node generate-thumbnails.mjs)",
+      "Bash(dir public\\\\thumbnails /B)",
+      "Bash(dir public\\\\games /B)"
     ]
   }
 }

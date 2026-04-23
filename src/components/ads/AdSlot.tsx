@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 
 interface AdSlotProps {
-  format: "banner" | "rectangle" | "sidebar";
+  format?: "banner" | "rectangle" | "sidebar";
   className?: string;
   slot?: string; // AdSense slot ID — set via env or prop
 }
@@ -16,7 +16,7 @@ const DIMS: Record<string, string> = {
   sidebar: "w-[300px] min-h-[600px]",
 };
 
-export default function AdSlot({ format, className = "", slot }: AdSlotProps) {
+export default function AdSlot({ format = "banner", className = "", slot }: AdSlotProps) {
   const adRef = useRef<HTMLModElement>(null);
   const pushed = useRef(false);
 

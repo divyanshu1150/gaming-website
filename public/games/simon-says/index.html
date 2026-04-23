@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simon Says</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #0a0a15;
+    color: #e0e0ff;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    user-select: none;
+  }
+  h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #a78bfa;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+  }
+  .info {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 24px;
+  }
+  .info-box { text-align: center; }
+  .info-label { font-size: 0.7rem; color: #6b7280; text-transform: uppercase; letter-spacing: 1px; }
+  .info-value { font-size: 1.6rem; font-weight: 700; color: #c4b5fd; }
+
+  /* Simon circle layout */
+  .simon-wrap {
+    position: relative;
+    width: min(320px, 88vw);
+    height: min(320px, 88vw);
+    border-radius: 50%;
+    background: #0d0d1a;
+    border: 4px solid #1a1a2e;
+    margin-bottom: 24px;
+  }
+  /* Center hole */
+  .center {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 36%;
+    height: 36%;
+    border-radius: 50%;
+    background: #0a0a15;
+    border: 3px solid #1a1a2e;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    color: #4b5563;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.5px;
+  }
+  /* The 4 colored quadrant buttons */
+  .quad {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    cursor: pointer;
+    transition: filter 0.05s;
+    -webkit-tap-highlight-color: transparent;
+  }
+  /* Clip each quadrant to its corner */
+  .quad-tl { top: 2px; left: 2px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 28%, 72% 100%, 0% 100%);
+    border-radius: 100% 0 0 0;
+    background: #dc2626; }
+  .quad-tr { top: 2px; right: 2px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 28% 100%, 0% 28%);
+    border-radius: 0 100% 0 0;
+    background: #16a34a; }
+  .quad-bl { bottom: 2px; left: 2px;
+    clip-path: polygon(0% 0%, 28% 0%, 100% 72%, 100% 100%, 0% 100%);
+    border-radius: 0 0 0 100%;
+    background: #1d4ed8; }
+  .quad-br { bottom: 2px; right: 2px;
+    clip-path: polygon(72% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 72%);
+    border-radius: 0 0 100% 0;
+    background: #ca8a04; }
+
+  .quad { filter: brightness(0.35); }
+  .quad.lit { filter: brightness(1.1); }
+  .quad:active { filter: brightness(1.3); }
+
+  #status {
+    font-size: 1rem;
+    color: #9ca3af;
+    margin-bottom: 16px;
+    min-height: 24px;
+    font-weight: 500;
+  }
+  .btn {
+    background: linear-gradient(135deg, #6d28d9, #4f46e5);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 36px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: opacity 0.15s;
+  }
+  .btn:hover { opacity: 0.85; }
+  .btn:disabled { opacity: 0.4; cursor: not-allowed; }
+</style>
+</head>
+<body>
+<h1>SIMON SAYS</h1>
+<div class="info">
+  <div class="info-box">
+    <div class="info-label">Round</div>
+    <div class="info-value" id="round">-</div>
+  </div>
+  <div class="info-box">
+    <div class="info-label">Best</div>
+    <div class="info-value" id="best">0</div>
+  </div>
+</div>
+
+<div class="simon-wrap">
+  <!-- 4 quads: 0=red(tl), 1=green(tr), 2=blue(bl), 3=yellow(br) -->
+  <div class="quad quad-tl" data-idx="0" id="btn0"></div>
+  <div class="quad quad-tr" data-idx="1" id="btn1"></div>
+  <div class="quad quad-bl" data-idx="2" id="btn2"></div>
+  <div class="quad quad-br" data-idx="3" id="btn3"></div>
+  <div class="center" id="center">SIMON<br>SAYS</div>
+</div>
+
+<div id="status">Press Start to play</div>
+<button class="btn" id="startBtn" onclick="startGame()">Start</button>
+
+<script>
+// ---- Web Audio tones ----
+let audioCtx = null;
+const FREQS = [392, 330, 264, 440]; // G4, E4, C4, A4
+
+function getAudio() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  return audioCtx;
+}
+
+function playTone(idx, duration = 0.4) {
+  const ac = getAudio();
+  const osc = ac.createOscillator();
+  const gain = ac.createGain();
+  osc.connect(gain); gain.connect(ac.destination);
+  osc.type = 'sine';
+  osc.frequency.value = FREQS[idx];
+  gain.gain.setValueAtTime(0.4, ac.currentTime);
+  gain.gain.exponentialRampToValueAtTime(0.001, ac.currentTime + duration);
+  osc.start(ac.currentTime);
+  osc.stop(ac.currentTime + duration);
+}
+
+function playError() {
+  const ac = getAudio();
+  const osc = ac.createOscillator();
+  const gain = ac.createGain();
+  osc.connect(gain); gain.connect(ac.destination);
+  osc.type = 'sawtooth';
+  osc.frequency.value = 150;
+  gain.gain.setValueAtTime(0.3, ac.currentTime);
+  gain.gain.exponentialRampToValueAtTime(0.001, ac.currentTime + 0.6);
+  osc.start(ac.currentTime);
+  osc.stop(ac.currentTime + 0.6);
+}
+
+// ---- Game state ----
+let sequence, playerIndex, best, playing, accepting;
+best = parseInt(localStorage.getItem('simonBest') || '0');
+document.getElementById('best').textContent = best;
+
+function startGame() {
+  sequence = [];
+  playerIndex = 0;
+  playing = true;
+  accepting = false;
+  document.getElementById('startBtn').disabled = true;
+  setStatus('Watch the sequence…');
+  nextRound();
+}
+
+function nextRound() {
+  sequence.push(Math.floor(Math.random() * 4));
+  const round = sequence.length;
+  document.getElementById('round').textContent = round;
+  playerIndex = 0;
+  accepting = false;
+  setStatus('Round ' + round + ' — watch!');
+  playSequence(() => {
+    accepting = true;
+    setStatus('Your turn!');
+  });
+}
+
+function playSequence(callback) {
+  let i = 0;
+  const speed = Math.max(300, 600 - sequence.length * 20);
+  function step() {
+    if (i >= sequence.length) { setTimeout(callback, 300); return; }
+    const idx = sequence[i];
+    lightUp(idx, speed * 0.7);
+    playTone(idx, speed * 0.0007);
+    i++;
+    setTimeout(step, speed + 100);
+  }
+  setTimeout(step, 400);
+}
+
+function lightUp(idx, ms) {
+  const btn = document.getElementById('btn' + idx);
+  btn.classList.add('lit');
+  setTimeout(() => btn.classList.remove('lit'), ms);
+}
+
+function handlePlayerInput(idx) {
+  if (!accepting) return;
+  lightUp(idx, 250);
+  playTone(idx, 0.25);
+
+  if (sequence[playerIndex] !== idx) {
+    // Wrong
+    accepting = false;
+    playing = false;
+    playError();
+    flashAll();
+    const score = sequence.length - 1;
+    if (score > best) { best = score; localStorage.setItem('simonBest', best); document.getElementById('best').textContent = best; }
+    setStatus('Wrong! You reached round ' + sequence.length);
+    document.getElementById('startBtn').disabled = false;
+    document.getElementById('startBtn').textContent = 'Play Again';
+    document.getElementById('round').textContent = '-';
+    return;
+  }
+
+  playerIndex++;
+  if (playerIndex === sequence.length) {
+    accepting = false;
+    setStatus('Correct! Get ready…');
+    setTimeout(nextRound, 1000);
+  }
+}
+
+function flashAll() {
+  [0,1,2,3].forEach(i => {
+    let count = 0;
+    const iv = setInterval(() => {
+      document.getElementById('btn'+i).classList.toggle('lit');
+      if (++count >= 4) { clearInterval(iv); document.getElementById('btn'+i).classList.remove('lit'); }
+    }, 150);
+  });
+}
+
+function setStatus(msg) {
+  document.getElementById('status').textContent = msg;
+}
+
+// ---- Click / touch events ----
+[0,1,2,3].forEach(i => {
+  const btn = document.getElementById('btn' + i);
+  btn.addEventListener('pointerdown', e => { e.preventDefault(); handlePlayerInput(i); });
+});
+</script>
+</body>
+</html>

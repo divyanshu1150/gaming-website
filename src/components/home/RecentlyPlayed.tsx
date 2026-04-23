@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { Game } from "@/types/game";
+import GameThumbnail from "@/components/game/GameThumbnail";
 
 interface RecentlyPlayedProps {
   allGames: Game[];
@@ -37,12 +37,10 @@ export default function RecentlyPlayed({ allGames }: RecentlyPlayedProps) {
             className="group shrink-0 w-36 bg-[#1a1a2e] rounded-xl overflow-hidden hover:bg-[#22223b] transition-colors"
           >
             <div className="relative aspect-video bg-[#111]">
-              <Image
+              <GameThumbnail
                 src={game.thumbnail}
                 alt={game.thumbnailAlt}
-                fill
-                sizes="144px"
-                className="object-cover"
+                title={game.title}
               />
             </div>
             <p className="text-white text-xs font-medium truncate px-2 py-1.5 group-hover:text-violet-300">
