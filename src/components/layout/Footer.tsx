@@ -74,8 +74,33 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/school-games" className="text-gray-400 hover:text-violet-400 text-sm transition-colors">
+                  School Games
+                </Link>
+              </li>
+              <li>
+                <Link href="/classic-games" className="text-gray-400 hover:text-violet-400 text-sm transition-colors">
+                  Classic Games
+                </Link>
+              </li>
+              <li>
+                <Link href="/brain-games" className="text-gray-400 hover:text-violet-400 text-sm transition-colors">
+                  Brain Games
+                </Link>
+              </li>
+              <li>
                 <Link href="/puzzle-games" className="text-gray-400 hover:text-violet-400 text-sm transition-colors">
                   Puzzle Games
+                </Link>
+              </li>
+              <li>
+                <Link href="/clicker-games" className="text-gray-400 hover:text-violet-400 text-sm transition-colors">
+                  Clicker Games
+                </Link>
+              </li>
+              <li>
+                <Link href="/html5-games" className="text-gray-400 hover:text-violet-400 text-sm transition-colors">
+                  HTML5 Games
                 </Link>
               </li>
               <li>
