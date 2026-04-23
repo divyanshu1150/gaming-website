@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 
 export default function AdFreeGamesPage() {
   const all = getAllGames();
-  const adFreeGames = all.filter((g) => g.embedType === "other");
+  const adFreeGames = all.filter((g) => g.embedType === "other" || g.embedType === "self-hosted");
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8 space-y-10">
@@ -114,11 +114,13 @@ export default function AdFreeGamesPage() {
           especially for fast-paced games where interruptions break your flow.
         </p>
         <p className="text-gray-300 text-sm leading-relaxed">
-          Our ad-free games are open-source titles built by developers who distribute their games
-          freely without any monetization. Games like <strong className="text-white">2048</strong>,{" "}
+          Our ad-free games include open-source titles and games built in-house by FreePlayArena.
+          Classics like <strong className="text-white">2048</strong>,{" "}
           <strong className="text-white">HexGL</strong>, and{" "}
-          <strong className="text-white">Hello Wordl</strong> are classic examples — beloved,
-          polished browser games with zero ads and zero tracking.
+          <strong className="text-white">Hello Wordl</strong> sit alongside originals like{" "}
+          <strong className="text-white">Snake</strong>,{" "}
+          <strong className="text-white">Sudoku</strong>, and{" "}
+          <strong className="text-white">Minesweeper</strong> — all polished browser games with zero ads and zero tracking.
         </p>
 
         <h2 className="text-white font-bold text-lg">FAQ</h2>

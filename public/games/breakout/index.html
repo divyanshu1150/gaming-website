@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Breakout</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0f0f1a;
+    color: #fff;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  h1 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #8b5cf6, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+  }
+  .hud {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 10px;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+  }
+  .hud-item { text-align: center; }
+  .hud-label { color: #8b5cf6; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 2px; }
+  .hud-val { font-size: 1.4rem; font-weight: 700; }
+  #gameCanvas {
+    border: 2px solid #7c3aed;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(124,58,237,0.4);
+    display: block;
+    cursor: none;
+  }
+  .hint { margin-top: 10px; font-size: 0.72rem; color: #6b7280; letter-spacing: 1px; }
+  #overlay {
+    position: fixed; inset: 0;
+    background: rgba(15,15,26,0.93);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    z-index: 10;
+  }
+  #overlay h2 {
+    font-size: 2.4rem; font-weight: 800; margin-bottom: 8px;
+    background: linear-gradient(135deg, #8b5cf6, #ec4899);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  #overlay p { color: #d1d5db; margin-bottom: 6px; font-size: 1rem; }
+  .big-num { font-size: 3rem; font-weight: 900; color: #8b5cf6; margin-bottom: 20px; }
+  .btn {
+    background: linear-gradient(135deg, #7c3aed, #8b5cf6);
+    color: #fff; border: none; padding: 13px 36px;
+    font-size: 0.95rem; font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase; border-radius: 8px; cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s;
+    box-shadow: 0 4px 20px rgba(124,58,237,0.5);
+  }
+  .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 28px rgba(124,58,237,0.7); }
+</style>
+</head>
+<body>
+<h1>Breakout</h1>
+<div class="hud">
+  <div class="hud-item"><div class="hud-label">Score</div><div class="hud-val" id="scoreEl">0</div></div>
+  <div class="hud-item"><div class="hud-label">Lives</div><div class="hud-val" id="livesEl">❤️❤️❤️</div></div>
+  <div class="hud-item"><div class="hud-label">Level</div><div class="hud-val" id="levelEl">1</div></div>
+</div>
+<canvas id="gameCanvas"></canvas>
+<div class="hint">Mouse or ← → to move paddle</div>
+
+<div id="overlay">
+  <h2 id="ovTitle">BREAKOUT</h2>
+  <p id="ovMsg">Destroy all the bricks!</p>
+  <div class="big-num" id="ovScore" style="display:none"></div>
+  <button class="btn" id="startBtn">Start Game</button>
+</div>
+
+<script>
+const canvas = document.getElementById('gameCanvas');
+const ctx = canvas.getContext('2d');
+const scoreEl = document.getElementById('scoreEl');
+const livesEl = document.getElementById('livesEl');
+const levelEl = document.getElementById('levelEl');
+const overlay = document.getElementById('overlay');
+const ovTitle = document.getElementById('ovTitle');
+const ovMsg = document.getElementById('ovMsg');
+const ovScore = document.getElementById('ovScore');
+const startBtn = document.getElementById('startBtn');
+
+let W, H, scale;
+const BASE_W = 480, BASE_H = 520;
+
+function resize() {
+  const maxW = Math.min(window.innerWidth - 32, BASE_W);
+  scale = maxW / BASE_W;
+  W = BASE_W * scale;
+  H = BASE_H * scale;
+  canvas.width = W;
+  canvas.height = H;
+}
+resize();
+
+const PADDLE_W = 90, PADDLE_H = 12, PADDLE_Y = BASE_H - 40;
+const BALL_R = 7;
+const BRICK_COLS = 10, BRICK_ROWS = 5;
+const BRICK_W = (BASE_W - 20) / BRICK_COLS;
+const BRICK_H = 22;
+const BRICK_PAD = 3;
+const BRICK_TOP = 50;
+
+const BRICK_COLORS = [
+  ['#f43f5e', '#fb7185', 3], // row 0 - red, 3 hits
+  ['#f97316', '#fb923c', 2], // row 1 - orange, 2 hits
+  ['#eab308', '#fbbf24', 2], // row 2 - yellow, 2 hits
+  ['#22c55e', '#4ade80', 1], // row 3 - green, 1 hit
+  ['#8b5cf6', '#a78bfa', 1], // row 4 - purple, 1 hit
+];
+
+let paddle, ball, bricks, score, lives, level, running, animId, keys;
+
+function initBricks() {
+  bricks = [];
+  for (let r = 0; r < BRICK_ROWS; r++) {
+    for (let c = 0; c < BRICK_COLS; c++) {
+      const [color, light, maxHits] = BRICK_COLORS[r];
+      bricks.push({
+        x: 10 + c * BRICK_W,
+        y: BRICK_TOP + r * (BRICK_H + BRICK_PAD),
+        w: BRICK_W - BRICK_PAD,
+        h: BRICK_H,
+        color, light,
+        hits: maxHits,
+        maxHits,
+        alive: true
+      });
+    }
+  }
+}
+
+function initLevel() {
+  const spd = 4 + (level - 1) * 0.8;
+  const angle = (Math.random() * 60 + 60) * Math.PI / 180;
+  ball = {
+    x: BASE_W / 2, y: BASE_H - 80,
+    vx: spd * Math.cos(angle) * (Math.random() < 0.5 ? 1 : -1),
+    vy: -spd * Math.sin(angle),
+    r: BALL_R
+  };
+  paddle = { x: BASE_W / 2 - PADDLE_W / 2, y: PADDLE_Y, w: PADDLE_W, h: PADDLE_H, target: BASE_W / 2 - PADDLE_W / 2 };
+  initBricks();
+}
+
+function startGame() {
+  score = 0; lives = 3; level = 1;
+  keys = {};
+  running = true;
+  overlay.style.display = 'none';
+  scoreEl.textContent = 0;
+  levelEl.textContent = 1;
+  livesEl.textContent = '❤️❤️❤️';
+  initLevel();
+  if (animId) cancelAnimationFrame(animId);
+  loop();
+}
+
+canvas.addEventListener('mousemove', e => {
+  const rect = canvas.getBoundingClientRect();
+  const mx = (e.clientX - rect.left) / scale;
+  paddle.target = mx - PADDLE_W / 2;
+});
+canvas.addEventListener('touchmove', e => {
+  e.preventDefault();
+  const rect = canvas.getBoundingClientRect();
+  const mx = (e.touches[0].clientX - rect.left) / scale;
+  paddle.target = mx - PADDLE_W / 2;
+}, { passive: false });
+
+document.addEventListener('keydown', e => { keys[e.key] = true; });
+document.addEventListener('keyup', e => { keys[e.key] = false; });
+
+function updatePaddle() {
+  if (keys['ArrowLeft'] || keys['a'] || keys['A']) paddle.target -= 8;
+  if (keys['ArrowRight'] || keys['d'] || keys['D']) paddle.target += 8;
+  paddle.target = Math.max(0, Math.min(BASE_W - paddle.w, paddle.target));
+  paddle.x += (paddle.target - paddle.x) * 0.18;
+}
+
+function checkCollision() {
+  // walls
+  if (ball.x - ball.r < 0) { ball.x = ball.r; ball.vx = Math.abs(ball.vx); }
+  if (ball.x + ball.r > BASE_W) { ball.x = BASE_W - ball.r; ball.vx = -Math.abs(ball.vx); }
+  if (ball.y - ball.r < 0) { ball.y = ball.r; ball.vy = Math.abs(ball.vy); }
+
+  // paddle
+  if (ball.vy > 0 &&
+      ball.x > paddle.x && ball.x < paddle.x + paddle.w &&
+      ball.y + ball.r > paddle.y && ball.y + ball.r < paddle.y + paddle.h + 5) {
+    const rel = (ball.x - (paddle.x + paddle.w / 2)) / (paddle.w / 2);
+    const spd = Math.hypot(ball.vx, ball.vy);
+    const angle = rel * 65 * Math.PI / 180;
+    ball.vx = spd * Math.sin(angle);
+    ball.vy = -spd * Math.cos(angle);
+    ball.y = paddle.y - ball.r;
+  }
+
+  // bricks
+  for (const b of bricks) {
+    if (!b.alive) continue;
+    if (ball.x + ball.r > b.x && ball.x - ball.r < b.x + b.w &&
+        ball.y + ball.r > b.y && ball.y - ball.r < b.y + b.h) {
+      b.hits--;
+      if (b.hits <= 0) {
+        b.alive = false;
+        score += b.maxHits * 10;
+        scoreEl.textContent = score;
+      }
+      const overlapLeft = (ball.x + ball.r) - b.x;
+      const overlapRight = (b.x + b.w) - (ball.x - ball.r);
+      const overlapTop = (ball.y + ball.r) - b.y;
+      const overlapBottom = (b.y + b.h) - (ball.y - ball.r);
+      const minH = Math.min(overlapLeft, overlapRight);
+      const minV = Math.min(overlapTop, overlapBottom);
+      if (minH < minV) ball.vx = -ball.vx;
+      else ball.vy = -ball.vy;
+      break;
+    }
+  }
+}
+
+function draw() {
+  ctx.save();
+  ctx.scale(scale, scale);
+  ctx.fillStyle = '#0f0f1a';
+  ctx.fillRect(0, 0, BASE_W, BASE_H);
+
+  // bricks
+  for (const b of bricks) {
+    if (!b.alive) continue;
+    const alpha = 0.5 + 0.5 * (b.hits / b.maxHits);
+    ctx.globalAlpha = alpha;
+    const grad = ctx.createLinearGradient(b.x, b.y, b.x, b.y + b.h);
+    grad.addColorStop(0, b.light);
+    grad.addColorStop(1, b.color);
+    ctx.fillStyle = grad;
+    ctx.beginPath(); ctx.roundRect(b.x, b.y, b.w, b.h, 4); ctx.fill();
+    ctx.globalAlpha = 1;
+    if (b.maxHits > 1) {
+      ctx.fillStyle = 'rgba(255,255,255,0.6)';
+      ctx.font = `bold ${10}px sans-serif`;
+      ctx.textAlign = 'center';
+      ctx.fillText(b.hits, b.x + b.w / 2, b.y + b.h / 2 + 4);
+    }
+  }
+
+  // paddle
+  const pg = ctx.createLinearGradient(paddle.x, paddle.y, paddle.x + paddle.w, paddle.y);
+  pg.addColorStop(0, '#7c3aed');
+  pg.addColorStop(1, '#a855f7');
+  ctx.fillStyle = pg;
+  ctx.beginPath(); ctx.roundRect(paddle.x, paddle.y, paddle.w, paddle.h, 6); ctx.fill();
+
+  // ball
+  const bg = ctx.createRadialGradient(ball.x - 2, ball.y - 2, 1, ball.x, ball.y, ball.r);
+  bg.addColorStop(0, '#fff');
+  bg.addColorStop(0.5, '#c4b5fd');
+  bg.addColorStop(1, '#7c3aed');
+  ctx.fillStyle = bg;
+  ctx.beginPath(); ctx.arc(ball.x, ball.y, ball.r, 0, Math.PI * 2); ctx.fill();
+
+  ctx.restore();
+}
+
+function loop() {
+  if (!running) return;
+  updatePaddle();
+  ball.x += ball.vx;
+  ball.y += ball.vy;
+  checkCollision();
+
+  if (ball.y + ball.r > BASE_H) {
+    lives--;
+    const hearts = ['', '❤️', '❤️❤️', '❤️❤️❤️'];
+    livesEl.textContent = lives > 0 ? hearts[lives] : '💀';
+    if (lives <= 0) { running = false; showEnd(false); return; }
+    const spd = 4 + (level - 1) * 0.8;
+    const angle = (Math.random() * 60 + 60) * Math.PI / 180;
+    ball.x = paddle.x + paddle.w / 2;
+    ball.y = paddle.y - ball.r - 2;
+    ball.vx = spd * Math.cos(angle) * (Math.random() < 0.5 ? 1 : -1);
+    ball.vy = -spd * Math.sin(angle);
+  }
+
+  if (bricks.every(b => !b.alive)) {
+    level++;
+    levelEl.textContent = level;
+    initLevel();
+    score += level * 50;
+    scoreEl.textContent = score;
+  }
+
+  draw();
+  animId = requestAnimationFrame(loop);
+}
+
+function showEnd(win) {
+  ovTitle.textContent = win ? 'YOU WIN! 🎉' : 'GAME OVER';
+  ovMsg.textContent = win ? 'Congratulations!' : 'Better luck next time!';
+  ovScore.style.display = 'block';
+  ovScore.textContent = score;
+  startBtn.textContent = 'Play Again';
+  overlay.style.display = 'flex';
+}
+
+startBtn.addEventListener('click', startGame);
+</script>
+</body>
+</html>

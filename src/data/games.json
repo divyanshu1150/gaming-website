@@ -1,6 +1,266 @@
 {
   "games": [
     {
+      "id": "self-snake-01",
+      "slug": "snake",
+      "title": "Snake",
+      "description": "Control a growing snake and eat as much food as possible without hitting the walls or yourself. A timeless classic reimagined in smooth HTML5 — simple to learn, hard to master. Every meal makes your snake longer and the challenge greater.",
+      "shortDescription": "Classic snake game — eat, grow, survive.",
+      "category": "casual",
+      "tags": [
+        "snake",
+        "classic",
+        "arcade",
+        "casual",
+        "no-ads",
+        "self-hosted"
+      ],
+      "thumbnail": "/thumbnails/snake.svg",
+      "thumbnailAlt": "Snake — free online game, no ads",
+      "embedUrl": "/games/snake/index.html",
+      "embedType": "self-hosted",
+      "aspectRatio": "16/9",
+      "featured": false,
+      "plays": 0,
+      "rating": 4.4,
+      "developer": "FreePlayArena",
+      "source": "FreePlayArena",
+      "instructions": "Arrow keys or WASD to change direction. Eat the red food to grow. Avoid walls and your own tail.",
+      "relatedSlugs": [
+        "breakout",
+        "flappy-block",
+        "whack-a-mole"
+      ],
+      "adFree": true
+    },
+    {
+      "id": "self-breakout-01",
+      "slug": "breakout",
+      "title": "Breakout",
+      "description": "Smash your way through rows of colourful bricks with a bouncing ball and paddle in this legendary arcade classic. Progress through increasingly challenging levels, earn power-ups, and aim for the perfect clear. Pure, ad-free brick-breaking fun.",
+      "shortDescription": "Break all the bricks — classic arcade action.",
+      "category": "casual",
+      "tags": [
+        "breakout",
+        "arcade",
+        "classic",
+        "casual",
+        "no-ads",
+        "self-hosted"
+      ],
+      "thumbnail": "/thumbnails/breakout.svg",
+      "thumbnailAlt": "Breakout — free online game, no ads",
+      "embedUrl": "/games/breakout/index.html",
+      "embedType": "self-hosted",
+      "aspectRatio": "16/9",
+      "featured": false,
+      "plays": 0,
+      "rating": 4.3,
+      "developer": "FreePlayArena",
+      "source": "FreePlayArena",
+      "instructions": "Move mouse or use Left/Right arrow keys to control the paddle. Bounce the ball to break all bricks.",
+      "relatedSlugs": [
+        "snake",
+        "flappy-block",
+        "pong"
+      ],
+      "adFree": true
+    },
+    {
+      "id": "self-minesweeper-01",
+      "slug": "minesweeper",
+      "title": "Minesweeper",
+      "description": "Uncover every safe cell on the grid without detonating a single mine. Use logic and deduction to flag dangerous squares, read the number clues, and clear the board as fast as possible. Choose from Easy, Medium, or Hard difficulty.",
+      "shortDescription": "Classic logic puzzle — flag mines, clear the board.",
+      "category": "puzzle",
+      "tags": [
+        "minesweeper",
+        "puzzle",
+        "logic",
+        "classic",
+        "no-ads",
+        "self-hosted"
+      ],
+      "thumbnail": "/thumbnails/minesweeper.svg",
+      "thumbnailAlt": "Minesweeper — free online game, no ads",
+      "embedUrl": "/games/minesweeper/index.html",
+      "embedType": "self-hosted",
+      "aspectRatio": "16/9",
+      "featured": true,
+      "plays": 0,
+      "rating": 4.5,
+      "developer": "FreePlayArena",
+      "source": "FreePlayArena",
+      "instructions": "Left-click to reveal a cell. Right-click to flag a suspected mine. Clear all safe cells to win.",
+      "relatedSlugs": [
+        "sudoku",
+        "memory-match"
+      ],
+      "adFree": true
+    },
+    {
+      "id": "self-memory-match-01",
+      "slug": "memory-match",
+      "title": "Memory Match",
+      "description": "Flip cards and find all matching pairs in this satisfying memory challenge. Three grid sizes let you scale the difficulty from a quick warm-up to a serious brain workout. Race against the clock and train your visual memory.",
+      "shortDescription": "Flip and match cards — test your memory.",
+      "category": "puzzle",
+      "tags": [
+        "memory",
+        "puzzle",
+        "cards",
+        "casual",
+        "no-ads",
+        "self-hosted"
+      ],
+      "thumbnail": "/thumbnails/memory-match.svg",
+      "thumbnailAlt": "Memory Match — free online card game, no ads",
+      "embedUrl": "/games/memory-match/index.html",
+      "embedType": "self-hosted",
+      "aspectRatio": "16/9",
+      "featured": false,
+      "plays": 0,
+      "rating": 4.2,
+      "developer": "FreePlayArena",
+      "source": "FreePlayArena",
+      "instructions": "Click any card to flip it. Find its matching pair. Match all pairs to complete the level.",
+      "relatedSlugs": [
+        "minesweeper",
+        "sudoku"
+      ],
+      "adFree": true
+    },
+    {
+      "id": "self-flappy-block-01",
+      "slug": "flappy-block",
+      "title": "Flappy Block",
+      "description": "Tap to keep your block airborne and navigate through an endless gauntlet of pipes. Every tap counts — too high or too low and it is game over. A one-button reflex challenge that is brutally simple and endlessly replayable.",
+      "shortDescription": "Tap to fly — dodge endless pipes.",
+      "category": "casual",
+      "tags": [
+        "flappy",
+        "arcade",
+        "reflex",
+        "casual",
+        "no-ads",
+        "self-hosted"
+      ],
+      "thumbnail": "/thumbnails/flappy-block.svg",
+      "thumbnailAlt": "Flappy Block — free online game, no ads",
+      "embedUrl": "/games/flappy-block/index.html",
+      "embedType": "self-hosted",
+      "aspectRatio": "16/9",
+      "featured": false,
+      "plays": 0,
+      "rating": 4.1,
+      "developer": "FreePlayArena",
+      "source": "FreePlayArena",
+      "instructions": "Click, tap, or press Space/Up arrow to flap. Navigate through pipes without touching them.",
+      "relatedSlugs": [
+        "snake",
+        "breakout",
+        "whack-a-mole"
+      ],
+      "adFree": true
+    },
+    {
+      "id": "self-whack-a-mole-01",
+      "slug": "whack-a-mole",
+      "title": "Whack-a-Mole",
+      "description": "Moles are popping up everywhere — whack them before they disappear! A 60-second speed challenge that tests your reflexes and click accuracy. Score big, earn a grade, and beat your personal best in this beloved arcade party game.",
+      "shortDescription": "Whack the moles before they vanish!",
+      "category": "casual",
+      "tags": [
+        "whack-a-mole",
+        "arcade",
+        "reflex",
+        "casual",
+        "no-ads",
+        "self-hosted"
+      ],
+      "thumbnail": "/thumbnails/whack-a-mole.svg",
+      "thumbnailAlt": "Whack-a-Mole — free online game, no ads",
+      "embedUrl": "/games/whack-a-mole/index.html",
+      "embedType": "self-hosted",
+      "aspectRatio": "16/9",
+      "featured": false,
+      "plays": 0,
+      "rating": 4.2,
+      "developer": "FreePlayArena",
+      "source": "FreePlayArena",
+      "instructions": "Click or tap the moles as they pop up. You have 60 seconds — score as high as possible!",
+      "relatedSlugs": [
+        "flappy-block",
+        "snake",
+        "breakout"
+      ],
+      "adFree": true
+    },
+    {
+      "id": "self-pong-01",
+      "slug": "pong",
+      "title": "Pong",
+      "description": "The game that started it all. Bounce the ball past the AI opponent in this pure, distilled two-player classic. Move your paddle, anticipate the angles, and be the first to 7 points. Timeless competitive fun with zero distractions.",
+      "shortDescription": "The original arcade classic — first to 7 wins.",
+      "category": "sports",
+      "tags": [
+        "pong",
+        "arcade",
+        "classic",
+        "sports",
+        "no-ads",
+        "self-hosted"
+      ],
+      "thumbnail": "/thumbnails/pong.svg",
+      "thumbnailAlt": "Pong — free online game, no ads",
+      "embedUrl": "/games/pong/index.html",
+      "embedType": "self-hosted",
+      "aspectRatio": "16/9",
+      "featured": false,
+      "plays": 0,
+      "rating": 4,
+      "developer": "FreePlayArena",
+      "source": "FreePlayArena",
+      "instructions": "Move mouse or use W/S keys to control your paddle. First to 7 points wins.",
+      "relatedSlugs": [
+        "breakout",
+        "snake"
+      ],
+      "adFree": true
+    },
+    {
+      "id": "self-sudoku-01",
+      "slug": "sudoku",
+      "title": "Sudoku",
+      "description": "Fill the 9x9 grid so every row, column, and 3x3 box contains every digit from 1 to 9. A mathematically generated puzzle with three difficulty levels ensures a perfect challenge every time. The world's favourite number puzzle, completely ad-free.",
+      "shortDescription": "The classic number logic puzzle — three difficulties.",
+      "category": "puzzle",
+      "tags": [
+        "sudoku",
+        "puzzle",
+        "logic",
+        "numbers",
+        "no-ads",
+        "self-hosted"
+      ],
+      "thumbnail": "/thumbnails/sudoku.svg",
+      "thumbnailAlt": "Sudoku — free online puzzle game, no ads",
+      "embedUrl": "/games/sudoku/index.html",
+      "embedType": "self-hosted",
+      "aspectRatio": "16/9",
+      "featured": true,
+      "plays": 0,
+      "rating": 4.6,
+      "developer": "FreePlayArena",
+      "source": "FreePlayArena",
+      "instructions": "Click a cell and type a number (1-9). Fill every row, column, and 3x3 box without repeating digits.",
+      "relatedSlugs": [
+        "minesweeper",
+        "memory-match"
+      ],
+      "adFree": true
+    },
+    {
       "id": "gm-xaq0qn86",
       "slug": "bullet-man-master-3d",
       "title": "Bullet Man Master 3D",
@@ -15,7 +275,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/xaq0qn86b1g1qa04gkux2qyj7kscd6d6/512x384.jpg",
-      "thumbnailAlt": "Bullet Man Master 3D \u2014 free online game",
+      "thumbnailAlt": "Bullet Man Master 3D — free online game",
       "embedUrl": "https://html5.gamemonetize.co/xaq0qn86b1g1qa04gkux2qyj7kscd6d6/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -50,7 +310,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/fxn4paqjk3u1yap268sqfi571d40pmre/512x384.jpg",
-      "thumbnailAlt": "Slime Jelly Bouncer \u2014 free online game",
+      "thumbnailAlt": "Slime Jelly Bouncer — free online game",
       "embedUrl": "https://html5.gamemonetize.co/fxn4paqjk3u1yap268sqfi571d40pmre/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -82,7 +342,7 @@
         "skill"
       ],
       "thumbnail": "https://img.gamemonetize.com/40lmlqg26jtdjx6os3heh5az3jlr0933/512x384.jpg",
-      "thumbnailAlt": "Minecraft Flappy Creeper \u2014 free online game",
+      "thumbnailAlt": "Minecraft Flappy Creeper — free online game",
       "embedUrl": "https://html5.gamemonetize.co/40lmlqg26jtdjx6os3heh5az3jlr0933/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -113,7 +373,7 @@
         "casual"
       ],
       "thumbnail": "https://img.gamemonetize.com/mnuyp439756qtqw4s8qoen0hx1dcyzia/512x384.jpg",
-      "thumbnailAlt": "Boom Chain \u2014 free online game",
+      "thumbnailAlt": "Boom Chain — free online game",
       "embedUrl": "https://html5.gamemonetize.co/mnuyp439756qtqw4s8qoen0hx1dcyzia/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -145,7 +405,7 @@
         "physics"
       ],
       "thumbnail": "https://img.gamemonetize.com/6x0mkpxx8lyhvzhf3yzjl5mscu992u1s/512x384.jpg",
-      "thumbnailAlt": "Numeral Crawl   Easy \u2014 free online game",
+      "thumbnailAlt": "Numeral Crawl   Easy — free online game",
       "embedUrl": "https://html5.gamemonetize.co/6x0mkpxx8lyhvzhf3yzjl5mscu992u1s/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -179,7 +439,7 @@
         "clicker"
       ],
       "thumbnail": "https://img.gamemonetize.com/5nrq667huplf20c4k9edb10l6lphzljk/512x384.jpg",
-      "thumbnailAlt": "Object 73: Survival Clicker \u2014 free online game",
+      "thumbnailAlt": "Object 73: Survival Clicker — free online game",
       "embedUrl": "https://html5.gamemonetize.co/5nrq667huplf20c4k9edb10l6lphzljk/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -211,7 +471,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/kax0hof3xrj621gyt905jytkvucppfjo/512x384.jpg",
-      "thumbnailAlt": "Ball Sort 2D \u2014 free online game",
+      "thumbnailAlt": "Ball Sort 2D — free online game",
       "embedUrl": "https://html5.gamemonetize.co/kax0hof3xrj621gyt905jytkvucppfjo/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -243,14 +503,14 @@
         "survival"
       ],
       "thumbnail": "https://img.gamemonetize.com/o6wb7zf32d59gc29zxz0kq6pwl537zvg/512x384.jpg",
-      "thumbnailAlt": "Cube Rush 3D: Survive The Rush \u2014 free online game",
+      "thumbnailAlt": "Cube Rush 3D: Survive The Rush — free online game",
       "embedUrl": "https://html5.gamemonetize.co/o6wb7zf32d59gc29zxz0kq6pwl537zvg/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "1/1",
       "featured": true,
       "plays": 34292,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "Desktop Move Click and Drag Mouse left right Mobile Move Drag left or right with your finger Goal Collect Yellow Cubes to grow your stack Avoid Red",
@@ -277,7 +537,7 @@
         "sports"
       ],
       "thumbnail": "https://img.gamemonetize.com/u0gsr6ochgr8nli5u5v7js0b1rj3sopf/512x384.jpg",
-      "thumbnailAlt": "Soccer Drop Game \u2014 free online game",
+      "thumbnailAlt": "Soccer Drop Game — free online game",
       "embedUrl": "https://html5.gamemonetize.co/u0gsr6ochgr8nli5u5v7js0b1rj3sopf/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -309,7 +569,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/3sj8xnprz2bc4u3hb6bgzb70zprhjli5/512x384.jpg",
-      "thumbnailAlt": "Happy Cat \u2014 free online game",
+      "thumbnailAlt": "Happy Cat — free online game",
       "embedUrl": "https://html5.gamemonetize.co/3sj8xnprz2bc4u3hb6bgzb70zprhjli5/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -341,7 +601,7 @@
         "skill"
       ],
       "thumbnail": "https://img.gamemonetize.com/t9usazpd800zm786qh2g21p0khxjfka7/512x384.jpg",
-      "thumbnailAlt": "Panda Adventure \u2014 free online game",
+      "thumbnailAlt": "Panda Adventure — free online game",
       "embedUrl": "https://html5.gamemonetize.co/t9usazpd800zm786qh2g21p0khxjfka7/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -376,7 +636,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/jovbimvm1app51sxj7cl2fxw0w99oauu/512x384.jpg",
-      "thumbnailAlt": "Fatty Bird \u2014 free online game",
+      "thumbnailAlt": "Fatty Bird — free online game",
       "embedUrl": "https://html5.gamemonetize.co/jovbimvm1app51sxj7cl2fxw0w99oauu/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -407,7 +667,7 @@
         "strategy"
       ],
       "thumbnail": "https://img.gamemonetize.com/4xgxxmz23rvq1jzdak0xeqnqvcimmljl/512x384.jpg",
-      "thumbnailAlt": "Merges Numbers \u2014 free online game",
+      "thumbnailAlt": "Merges Numbers — free online game",
       "embedUrl": "https://html5.gamemonetize.co/4xgxxmz23rvq1jzdak0xeqnqvcimmljl/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -439,7 +699,7 @@
         "santa"
       ],
       "thumbnail": "https://img.gamemonetize.com/b5o01b8tn9zn6i5slvh5hcglkph7rwlb/512x384.jpg",
-      "thumbnailAlt": "Catch Reindeer \u2014 free online game",
+      "thumbnailAlt": "Catch Reindeer — free online game",
       "embedUrl": "https://html5.gamemonetize.co/b5o01b8tn9zn6i5slvh5hcglkph7rwlb/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -471,7 +731,7 @@
         "tower defense"
       ],
       "thumbnail": "https://img.gamemonetize.com/lpmgjrafsc7mod4ef33pvhxd0pbplwzm/512x384.jpg",
-      "thumbnailAlt": "Defence Wall \u2014 free online game",
+      "thumbnailAlt": "Defence Wall — free online game",
       "embedUrl": "https://html5.gamemonetize.co/lpmgjrafsc7mod4ef33pvhxd0pbplwzm/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -503,7 +763,7 @@
         "water"
       ],
       "thumbnail": "https://img.gamemonetize.com/e0mvd9k54jt7v02w202cq404csfnvotj/512x384.jpg",
-      "thumbnailAlt": "Crazy Sea Battle \u2014 free online game",
+      "thumbnailAlt": "Crazy Sea Battle — free online game",
       "embedUrl": "https://html5.gamemonetize.co/e0mvd9k54jt7v02w202cq404csfnvotj/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -534,7 +794,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/awnouc0jesu3jx493fp7zrmyoxs3o69w/512x384.jpg",
-      "thumbnailAlt": "Color Pixel Flow \u2014 free online game",
+      "thumbnailAlt": "Color Pixel Flow — free online game",
       "embedUrl": "https://html5.gamemonetize.co/awnouc0jesu3jx493fp7zrmyoxs3o69w/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -566,7 +826,7 @@
         "funny"
       ],
       "thumbnail": "https://img.gamemonetize.com/56bzceu3z2n9mcbhgwdibpda9q5mactj/512x384.jpg",
-      "thumbnailAlt": "Subway Spider Kid Game \u2014 free online game",
+      "thumbnailAlt": "Subway Spider Kid Game — free online game",
       "embedUrl": "https://html5.gamemonetize.co/56bzceu3z2n9mcbhgwdibpda9q5mactj/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -598,7 +858,7 @@
         "fun"
       ],
       "thumbnail": "https://img.gamemonetize.com/bo0smk2zrv4du6dgp6kk0yt5tieafaai/512x384.jpg",
-      "thumbnailAlt": "Super Alien Rabbit \u2014 free online game",
+      "thumbnailAlt": "Super Alien Rabbit — free online game",
       "embedUrl": "https://html5.gamemonetize.co/bo0smk2zrv4du6dgp6kk0yt5tieafaai/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -634,14 +894,14 @@
         "skill"
       ],
       "thumbnail": "https://img.gamemonetize.com/y8v9r7in7oi46jrcbjtpccsyl9nnbbyx/512x384.jpg",
-      "thumbnailAlt": "Get rich in \u2014 free online game",
+      "thumbnailAlt": "Get rich in — free online game",
       "embedUrl": "https://html5.gamemonetize.co/y8v9r7in7oi46jrcbjtpccsyl9nnbbyx/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "1/1",
       "featured": false,
       "plays": 78951,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "Mouse to play",
@@ -670,7 +930,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/y4d1q6uemuqcqk01takb1h99javep4yr/512x384.jpg",
-      "thumbnailAlt": "juicy crush saga \u2014 free online game",
+      "thumbnailAlt": "juicy crush saga — free online game",
       "embedUrl": "https://html5.gamemonetize.co/y4d1q6uemuqcqk01takb1h99javep4yr/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -701,14 +961,14 @@
         "stack"
       ],
       "thumbnail": "https://img.gamemonetize.com/fk5zjemc0xfbq79e5kp1p9buavimax3f/512x384.jpg",
-      "thumbnailAlt": "Cheese Tower \u2014 free online game",
+      "thumbnailAlt": "Cheese Tower — free online game",
       "embedUrl": "https://html5.gamemonetize.co/fk5zjemc0xfbq79e5kp1p9buavimax3f/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "4/3",
       "featured": false,
       "plays": 45846,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "Click when below cheese block is covered by top incoming block",
@@ -733,7 +993,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/5es063fsitn5xnztm28bfcr25piz0uyy/512x384.jpg",
-      "thumbnailAlt": "TechTiles \u2014 free online game",
+      "thumbnailAlt": "TechTiles — free online game",
       "embedUrl": "https://html5.gamemonetize.co/5es063fsitn5xnztm28bfcr25piz0uyy/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -767,7 +1027,7 @@
         "racing"
       ],
       "thumbnail": "https://img.gamemonetize.com/3patc8i0moikmychbk1z2dm7idcjhlbr/512x384.jpg",
-      "thumbnailAlt": "Not Drunk Yet! \u2014 free online game",
+      "thumbnailAlt": "Not Drunk Yet! — free online game",
       "embedUrl": "https://html5.gamemonetize.co/3patc8i0moikmychbk1z2dm7idcjhlbr/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -803,14 +1063,14 @@
         "makeover"
       ],
       "thumbnail": "https://img.gamemonetize.com/xek3wlnjmbdry5f5hmohevbws406ha99/512x384.jpg",
-      "thumbnailAlt": "Fashion Valkyries Saga of Style \u2014 free online game",
+      "thumbnailAlt": "Fashion Valkyries Saga of Style — free online game",
       "embedUrl": "https://html5.gamemonetize.co/xek3wlnjmbdry5f5hmohevbws406ha99/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "4/3",
       "featured": false,
       "plays": 15883,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "Depending on the gaming device either a click of a computer mouse or a simple touch on touchscreens is used to control it",
@@ -836,7 +1096,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/4edin4j90689m5c8iw76z12l8edpvmgl/512x384.jpg",
-      "thumbnailAlt": "Cooking Alike \u2014 free online game",
+      "thumbnailAlt": "Cooking Alike — free online game",
       "embedUrl": "https://html5.gamemonetize.co/4edin4j90689m5c8iw76z12l8edpvmgl/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -871,14 +1131,14 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/gtjnliz2alf66y0ys8inzovvf4dvoxty/512x384.jpg",
-      "thumbnailAlt": "Color Connect 3D \u2014 free online game",
+      "thumbnailAlt": "Color Connect 3D — free online game",
       "embedUrl": "https://html5.gamemonetize.co/gtjnliz2alf66y0ys8inzovvf4dvoxty/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "4/3",
       "featured": false,
       "plays": 23875,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "Tap on Screen With Left Mouse Click To Connect With Line",
@@ -903,7 +1163,7 @@
         "casual"
       ],
       "thumbnail": "https://img.gamemonetize.com/v8wzgvtoycj5jqjm4ncypo11hf4oyzt5/512x384.jpg",
-      "thumbnailAlt": "Rolling Speed Ball \u2014 free online game",
+      "thumbnailAlt": "Rolling Speed Ball — free online game",
       "embedUrl": "https://html5.gamemonetize.co/v8wzgvtoycj5jqjm4ncypo11hf4oyzt5/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -939,14 +1199,14 @@
         "running"
       ],
       "thumbnail": "https://img.gamemonetize.com/b6dju9rfjek6erquealyvpwny484eck6/512x384.jpg",
-      "thumbnailAlt": "Long Neck Runner Game \u2014 free online game",
+      "thumbnailAlt": "Long Neck Runner Game — free online game",
       "embedUrl": "https://html5.gamemonetize.co/b6dju9rfjek6erquealyvpwny484eck6/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "4/3",
       "featured": false,
       "plays": 60349,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "Left amp Right Arrows for movement",
@@ -971,7 +1231,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/3i0v7x65s9tc6yhkk7aru0qotishhds3/512x384.jpg",
-      "thumbnailAlt": "Coin Master Runner \u2014 free online game",
+      "thumbnailAlt": "Coin Master Runner — free online game",
       "embedUrl": "https://html5.gamemonetize.co/3i0v7x65s9tc6yhkk7aru0qotishhds3/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -1005,7 +1265,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/7h5nn5mt8f9c7ej7nf92mzxwqq0a4gyh/512x384.jpg",
-      "thumbnailAlt": "Neon Circuit \u2014 free online game",
+      "thumbnailAlt": "Neon Circuit — free online game",
       "embedUrl": "https://html5.gamemonetize.co/7h5nn5mt8f9c7ej7nf92mzxwqq0a4gyh/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -1039,7 +1299,7 @@
         "ragdoll"
       ],
       "thumbnail": "https://img.gamemonetize.com/8ufwjvdl67ao6oogeb7yq5we5l30rcnu/512x384.jpg",
-      "thumbnailAlt": "Noobs: Crazy Combo \u2014 free online game",
+      "thumbnailAlt": "Noobs: Crazy Combo — free online game",
       "embedUrl": "https://html5.gamemonetize.co/8ufwjvdl67ao6oogeb7yq5we5l30rcnu/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -1075,7 +1335,7 @@
         "hypercasual"
       ],
       "thumbnail": "https://img.gamemonetize.com/3h21dkd71sbjo0mr2wt0nr0oe5vdzfvb/512x384.jpg",
-      "thumbnailAlt": "Boat Bear \u2014 free online game",
+      "thumbnailAlt": "Boat Bear — free online game",
       "embedUrl": "https://html5.gamemonetize.co/3h21dkd71sbjo0mr2wt0nr0oe5vdzfvb/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -1107,14 +1367,14 @@
         "hypercasual"
       ],
       "thumbnail": "https://img.gamemonetize.com/8p1a40ggtyxtpoisehebihyvkcfyo5g8/512x384.jpg",
-      "thumbnailAlt": "Mini Sky Helicopter \u2014 free online game",
+      "thumbnailAlt": "Mini Sky Helicopter — free online game",
       "embedUrl": "https://html5.gamemonetize.co/8p1a40ggtyxtpoisehebihyvkcfyo5g8/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "4/3",
       "featured": false,
       "plays": 78141,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "- To click any button use mouse",
@@ -1139,7 +1399,7 @@
         "undead"
       ],
       "thumbnail": "https://img.gamemonetize.com/6mda3iwf398q8y357zo0m8bnofl6quc4/512x384.jpg",
-      "thumbnailAlt": "AirSteps \u2014 free online game",
+      "thumbnailAlt": "AirSteps — free online game",
       "embedUrl": "https://html5.gamemonetize.co/6mda3iwf398q8y357zo0m8bnofl6quc4/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -1170,7 +1430,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/du46nkir44m4gi7454gnses9e8u37wrq/512x384.jpg",
-      "thumbnailAlt": "ZooLogic \u2014 free online game",
+      "thumbnailAlt": "ZooLogic — free online game",
       "embedUrl": "https://html5.gamemonetize.co/du46nkir44m4gi7454gnses9e8u37wrq/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -1204,7 +1464,7 @@
         "unity games"
       ],
       "thumbnail": "https://img.gamemonetize.com/79tq8bz4t8p6wer1vuwiixv16ocbs42p/512x384.jpg",
-      "thumbnailAlt": "Stickman Archer Bow Fight \u2014 free online game",
+      "thumbnailAlt": "Stickman Archer Bow Fight — free online game",
       "embedUrl": "https://html5.gamemonetize.co/79tq8bz4t8p6wer1vuwiixv16ocbs42p/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -1234,7 +1494,7 @@
         "poker"
       ],
       "thumbnail": "https://img.gamemonetize.com/ajskpz177d9gnm1xzmzx3rp1to5jc0un/512x384.jpg",
-      "thumbnailAlt": "VR Poker \u2014 free online game",
+      "thumbnailAlt": "VR Poker — free online game",
       "embedUrl": "https://html5.gamemonetize.co/ajskpz177d9gnm1xzmzx3rp1to5jc0un/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -1268,7 +1528,7 @@
         "sniper"
       ],
       "thumbnail": "https://img.gamemonetize.com/7kntpx8lrkss1q9r0rogogwwgfdfix41/512x384.jpg",
-      "thumbnailAlt": "Sniper Pixel Shooting \u2014 free online game",
+      "thumbnailAlt": "Sniper Pixel Shooting — free online game",
       "embedUrl": "https://html5.gamemonetize.co/7kntpx8lrkss1q9r0rogogwwgfdfix41/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -1301,7 +1561,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/zor0wgcoadh5ifc11fqb9faqtnvf0736/512x384.jpg",
-      "thumbnailAlt": "Skill Driver Game \u2014 free online game",
+      "thumbnailAlt": "Skill Driver Game — free online game",
       "embedUrl": "https://html5.gamemonetize.co/zor0wgcoadh5ifc11fqb9faqtnvf0736/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -1333,7 +1593,7 @@
         "hypercasual"
       ],
       "thumbnail": "https://img.gamemonetize.com/5swxfxpua5oif6lt9jp1po42300ormlq/512x384.jpg",
-      "thumbnailAlt": "Rolling Ball Race \u2014 free online game",
+      "thumbnailAlt": "Rolling Ball Race — free online game",
       "embedUrl": "https://html5.gamemonetize.co/5swxfxpua5oif6lt9jp1po42300ormlq/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -1365,7 +1625,7 @@
         "skill"
       ],
       "thumbnail": "https://img.gamemonetize.com/uvx8axaeblufti7iz931fxq3ewcoaknz/512x384.jpg",
-      "thumbnailAlt": "ATM Robbery Escape Game \u2014 free online game",
+      "thumbnailAlt": "ATM Robbery Escape Game — free online game",
       "embedUrl": "https://html5.gamemonetize.co/uvx8axaeblufti7iz931fxq3ewcoaknz/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -1401,7 +1661,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/gczsf64tt3cp3vdcevs826cxa58kuzqn/512x384.jpg",
-      "thumbnailAlt": "Fruit Tower Drop \u2014 free online game",
+      "thumbnailAlt": "Fruit Tower Drop — free online game",
       "embedUrl": "https://html5.gamemonetize.co/gczsf64tt3cp3vdcevs826cxa58kuzqn/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -1432,7 +1692,7 @@
         "skills"
       ],
       "thumbnail": "https://img.gamemonetize.com/e6x7w1xg8pv6yg4i93o4v3zk85fpcvna/512x384.jpg",
-      "thumbnailAlt": "EraMind \u2014 free online game",
+      "thumbnailAlt": "EraMind — free online game",
       "embedUrl": "https://html5.gamemonetize.co/e6x7w1xg8pv6yg4i93o4v3zk85fpcvna/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -1464,7 +1724,7 @@
         "number"
       ],
       "thumbnail": "https://img.gamemonetize.com/egckyq7fh4zpm5g9xgyc58a0gtbvglbw/512x384.jpg",
-      "thumbnailAlt": "Number Bee \u2014 free online game",
+      "thumbnailAlt": "Number Bee — free online game",
       "embedUrl": "https://html5.gamemonetize.co/egckyq7fh4zpm5g9xgyc58a0gtbvglbw/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -1496,7 +1756,7 @@
         "warrior"
       ],
       "thumbnail": "https://img.gamemonetize.com/mza97bnuqgcb584vhys176ys4n303shu/512x384.jpg",
-      "thumbnailAlt": "Fuse Fury \u2014 free online game",
+      "thumbnailAlt": "Fuse Fury — free online game",
       "embedUrl": "https://html5.gamemonetize.co/mza97bnuqgcb584vhys176ys4n303shu/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -1527,7 +1787,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/9gxtmjhyfq7m36jrnoi0hg14xo50jiry/512x384.jpg",
-      "thumbnailAlt": "Ball Break The Hoops \u2014 free online game",
+      "thumbnailAlt": "Ball Break The Hoops — free online game",
       "embedUrl": "https://html5.gamemonetize.co/9gxtmjhyfq7m36jrnoi0hg14xo50jiry/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -1559,7 +1819,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/lziz2scmn3lp8x4dhi51ouonglpdpr7h/512x384.jpg",
-      "thumbnailAlt": "Finding Redpanda \u2014 free online game",
+      "thumbnailAlt": "Finding Redpanda — free online game",
       "embedUrl": "https://html5.gamemonetize.co/lziz2scmn3lp8x4dhi51ouonglpdpr7h/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -1590,7 +1850,7 @@
         "water"
       ],
       "thumbnail": "https://img.gamemonetize.com/bsy2m2m3z1wejyrunggu6iilbe6pj4kg/512x384.jpg",
-      "thumbnailAlt": "FinToss \u2014 free online game",
+      "thumbnailAlt": "FinToss — free online game",
       "embedUrl": "https://html5.gamemonetize.co/bsy2m2m3z1wejyrunggu6iilbe6pj4kg/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -1626,14 +1886,14 @@
         "shoot"
       ],
       "thumbnail": "https://img.gamemonetize.com/v7efjrd0d2jfzgp3hswbtmi1wcn46yvu/512x384.jpg",
-      "thumbnailAlt": "Ultra Kick: Goal Crazy \u2014 free online game",
+      "thumbnailAlt": "Ultra Kick: Goal Crazy — free online game",
       "embedUrl": "https://html5.gamemonetize.co/v7efjrd0d2jfzgp3hswbtmi1wcn46yvu/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "16/9",
       "featured": false,
       "plays": 76480,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "Aim with the moving cursor charge your power and shoot Chain goals for bonuses use 4 shot types and defeat legendary boss goalkeepers to win",
@@ -1662,7 +1922,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/c2eprzhghrfxpof6z08w87j13n3igqrd/512x384.jpg",
-      "thumbnailAlt": "Sugar Smash \u2014 free online game",
+      "thumbnailAlt": "Sugar Smash — free online game",
       "embedUrl": "https://html5.gamemonetize.co/c2eprzhghrfxpof6z08w87j13n3igqrd/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -1693,7 +1953,7 @@
         "running"
       ],
       "thumbnail": "https://img.gamemonetize.com/17v2va5v1p9g7o464cgm5vo544hbnuba/512x384.jpg",
-      "thumbnailAlt": "Money Stack Runner Game \u2014 free online game",
+      "thumbnailAlt": "Money Stack Runner Game — free online game",
       "embedUrl": "https://html5.gamemonetize.co/17v2va5v1p9g7o464cgm5vo544hbnuba/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -1726,7 +1986,7 @@
         "zombie"
       ],
       "thumbnail": "https://img.gamemonetize.com/8uwvaog1k302b2er4de5t3jxc1q3xy74/512x384.jpg",
-      "thumbnailAlt": "Deadly Zombie Virus \u2014 free online game",
+      "thumbnailAlt": "Deadly Zombie Virus — free online game",
       "embedUrl": "https://html5.gamemonetize.co/8uwvaog1k302b2er4de5t3jxc1q3xy74/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -1760,7 +2020,7 @@
         "simulator"
       ],
       "thumbnail": "https://img.gamemonetize.com/x9t21c9tq5voetkce7vs6z7dvzgrymzb/512x384.jpg",
-      "thumbnailAlt": "Helicopter Rescue Games 3d \u2014 free online game",
+      "thumbnailAlt": "Helicopter Rescue Games 3d — free online game",
       "embedUrl": "https://html5.gamemonetize.co/x9t21c9tq5voetkce7vs6z7dvzgrymzb/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -1794,7 +2054,7 @@
         "snake"
       ],
       "thumbnail": "https://img.gamemonetize.com/14s2bfmz6c7bsfym3666cxqt7h9hbnxt/512x384.jpg",
-      "thumbnailAlt": "Snake War Game \u2014 free online game",
+      "thumbnailAlt": "Snake War Game — free online game",
       "embedUrl": "https://html5.gamemonetize.co/14s2bfmz6c7bsfym3666cxqt7h9hbnxt/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -1825,7 +2085,7 @@
         "snake"
       ],
       "thumbnail": "https://img.gamemonetize.com/1y99emuy48db6fj22jllf24fk7apcsta/512x384.jpg",
-      "thumbnailAlt": "Color Snake Run \u2014 free online game",
+      "thumbnailAlt": "Color Snake Run — free online game",
       "embedUrl": "https://html5.gamemonetize.co/1y99emuy48db6fj22jllf24fk7apcsta/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -1857,7 +2117,7 @@
         "survival"
       ],
       "thumbnail": "https://img.gamemonetize.com/e0xia9yrddigo8oa7mpf73frigo428zy/512x384.jpg",
-      "thumbnailAlt": "Neon Dash: Survive the Dash \u2014 free online game",
+      "thumbnailAlt": "Neon Dash: Survive the Dash — free online game",
       "embedUrl": "https://html5.gamemonetize.co/e0xia9yrddigo8oa7mpf73frigo428zy/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -1887,7 +2147,7 @@
         "running"
       ],
       "thumbnail": "https://img.gamemonetize.com/qjingi1klpk8micxaecbyqtfx7qselsp/512x384.jpg",
-      "thumbnailAlt": "DONT PANIC DUDE! \u2014 free online game",
+      "thumbnailAlt": "DONT PANIC DUDE! — free online game",
       "embedUrl": "https://html5.gamemonetize.co/qjingi1klpk8micxaecbyqtfx7qselsp/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -1923,7 +2183,7 @@
         "classic"
       ],
       "thumbnail": "https://img.gamemonetize.com/5huu0n7am62jtq14es7ncpdf1mjom3o2/512x384.jpg",
-      "thumbnailAlt": "AIchessgame \u2014 free online game",
+      "thumbnailAlt": "AIchessgame — free online game",
       "embedUrl": "https://html5.gamemonetize.co/5huu0n7am62jtq14es7ncpdf1mjom3o2/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -1954,7 +2214,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/ij0aqcaitnj9et6bnntx3o4uvf0a9u0f/512x384.jpg",
-      "thumbnailAlt": "Grid3 \u2014 free online game",
+      "thumbnailAlt": "Grid3 — free online game",
       "embedUrl": "https://html5.gamemonetize.co/ij0aqcaitnj9et6bnntx3o4uvf0a9u0f/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -1987,7 +2247,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/jdaz00ja43out2x87orb5870xh9zld8m/512x384.jpg",
-      "thumbnailAlt": "StickyConnect \u2014 free online game",
+      "thumbnailAlt": "StickyConnect — free online game",
       "embedUrl": "https://html5.gamemonetize.co/jdaz00ja43out2x87orb5870xh9zld8m/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -2019,7 +2279,7 @@
         "hypercasual"
       ],
       "thumbnail": "https://img.gamemonetize.com/1gypcz6zp7sefa2q03i29g6iyqrma4l7/512x384.jpg",
-      "thumbnailAlt": "Hover Shift Craft Racer \u2014 free online game",
+      "thumbnailAlt": "Hover Shift Craft Racer — free online game",
       "embedUrl": "https://html5.gamemonetize.co/1gypcz6zp7sefa2q03i29g6iyqrma4l7/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -2052,7 +2312,7 @@
         "word"
       ],
       "thumbnail": "https://img.gamemonetize.com/gw420f1o6f02mz4aezurvzu6uu9a8jj8/512x384.jpg",
-      "thumbnailAlt": "Word Search Universe Easter \u2014 free online game",
+      "thumbnailAlt": "Word Search Universe Easter — free online game",
       "embedUrl": "https://html5.gamemonetize.co/gw420f1o6f02mz4aezurvzu6uu9a8jj8/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -2086,7 +2346,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/hnq8casa5a4ymwc9vod8vwn4hhgvgazh/512x384.jpg",
-      "thumbnailAlt": "All Dot Connect Puzzle Game \u2014 free online game",
+      "thumbnailAlt": "All Dot Connect Puzzle Game — free online game",
       "embedUrl": "https://html5.gamemonetize.co/hnq8casa5a4ymwc9vod8vwn4hhgvgazh/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -2120,7 +2380,7 @@
         "skills"
       ],
       "thumbnail": "https://img.gamemonetize.com/lwrzehbb6wpt3112uj1qqwad265jpfnr/512x384.jpg",
-      "thumbnailAlt": "BUBBLE BLAST \u2014 free online game",
+      "thumbnailAlt": "BUBBLE BLAST — free online game",
       "embedUrl": "https://html5.gamemonetize.co/lwrzehbb6wpt3112uj1qqwad265jpfnr/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -2153,14 +2413,14 @@
         "zombie"
       ],
       "thumbnail": "https://img.gamemonetize.com/ow2zx4g1b2b6yzepox0m3su5xxrp84px/512x384.jpg",
-      "thumbnailAlt": "Zombie Highway Car Game \u2014 free online game",
+      "thumbnailAlt": "Zombie Highway Car Game — free online game",
       "embedUrl": "https://html5.gamemonetize.co/ow2zx4g1b2b6yzepox0m3su5xxrp84px/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "4/3",
       "featured": false,
       "plays": 71794,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "Mouse click to turn car - To click any button use mouse",
@@ -2189,14 +2449,14 @@
         "coloring"
       ],
       "thumbnail": "https://img.gamemonetize.com/elcxuvtqmjbug5x08k5k85zwpaepu0p7/512x384.jpg",
-      "thumbnailAlt": "Color Bridge Builder Puzzle \u2014 free online game",
+      "thumbnailAlt": "Color Bridge Builder Puzzle — free online game",
       "embedUrl": "https://html5.gamemonetize.co/elcxuvtqmjbug5x08k5k85zwpaepu0p7/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "16/9",
       "featured": false,
       "plays": 24495,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "Build bridges using colored blocks and guide vehicles safely across gaps Solve physics-based puzzles and complete increasingly challenging levels",
@@ -2221,7 +2481,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/fgcd1c9yk7vdt92fg5v8n22h2jfj1fhz/512x384.jpg",
-      "thumbnailAlt": "Endless Space Pilot 2D \u2014 free online game",
+      "thumbnailAlt": "Endless Space Pilot 2D — free online game",
       "embedUrl": "https://html5.gamemonetize.co/fgcd1c9yk7vdt92fg5v8n22h2jfj1fhz/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -2253,7 +2513,7 @@
         "hypercasual"
       ],
       "thumbnail": "https://img.gamemonetize.com/aos9uibpduazpzx0d4vuodsxolxrb9w4/512x384.jpg",
-      "thumbnailAlt": "Feed My Monster \u2014 free online game",
+      "thumbnailAlt": "Feed My Monster — free online game",
       "embedUrl": "https://html5.gamemonetize.co/aos9uibpduazpzx0d4vuodsxolxrb9w4/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -2285,7 +2545,7 @@
         "sword"
       ],
       "thumbnail": "https://img.gamemonetize.com/r4pfwrszqgjysmsmi6aajfjkyobwiz4c/512x384.jpg",
-      "thumbnailAlt": "Throw Sword \u2014 free online game",
+      "thumbnailAlt": "Throw Sword — free online game",
       "embedUrl": "https://html5.gamemonetize.co/r4pfwrszqgjysmsmi6aajfjkyobwiz4c/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -2317,7 +2577,7 @@
         "hypercasual"
       ],
       "thumbnail": "https://img.gamemonetize.com/8c60twyjarwrcwrwub40m6ffbqfvlkrv/512x384.jpg",
-      "thumbnailAlt": "Hopping Boy \u2014 free online game",
+      "thumbnailAlt": "Hopping Boy — free online game",
       "embedUrl": "https://html5.gamemonetize.co/8c60twyjarwrcwrwub40m6ffbqfvlkrv/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -2349,7 +2609,7 @@
         "hypercasual"
       ],
       "thumbnail": "https://img.gamemonetize.com/xv4kbcgoxhlqw7xjg24jbr7pgc96v0ll/512x384.jpg",
-      "thumbnailAlt": "Rabbit Skater Game \u2014 free online game",
+      "thumbnailAlt": "Rabbit Skater Game — free online game",
       "embedUrl": "https://html5.gamemonetize.co/xv4kbcgoxhlqw7xjg24jbr7pgc96v0ll/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -2379,7 +2639,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/n47m2bqxmxub4hdktu6yyydfof15fhhe/512x384.jpg",
-      "thumbnailAlt": "DotAnimals \u2014 free online game",
+      "thumbnailAlt": "DotAnimals — free online game",
       "embedUrl": "https://html5.gamemonetize.co/n47m2bqxmxub4hdktu6yyydfof15fhhe/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -2412,7 +2672,7 @@
         "skill"
       ],
       "thumbnail": "https://img.gamemonetize.com/zoda6uyj5m2ecd28hf5a1atix2iu23hr/512x384.jpg",
-      "thumbnailAlt": "Rambo legend Game \u2014 free online game",
+      "thumbnailAlt": "Rambo legend Game — free online game",
       "embedUrl": "https://html5.gamemonetize.co/zoda6uyj5m2ecd28hf5a1atix2iu23hr/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -2444,7 +2704,7 @@
         "shoot"
       ],
       "thumbnail": "https://img.gamemonetize.com/5yxry7nao6ny4gqw2lt1uihblafhagnn/512x384.jpg",
-      "thumbnailAlt": "Duck Dash Pro \u2014 free online game",
+      "thumbnailAlt": "Duck Dash Pro — free online game",
       "embedUrl": "https://html5.gamemonetize.co/5yxry7nao6ny4gqw2lt1uihblafhagnn/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -2475,7 +2735,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/dfzt6z802dcpm86mh6dwovyc3d28fts7/512x384.jpg",
-      "thumbnailAlt": "Block Clash \u2014 free online game",
+      "thumbnailAlt": "Block Clash — free online game",
       "embedUrl": "https://html5.gamemonetize.co/dfzt6z802dcpm86mh6dwovyc3d28fts7/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -2511,7 +2771,7 @@
         "casual"
       ],
       "thumbnail": "https://img.gamemonetize.com/dqg9yc4x992p3q08abk8rbmhfsa7009l/512x384.jpg",
-      "thumbnailAlt": "Sugar Rush Tower \u2014 free online game",
+      "thumbnailAlt": "Sugar Rush Tower — free online game",
       "embedUrl": "https://html5.gamemonetize.co/dqg9yc4x992p3q08abk8rbmhfsa7009l/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -2544,7 +2804,7 @@
         "watermelon"
       ],
       "thumbnail": "https://img.gamemonetize.com/cjw6u4lhi9z5u9cn5q7x14d9uwaz60kj/512x384.jpg",
-      "thumbnailAlt": "Fruit Merge Arena \u2014 free online game",
+      "thumbnailAlt": "Fruit Merge Arena — free online game",
       "embedUrl": "https://html5.gamemonetize.co/cjw6u4lhi9z5u9cn5q7x14d9uwaz60kj/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -2566,7 +2826,7 @@
       "id": "gm-l8bum0wy",
       "slug": "bamboo-panda",
       "title": "Bamboo Panda",
-      "description": "A Panda has just landed in our forests! This imposing black and white animal is hungry and wants only one thing\u2026 eat bamboo! Feed him before he goes for a little nap, but watch out, other pandas in the jungle are also fighting for the bamboo. They hide in the bamboo in order to stop you. Do not underestimate these pandas, they are armed! Stay vigilant ... The war of bamboo is about to start.",
+      "description": "A Panda has just landed in our forests! This imposing black and white animal is hungry and wants only one thing… eat bamboo! Feed him before he goes for a little nap, but watch out, other pandas in the jungle are also fighting for the bamboo. They hide in the bamboo in order to stop you. Do not underestimate these pandas, they are armed! Stay vigilant ... The war of bamboo is about to start.",
       "shortDescription": "A Panda has just landed in our forests!",
       "category": "casual",
       "tags": [
@@ -2580,7 +2840,7 @@
         "fun"
       ],
       "thumbnail": "https://img.gamemonetize.com/l8bum0wy23964s56z4dow48ri5ir237o/512x384.jpg",
-      "thumbnailAlt": "Bamboo Panda \u2014 free online game",
+      "thumbnailAlt": "Bamboo Panda — free online game",
       "embedUrl": "https://html5.gamemonetize.co/l8bum0wy23964s56z4dow48ri5ir237o/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -2609,7 +2869,7 @@
         "casual"
       ],
       "thumbnail": "https://img.gamemonetize.com/ge641f4aizfk5ouhug4ukmzbez9n9trx/512x384.jpg",
-      "thumbnailAlt": "BallCrazeSortGame \u2014 free online game",
+      "thumbnailAlt": "BallCrazeSortGame — free online game",
       "embedUrl": "https://html5.gamemonetize.co/ge641f4aizfk5ouhug4ukmzbez9n9trx/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -2641,7 +2901,7 @@
         "skills"
       ],
       "thumbnail": "https://img.gamemonetize.com/sbono917zmvxuj4ezo4e1q5f8l4gbkp1/512x384.jpg",
-      "thumbnailAlt": "Brick Cat chipi chapa \u2014 free online game",
+      "thumbnailAlt": "Brick Cat chipi chapa — free online game",
       "embedUrl": "https://html5.gamemonetize.co/sbono917zmvxuj4ezo4e1q5f8l4gbkp1/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -2671,7 +2931,7 @@
         "arcade"
       ],
       "thumbnail": "https://img.gamemonetize.com/tzel8pbxyx6ax3ybmdpl5pt2wfwjmysx/512x384.jpg",
-      "thumbnailAlt": "CROCO JUGGLER \u2014 free online game",
+      "thumbnailAlt": "CROCO JUGGLER — free online game",
       "embedUrl": "https://html5.gamemonetize.co/tzel8pbxyx6ax3ybmdpl5pt2wfwjmysx/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -2704,7 +2964,7 @@
         "racing"
       ],
       "thumbnail": "https://img.gamemonetize.com/ezh2ais4qk74un2uy1wzg3elrm32877u/512x384.jpg",
-      "thumbnailAlt": "Kigali Drift King \u2014 free online game",
+      "thumbnailAlt": "Kigali Drift King — free online game",
       "embedUrl": "https://html5.gamemonetize.co/ezh2ais4qk74un2uy1wzg3elrm32877u/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -2737,7 +2997,7 @@
         "ninja"
       ],
       "thumbnail": "https://img.gamemonetize.com/hbzby7trz2m0oa3eujtep9j5zts9sba7/512x384.jpg",
-      "thumbnailAlt": "Ninja Warrior Game \u2014 free online game",
+      "thumbnailAlt": "Ninja Warrior Game — free online game",
       "embedUrl": "https://html5.gamemonetize.co/hbzby7trz2m0oa3eujtep9j5zts9sba7/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -2769,7 +3029,7 @@
         "fun"
       ],
       "thumbnail": "https://img.gamemonetize.com/f9bqfxgmw2s5camuffa084p4dmed6rbl/512x384.jpg",
-      "thumbnailAlt": "Monster Man Rush \u2014 free online game",
+      "thumbnailAlt": "Monster Man Rush — free online game",
       "embedUrl": "https://html5.gamemonetize.co/f9bqfxgmw2s5camuffa084p4dmed6rbl/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -2801,7 +3061,7 @@
         "hypercasual"
       ],
       "thumbnail": "https://img.gamemonetize.com/0e2hjszjwju68p8x4fo2rm9ffduzi83v/512x384.jpg",
-      "thumbnailAlt": "Going Rolling Ball \u2014 free online game",
+      "thumbnailAlt": "Going Rolling Ball — free online game",
       "embedUrl": "https://html5.gamemonetize.co/0e2hjszjwju68p8x4fo2rm9ffduzi83v/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -2833,7 +3093,7 @@
         "strategy"
       ],
       "thumbnail": "https://img.gamemonetize.com/6zjb3m09zd40j5psi4m47q2jctaf3m4r/512x384.jpg",
-      "thumbnailAlt": "Sprunki Pyramixed Playtime \u2014 free online game",
+      "thumbnailAlt": "Sprunki Pyramixed Playtime — free online game",
       "embedUrl": "https://html5.gamemonetize.co/6zjb3m09zd40j5psi4m47q2jctaf3m4r/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -2865,7 +3125,7 @@
         "skill"
       ],
       "thumbnail": "https://img.gamemonetize.com/jzxt64ny43o281wmd903o3nnfc8gsu8p/512x384.jpg",
-      "thumbnailAlt": "Color Madness   Spot the Differences \u2014 free online game",
+      "thumbnailAlt": "Color Madness   Spot the Differences — free online game",
       "embedUrl": "https://html5.gamemonetize.co/jzxt64ny43o281wmd903o3nnfc8gsu8p/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -2900,7 +3160,7 @@
         "jetpack"
       ],
       "thumbnail": "https://img.gamemonetize.com/giw6y52q8dkxjzr4h0qk9n7n5000o3om/512x384.jpg",
-      "thumbnailAlt": "Jetspire \u2014 free online game",
+      "thumbnailAlt": "Jetspire — free online game",
       "embedUrl": "https://html5.gamemonetize.co/giw6y52q8dkxjzr4h0qk9n7n5000o3om/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -2935,7 +3195,7 @@
         "strategy"
       ],
       "thumbnail": "https://img.gamemonetize.com/vudkk5jyzqo7xap8y7v61zt94mgxsurf/512x384.jpg",
-      "thumbnailAlt": "Unbolck me \u2014 free online game",
+      "thumbnailAlt": "Unbolck me — free online game",
       "embedUrl": "https://html5.gamemonetize.co/vudkk5jyzqo7xap8y7v61zt94mgxsurf/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -2966,14 +3226,14 @@
         "quiz"
       ],
       "thumbnail": "https://img.gamemonetize.com/tti42617jjyplnn8m4j6xvfad6d97my4/512x384.jpg",
-      "thumbnailAlt": "MathTaless \u2014 free online game",
+      "thumbnailAlt": "MathTaless — free online game",
       "embedUrl": "https://html5.gamemonetize.co/tti42617jjyplnn8m4j6xvfad6d97my4/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "4/3",
       "featured": false,
       "plays": 24681,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "Tap on the Correct option",
@@ -2998,7 +3258,7 @@
         "tetris"
       ],
       "thumbnail": "https://img.gamemonetize.com/y0217bo2p2jmbqv9rjo7uc98mto11j9o/512x384.jpg",
-      "thumbnailAlt": "BLOCK FUSION \u2014 free online game",
+      "thumbnailAlt": "BLOCK FUSION — free online game",
       "embedUrl": "https://html5.gamemonetize.co/y0217bo2p2jmbqv9rjo7uc98mto11j9o/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -3029,7 +3289,7 @@
         "science"
       ],
       "thumbnail": "https://img.gamemonetize.com/qi4hmpb4y0wjyjer0eitr0k74custk1e/512x384.jpg",
-      "thumbnailAlt": "SciWhy Easy \u2014 free online game",
+      "thumbnailAlt": "SciWhy Easy — free online game",
       "embedUrl": "https://html5.gamemonetize.co/qi4hmpb4y0wjyjer0eitr0k74custk1e/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -3062,7 +3322,7 @@
         "relaxation"
       ],
       "thumbnail": "https://img.gamemonetize.com/zf9ivma2rjjgz3n6l71jaq8dou42ibpi/512x384.jpg",
-      "thumbnailAlt": "Pocket Stress Relief Games \u2014 free online game",
+      "thumbnailAlt": "Pocket Stress Relief Games — free online game",
       "embedUrl": "https://html5.gamemonetize.co/zf9ivma2rjjgz3n6l71jaq8dou42ibpi/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -3093,14 +3353,14 @@
         "math"
       ],
       "thumbnail": "https://img.gamemonetize.com/nvh66os5th2de9udbdq3kr7czcf43xt7/512x384.jpg",
-      "thumbnailAlt": "Num Blast \u2014 free online game",
+      "thumbnailAlt": "Num Blast — free online game",
       "embedUrl": "https://html5.gamemonetize.co/nvh66os5th2de9udbdq3kr7czcf43xt7/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "4/3",
       "featured": false,
       "plays": 8577,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "Mouse click or tap to play",
@@ -3125,14 +3385,14 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/dmjen15gobzzvz633h899ou8viymw784/512x384.jpg",
-      "thumbnailAlt": "Rock Slide \u2014 free online game",
+      "thumbnailAlt": "Rock Slide — free online game",
       "embedUrl": "https://html5.gamemonetize.co/dmjen15gobzzvz633h899ou8viymw784/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "16/9",
       "featured": false,
       "plays": 47591,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "Use mouse to play",
@@ -3157,7 +3417,7 @@
         "fun"
       ],
       "thumbnail": "https://img.gamemonetize.com/e7gvf2n0jk2vlfu4ykretouip8n5ldti/512x384.jpg",
-      "thumbnailAlt": "Hoppy Stacky \u2014 free online game",
+      "thumbnailAlt": "Hoppy Stacky — free online game",
       "embedUrl": "https://html5.gamemonetize.co/e7gvf2n0jk2vlfu4ykretouip8n5ldti/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -3192,7 +3452,7 @@
         "hypercasual"
       ],
       "thumbnail": "https://img.gamemonetize.com/nnqd2hx5204xu00b7p3sqe2co9wa1kdk/512x384.jpg",
-      "thumbnailAlt": "Forest Wing \u2014 free online game",
+      "thumbnailAlt": "Forest Wing — free online game",
       "embedUrl": "https://html5.gamemonetize.co/nnqd2hx5204xu00b7p3sqe2co9wa1kdk/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -3224,7 +3484,7 @@
         "slicing"
       ],
       "thumbnail": "https://img.gamemonetize.com/wviroj7wmc5vtgm3x19jpmx8lomto0y4/512x384.jpg",
-      "thumbnailAlt": "Cut Art Master \u2014 free online game",
+      "thumbnailAlt": "Cut Art Master — free online game",
       "embedUrl": "https://html5.gamemonetize.co/wviroj7wmc5vtgm3x19jpmx8lomto0y4/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -3257,7 +3517,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/qofeeuj9m6vc6v6y2u0x7yqofydz9qyf/512x384.jpg",
-      "thumbnailAlt": "Robe Challenge \u2014 free online game",
+      "thumbnailAlt": "Robe Challenge — free online game",
       "embedUrl": "https://html5.gamemonetize.co/qofeeuj9m6vc6v6y2u0x7yqofydz9qyf/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -3290,7 +3550,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/l2z8hylz6j68hna8feme59e1kwu1qpty/512x384.jpg",
-      "thumbnailAlt": "Endless Path: Twist &amp;amp; Turn \u2014 free online game",
+      "thumbnailAlt": "Endless Path: Twist &amp;amp; Turn — free online game",
       "embedUrl": "https://html5.gamemonetize.co/l2z8hylz6j68hna8feme59e1kwu1qpty/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -3326,7 +3586,7 @@
         "survival"
       ],
       "thumbnail": "https://img.gamemonetize.com/6t3tx9vqtuutj66q2cs9itvdf7g8ugih/512x384.jpg",
-      "thumbnailAlt": "Terrifying Zombies: Tower Defense II \u2014 free online game",
+      "thumbnailAlt": "Terrifying Zombies: Tower Defense II — free online game",
       "embedUrl": "https://html5.gamemonetize.co/6t3tx9vqtuutj66q2cs9itvdf7g8ugih/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -3358,7 +3618,7 @@
         "relaxation"
       ],
       "thumbnail": "https://img.gamemonetize.com/pietcd6shsx6vdxpkg3x3ypsoo9ft12o/512x384.jpg",
-      "thumbnailAlt": "Seat Puzzle Cut The Rope \u2014 free online game",
+      "thumbnailAlt": "Seat Puzzle Cut The Rope — free online game",
       "embedUrl": "https://html5.gamemonetize.co/pietcd6shsx6vdxpkg3x3ypsoo9ft12o/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -3390,7 +3650,7 @@
         "music"
       ],
       "thumbnail": "https://img.gamemonetize.com/wstmnin6hc4zoq4zsqn93oyvdzpaxxbg/512x384.jpg",
-      "thumbnailAlt": "Music Tile Game \u2014 free online game",
+      "thumbnailAlt": "Music Tile Game — free online game",
       "embedUrl": "https://html5.gamemonetize.co/wstmnin6hc4zoq4zsqn93oyvdzpaxxbg/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -3421,7 +3681,7 @@
         "hypercasual"
       ],
       "thumbnail": "https://img.gamemonetize.com/s5i4yxh7s4aphnfyktgaitauatjcp9rm/512x384.jpg",
-      "thumbnailAlt": "Scary Joker Game \u2014 free online game",
+      "thumbnailAlt": "Scary Joker Game — free online game",
       "embedUrl": "https://html5.gamemonetize.co/s5i4yxh7s4aphnfyktgaitauatjcp9rm/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -3451,7 +3711,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/soip6p75rr8nalcertqmotjm4zme64a3/512x384.jpg",
-      "thumbnailAlt": "Jump Up 3D \u2014 free online game",
+      "thumbnailAlt": "Jump Up 3D — free online game",
       "embedUrl": "https://html5.gamemonetize.co/soip6p75rr8nalcertqmotjm4zme64a3/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -3485,7 +3745,7 @@
         "skill"
       ],
       "thumbnail": "https://img.gamemonetize.com/i1n3lavknq6exbddhkj4w2tpjxtahqmd/512x384.jpg",
-      "thumbnailAlt": "Kiwi Adventure Game \u2014 free online game",
+      "thumbnailAlt": "Kiwi Adventure Game — free online game",
       "embedUrl": "https://html5.gamemonetize.co/i1n3lavknq6exbddhkj4w2tpjxtahqmd/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -3521,14 +3781,14 @@
         "school"
       ],
       "thumbnail": "https://img.gamemonetize.com/kxzdm6onz1bz5lpz1zhy2bykphn2ij6a/512x384.jpg",
-      "thumbnailAlt": "Easy Easter Coloring Eggs \u2014 free online game",
+      "thumbnailAlt": "Easy Easter Coloring Eggs — free online game",
       "embedUrl": "https://html5.gamemonetize.co/kxzdm6onz1bz5lpz1zhy2bykphn2ij6a/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "4/3",
       "featured": false,
       "plays": 36793,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "Mouse to play",
@@ -3550,7 +3810,7 @@
         "casual"
       ],
       "thumbnail": "https://img.gamemonetize.com/5wapv148s692qieoclu9iikp9zytehqw/512x384.jpg",
-      "thumbnailAlt": "Friday Night Funkin PixelCrate \u2014 free online game",
+      "thumbnailAlt": "Friday Night Funkin PixelCrate — free online game",
       "embedUrl": "https://html5.gamemonetize.co/5wapv148s692qieoclu9iikp9zytehqw/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -3580,7 +3840,7 @@
         "html"
       ],
       "thumbnail": "https://img.gamemonetize.com/9zq8pj6vq86n2clkfwez6f6vte6wzhxd/512x384.jpg",
-      "thumbnailAlt": "Stellar Pulse \u2014 free online game",
+      "thumbnailAlt": "Stellar Pulse — free online game",
       "embedUrl": "https://html5.gamemonetize.co/9zq8pj6vq86n2clkfwez6f6vte6wzhxd/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -3612,7 +3872,7 @@
         "run"
       ],
       "thumbnail": "https://img.gamemonetize.com/k12p5hhhsctx5tn9nyl0sbjwcdtu8hql/512x384.jpg",
-      "thumbnailAlt": "Runettes \u2014 free online game",
+      "thumbnailAlt": "Runettes — free online game",
       "embedUrl": "https://html5.gamemonetize.co/k12p5hhhsctx5tn9nyl0sbjwcdtu8hql/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -3644,7 +3904,7 @@
         "water"
       ],
       "thumbnail": "https://img.gamemonetize.com/206o9kbx15jdjik97atwu73rysjkrn30/512x384.jpg",
-      "thumbnailAlt": "HydraSword \u2014 free online game",
+      "thumbnailAlt": "HydraSword — free online game",
       "embedUrl": "https://html5.gamemonetize.co/206o9kbx15jdjik97atwu73rysjkrn30/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -3676,7 +3936,7 @@
         "war"
       ],
       "thumbnail": "https://img.gamemonetize.com/mp8b4ilba6x4lqfa4crnuzsaosib839n/512x384.jpg",
-      "thumbnailAlt": "SkyFury \u2014 free online game",
+      "thumbnailAlt": "SkyFury — free online game",
       "embedUrl": "https://html5.gamemonetize.co/mp8b4ilba6x4lqfa4crnuzsaosib839n/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -3708,7 +3968,7 @@
         "strategy"
       ],
       "thumbnail": "https://img.gamemonetize.com/tdcb5hzr1l1cv72zh24mjenpqwpoup7u/512x384.jpg",
-      "thumbnailAlt": "World Archery League \u2014 free online game",
+      "thumbnailAlt": "World Archery League — free online game",
       "embedUrl": "https://html5.gamemonetize.co/tdcb5hzr1l1cv72zh24mjenpqwpoup7u/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -3741,7 +4001,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/4slhd9gdl27v5h3stlcjqvdp96iyovfp/512x384.jpg",
-      "thumbnailAlt": "Toon Blast Puzzle \u2014 free online game",
+      "thumbnailAlt": "Toon Blast Puzzle — free online game",
       "embedUrl": "https://html5.gamemonetize.co/4slhd9gdl27v5h3stlcjqvdp96iyovfp/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -3776,7 +4036,7 @@
         "truck"
       ],
       "thumbnail": "https://img.gamemonetize.com/wmbjgaewe5ml9mhrj60s9587bckiy6ts/512x384.jpg",
-      "thumbnailAlt": "Extreme Monster Truck \u2014 free online game",
+      "thumbnailAlt": "Extreme Monster Truck — free online game",
       "embedUrl": "https://html5.gamemonetize.co/wmbjgaewe5ml9mhrj60s9587bckiy6ts/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -3808,7 +4068,7 @@
         "sorting"
       ],
       "thumbnail": "https://img.gamemonetize.com/wqiepf48c1egs7oa9lkm3rh6k1ejwhq0/512x384.jpg",
-      "thumbnailAlt": "Goods Sorting Shopping Master \u2014 free online game",
+      "thumbnailAlt": "Goods Sorting Shopping Master — free online game",
       "embedUrl": "https://html5.gamemonetize.co/wqiepf48c1egs7oa9lkm3rh6k1ejwhq0/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -3839,7 +4099,7 @@
         "ai games"
       ],
       "thumbnail": "https://img.gamemonetize.com/tht4vias9mmr1ehyyp2nglhv8mh9z94y/512x384.jpg",
-      "thumbnailAlt": "Box Brothers \u2014 free online game",
+      "thumbnailAlt": "Box Brothers — free online game",
       "embedUrl": "https://html5.gamemonetize.co/tht4vias9mmr1ehyyp2nglhv8mh9z94y/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -3875,7 +4135,7 @@
         "strategy"
       ],
       "thumbnail": "https://img.gamemonetize.com/z9mtf9pvbhgg8dugfogecr1w7hz4xi64/512x384.jpg",
-      "thumbnailAlt": "Blockify \u2014 free online game",
+      "thumbnailAlt": "Blockify — free online game",
       "embedUrl": "https://html5.gamemonetize.co/z9mtf9pvbhgg8dugfogecr1w7hz4xi64/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -3905,7 +4165,7 @@
         "running"
       ],
       "thumbnail": "https://img.gamemonetize.com/u9617teqt4pn9co9thzlrrfxs2zsrw2a/512x384.jpg",
-      "thumbnailAlt": "Roof Rush 3D \u2014 free online game",
+      "thumbnailAlt": "Roof Rush 3D — free online game",
       "embedUrl": "https://html5.gamemonetize.co/u9617teqt4pn9co9thzlrrfxs2zsrw2a/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -3941,7 +4201,7 @@
         "matching"
       ],
       "thumbnail": "https://img.gamemonetize.com/62f8ghv9hv34m7nc1x3f2jeedzhcdaxz/512x384.jpg",
-      "thumbnailAlt": "Easter Match 3 Saga \u2014 free online game",
+      "thumbnailAlt": "Easter Match 3 Saga — free online game",
       "embedUrl": "https://html5.gamemonetize.co/62f8ghv9hv34m7nc1x3f2jeedzhcdaxz/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -3975,7 +4235,7 @@
         "sport"
       ],
       "thumbnail": "https://img.gamemonetize.com/pqxpsmgqgxh27zvwxy79gbqluz17j8e0/512x384.jpg",
-      "thumbnailAlt": "Tap Basket \u2014 free online game",
+      "thumbnailAlt": "Tap Basket — free online game",
       "embedUrl": "https://html5.gamemonetize.co/pqxpsmgqgxh27zvwxy79gbqluz17j8e0/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -4007,7 +4267,7 @@
         "warrior"
       ],
       "thumbnail": "https://img.gamemonetize.com/cihth2bbe2a0ntw3ylj8srfz268e4nty/512x384.jpg",
-      "thumbnailAlt": "RelicRun \u2014 free online game",
+      "thumbnailAlt": "RelicRun — free online game",
       "embedUrl": "https://html5.gamemonetize.co/cihth2bbe2a0ntw3ylj8srfz268e4nty/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -4043,7 +4303,7 @@
         "horse"
       ],
       "thumbnail": "https://img.gamemonetize.com/iqa12beq0g7pjjvo8i83z3outk2sheb0/512x384.jpg",
-      "thumbnailAlt": "Horse Racing \u2014 free online game",
+      "thumbnailAlt": "Horse Racing — free online game",
       "embedUrl": "https://html5.gamemonetize.co/iqa12beq0g7pjjvo8i83z3outk2sheb0/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -4073,7 +4333,7 @@
         "arcade"
       ],
       "thumbnail": "https://img.gamemonetize.com/akfdiz07oxf1j8w9usumf64iqunmn9nm/512x384.jpg",
-      "thumbnailAlt": "Reflex Grid \u2014 free online game",
+      "thumbnailAlt": "Reflex Grid — free online game",
       "embedUrl": "https://html5.gamemonetize.co/akfdiz07oxf1j8w9usumf64iqunmn9nm/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -4104,7 +4364,7 @@
         "classic"
       ],
       "thumbnail": "https://img.gamemonetize.com/ze62tjzp2duzrol2c1oup9wfdm0vglu1/512x384.jpg",
-      "thumbnailAlt": "ULTIMATE CHESS \u2014 free online game",
+      "thumbnailAlt": "ULTIMATE CHESS — free online game",
       "embedUrl": "https://html5.gamemonetize.co/ze62tjzp2duzrol2c1oup9wfdm0vglu1/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -4140,7 +4400,7 @@
         "strategy"
       ],
       "thumbnail": "https://img.gamemonetize.com/d7a965ple3vols2kwz51d646oclw79mh/512x384.jpg",
-      "thumbnailAlt": "Ziply \u2014 free online game",
+      "thumbnailAlt": "Ziply — free online game",
       "embedUrl": "https://html5.gamemonetize.co/d7a965ple3vols2kwz51d646oclw79mh/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -4173,7 +4433,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/4zc91pp65rxew6a2s7b6ouor6w5ezhtc/512x384.jpg",
-      "thumbnailAlt": "EMOJI MERGE MADNESS \u2014 free online game",
+      "thumbnailAlt": "EMOJI MERGE MADNESS — free online game",
       "embedUrl": "https://html5.gamemonetize.co/4zc91pp65rxew6a2s7b6ouor6w5ezhtc/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -4205,7 +4465,7 @@
         "running"
       ],
       "thumbnail": "https://img.gamemonetize.com/iv0siadzdl75mq4brnh2p63bjdomi3jt/512x384.jpg",
-      "thumbnailAlt": "Robot Astro Party \u2014 free online game",
+      "thumbnailAlt": "Robot Astro Party — free online game",
       "embedUrl": "https://html5.gamemonetize.co/iv0siadzdl75mq4brnh2p63bjdomi3jt/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -4237,7 +4497,7 @@
         "traffic"
       ],
       "thumbnail": "https://img.gamemonetize.com/rbzdx3ju83ky74054iq611827ty17mcc/512x384.jpg",
-      "thumbnailAlt": "Cow Jam Farm puzzle \u2014 free online game",
+      "thumbnailAlt": "Cow Jam Farm puzzle — free online game",
       "embedUrl": "https://html5.gamemonetize.co/rbzdx3ju83ky74054iq611827ty17mcc/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -4269,7 +4529,7 @@
         "strategy"
       ],
       "thumbnail": "https://img.gamemonetize.com/d09fij2k9catr8c40qn5rjjcjcb0cscy/512x384.jpg",
-      "thumbnailAlt": "Hospital Inc \u2014 free online game",
+      "thumbnailAlt": "Hospital Inc — free online game",
       "embedUrl": "https://html5.gamemonetize.co/d09fij2k9catr8c40qn5rjjcjcb0cscy/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -4300,7 +4560,7 @@
         "punch"
       ],
       "thumbnail": "https://img.gamemonetize.com/9bqvww3klwxn3djn2gxjsbkatk4wlv3r/512x384.jpg",
-      "thumbnailAlt": "Ruler Survival Game \u2014 free online game",
+      "thumbnailAlt": "Ruler Survival Game — free online game",
       "embedUrl": "https://html5.gamemonetize.co/9bqvww3klwxn3djn2gxjsbkatk4wlv3r/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -4333,7 +4593,7 @@
         "mapi games"
       ],
       "thumbnail": "https://img.gamemonetize.com/1ti4ndc0ahrycs3dmvve6r5858cktiyi/512x384.jpg",
-      "thumbnailAlt": "Orbit Rush 3D \u2014 free online game",
+      "thumbnailAlt": "Orbit Rush 3D — free online game",
       "embedUrl": "https://html5.gamemonetize.co/1ti4ndc0ahrycs3dmvve6r5858cktiyi/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -4369,7 +4629,7 @@
         "coloring"
       ],
       "thumbnail": "https://img.gamemonetize.com/0m51x46pdg00upirxhw3ovpcn3mpl2nd/512x384.jpg",
-      "thumbnailAlt": "Bounce Blast \u2014 free online game",
+      "thumbnailAlt": "Bounce Blast — free online game",
       "embedUrl": "https://html5.gamemonetize.co/0m51x46pdg00upirxhw3ovpcn3mpl2nd/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -4402,7 +4662,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/i1era5wdmuf9i55l5t9wvqd8cpev2grl/512x384.jpg",
-      "thumbnailAlt": "Ball Color Smash \u2014 free online game",
+      "thumbnailAlt": "Ball Color Smash — free online game",
       "embedUrl": "https://html5.gamemonetize.co/i1era5wdmuf9i55l5t9wvqd8cpev2grl/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -4434,7 +4694,7 @@
         "side scrolling"
       ],
       "thumbnail": "https://img.gamemonetize.com/gpahz5repchd5e6ahizvuir7x9vhkdre/512x384.jpg",
-      "thumbnailAlt": "Big Rolling Ball \u2014 free online game",
+      "thumbnailAlt": "Big Rolling Ball — free online game",
       "embedUrl": "https://html5.gamemonetize.co/gpahz5repchd5e6ahizvuir7x9vhkdre/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -4467,7 +4727,7 @@
         "skill"
       ],
       "thumbnail": "https://img.gamemonetize.com/f8n8ecni7ef03tr8oiuojy9139w5l1p9/512x384.jpg",
-      "thumbnailAlt": "Square Sling \u2014 free online game",
+      "thumbnailAlt": "Square Sling — free online game",
       "embedUrl": "https://html5.gamemonetize.co/f8n8ecni7ef03tr8oiuojy9139w5l1p9/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -4503,7 +4763,7 @@
         "fun"
       ],
       "thumbnail": "https://img.gamemonetize.com/xr64lyiz8u9kgupokk8c1yusz5ze6dn6/512x384.jpg",
-      "thumbnailAlt": "Candy Merge Sort \u2014 free online game",
+      "thumbnailAlt": "Candy Merge Sort — free online game",
       "embedUrl": "https://html5.gamemonetize.co/xr64lyiz8u9kgupokk8c1yusz5ze6dn6/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -4534,7 +4794,7 @@
         "science"
       ],
       "thumbnail": "https://img.gamemonetize.com/98yigv2o7d2w53hv8w1vs23lpqaa3l90/512x384.jpg",
-      "thumbnailAlt": "SciWhy \u2014 free online game",
+      "thumbnailAlt": "SciWhy — free online game",
       "embedUrl": "https://html5.gamemonetize.co/98yigv2o7d2w53hv8w1vs23lpqaa3l90/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -4570,7 +4830,7 @@
         "water"
       ],
       "thumbnail": "https://img.gamemonetize.com/41xsdnxxv9zcj69f9j0qhfeguoce059e/512x384.jpg",
-      "thumbnailAlt": "Magic Water Sort: Color Puzzle \u2014 free online game",
+      "thumbnailAlt": "Magic Water Sort: Color Puzzle — free online game",
       "embedUrl": "https://html5.gamemonetize.co/41xsdnxxv9zcj69f9j0qhfeguoce059e/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -4604,7 +4864,7 @@
         "survival"
       ],
       "thumbnail": "https://img.gamemonetize.com/i29r6vckxoql05j380pc4pe7e9fky1nw/512x384.jpg",
-      "thumbnailAlt": "No One Survives 1 minute \u2014 free online game",
+      "thumbnailAlt": "No One Survives 1 minute — free online game",
       "embedUrl": "https://html5.gamemonetize.co/i29r6vckxoql05j380pc4pe7e9fky1nw/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -4637,14 +4897,14 @@
         "webgl"
       ],
       "thumbnail": "https://img.gamemonetize.com/rmt4uf1abfqajv6qh3v5pntd4ymsfqw9/512x384.jpg",
-      "thumbnailAlt": "Toy Factory \u2014 free online game",
+      "thumbnailAlt": "Toy Factory — free online game",
       "embedUrl": "https://html5.gamemonetize.co/rmt4uf1abfqajv6qh3v5pntd4ymsfqw9/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "1/1",
       "featured": false,
       "plays": 5549,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "Move Touch and drag the screen to direct your character Collect Walk over boxes to collect them automatically Drop Take the collected boxes to the drop-off area to earn money Upgrade Go to the upgrade zones to power up your character and workers",
@@ -4668,7 +4928,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/2l1klheq488pzd2emh10kl4a3qjcdzj0/512x384.jpg",
-      "thumbnailAlt": "fours colors \u2014 free online game",
+      "thumbnailAlt": "fours colors — free online game",
       "embedUrl": "https://html5.gamemonetize.co/2l1klheq488pzd2emh10kl4a3qjcdzj0/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -4701,7 +4961,7 @@
         "stickman"
       ],
       "thumbnail": "https://img.gamemonetize.com/b1xq3umsvsobp3v95syywh7s62vw944m/512x384.jpg",
-      "thumbnailAlt": "Stickman Blast Puzzle \u2014 free online game",
+      "thumbnailAlt": "Stickman Blast Puzzle — free online game",
       "embedUrl": "https://html5.gamemonetize.co/b1xq3umsvsobp3v95syywh7s62vw944m/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -4731,7 +4991,7 @@
         "ball"
       ],
       "thumbnail": "https://img.gamemonetize.com/68wt6pzen1qr1cxxcj0nmaooah3tkd97/512x384.jpg",
-      "thumbnailAlt": "Air Battles \u2014 free online game",
+      "thumbnailAlt": "Air Battles — free online game",
       "embedUrl": "https://html5.gamemonetize.co/68wt6pzen1qr1cxxcj0nmaooah3tkd97/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -4767,14 +5027,14 @@
         "platform"
       ],
       "thumbnail": "https://img.gamemonetize.com/4u9qmrvdb6ytz66lvzgblpintbw1vlu1/512x384.jpg",
-      "thumbnailAlt": "Trump the Ragdoll \u2014 free online game",
+      "thumbnailAlt": "Trump the Ragdoll — free online game",
       "embedUrl": "https://html5.gamemonetize.co/4u9qmrvdb6ytz66lvzgblpintbw1vlu1/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "16/9",
       "featured": false,
       "plays": 75791,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "Mouse to play",
@@ -4799,7 +5059,7 @@
         "endless"
       ],
       "thumbnail": "https://img.gamemonetize.com/0rzv5mtnnhcgr62ohdbuh35cdespqssv/512x384.jpg",
-      "thumbnailAlt": "Plane Runner 3D \u2014 free online game",
+      "thumbnailAlt": "Plane Runner 3D — free online game",
       "embedUrl": "https://html5.gamemonetize.co/0rzv5mtnnhcgr62ohdbuh35cdespqssv/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -4831,7 +5091,7 @@
         "fun"
       ],
       "thumbnail": "https://img.gamemonetize.com/irbmt1cz3n44oeoyoco3d49nfprfrn1m/512x384.jpg",
-      "thumbnailAlt": "Dream Head Soccer Game \u2014 free online game",
+      "thumbnailAlt": "Dream Head Soccer Game — free online game",
       "embedUrl": "https://html5.gamemonetize.co/irbmt1cz3n44oeoyoco3d49nfprfrn1m/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -4864,7 +5124,7 @@
         "hypercasual"
       ],
       "thumbnail": "https://img.gamemonetize.com/jwggemrofblxsxd3uhcvwgaveucs5yu0/512x384.jpg",
-      "thumbnailAlt": "Flippy Hero Jump Game \u2014 free online game",
+      "thumbnailAlt": "Flippy Hero Jump Game — free online game",
       "embedUrl": "https://html5.gamemonetize.co/jwggemrofblxsxd3uhcvwgaveucs5yu0/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -4897,7 +5157,7 @@
         "plants"
       ],
       "thumbnail": "https://img.gamemonetize.com/ykm6g0757erd8wmd9q668df8nu0slxzg/512x384.jpg",
-      "thumbnailAlt": "Garden Brain  Learn Grow! \u2014 free online game",
+      "thumbnailAlt": "Garden Brain  Learn Grow! — free online game",
       "embedUrl": "https://html5.gamemonetize.co/ykm6g0757erd8wmd9q668df8nu0slxzg/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -4933,7 +5193,7 @@
         "collecting"
       ],
       "thumbnail": "https://img.gamemonetize.com/aisjt5kvj6gvgh7tar9kc7i29zljxq3x/512x384.jpg",
-      "thumbnailAlt": "Hyper Wave Trial \u2014 free online game",
+      "thumbnailAlt": "Hyper Wave Trial — free online game",
       "embedUrl": "https://html5.gamemonetize.co/aisjt5kvj6gvgh7tar9kc7i29zljxq3x/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -4964,7 +5224,7 @@
         "retro"
       ],
       "thumbnail": "https://img.gamemonetize.com/nifxdup7830l0cnxs0h9i007d0a4jjir/512x384.jpg",
-      "thumbnailAlt": "PIXEL DASH: NEON RUN \u2014 free online game",
+      "thumbnailAlt": "PIXEL DASH: NEON RUN — free online game",
       "embedUrl": "https://html5.gamemonetize.co/nifxdup7830l0cnxs0h9i007d0a4jjir/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -5000,14 +5260,14 @@
         "html games for your website"
       ],
       "thumbnail": "https://img.gamemonetize.com/lyq8h8835l21f92833tax2fgqtw08dsb/512x384.jpg",
-      "thumbnailAlt": "Space Adventure Game \u2014 free online game",
+      "thumbnailAlt": "Space Adventure Game — free online game",
       "embedUrl": "https://html5.gamemonetize.co/lyq8h8835l21f92833tax2fgqtw08dsb/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "4/3",
       "featured": false,
       "plays": 16248,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "Press left right buttons on screen or press A D keyboard buttons for control",
@@ -5034,7 +5294,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/naosyo3h9f0jcapj55v5oy8iym33h7hs/512x384.jpg",
-      "thumbnailAlt": "Find Number Biggest and Smallest \u2014 free online game",
+      "thumbnailAlt": "Find Number Biggest and Smallest — free online game",
       "embedUrl": "https://html5.gamemonetize.co/naosyo3h9f0jcapj55v5oy8iym33h7hs/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -5068,14 +5328,14 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/662zyvg8i95n16r5za9seo7fswx4q9ha/512x384.jpg",
-      "thumbnailAlt": "Comparing Numbers? &amp;ndash; Quick Math Game \u2014 free online game",
+      "thumbnailAlt": "Comparing Numbers? &amp;ndash; Quick Math Game — free online game",
       "embedUrl": "https://html5.gamemonetize.co/662zyvg8i95n16r5za9seo7fswx4q9ha/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "1/1",
       "featured": false,
       "plays": 34054,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "Mouse click or tap the correct symbol gt lt to answer",
@@ -5104,7 +5364,7 @@
         "levels"
       ],
       "thumbnail": "https://img.gamemonetize.com/0lad3oxrnmmgi05advyfk4jeh00lmvgm/512x384.jpg",
-      "thumbnailAlt": "SpacePuzzler \u2014 free online game",
+      "thumbnailAlt": "SpacePuzzler — free online game",
       "embedUrl": "https://html5.gamemonetize.co/0lad3oxrnmmgi05advyfk4jeh00lmvgm/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -5140,7 +5400,7 @@
         "mobile"
       ],
       "thumbnail": "https://img.gamemonetize.com/adolichvdk8bzshxae231w1slz5bbual/512x384.jpg",
-      "thumbnailAlt": "Stickman Army : Team Battle-3 \u2014 free online game",
+      "thumbnailAlt": "Stickman Army : Team Battle-3 — free online game",
       "embedUrl": "https://html5.gamemonetize.co/adolichvdk8bzshxae231w1slz5bbual/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -5170,7 +5430,7 @@
         "space"
       ],
       "thumbnail": "https://img.gamemonetize.com/5pducpoyf5edlgcq6f80pdgzbad4w3cy/512x384.jpg",
-      "thumbnailAlt": "Jelly merge 2026 \u2014 free online game",
+      "thumbnailAlt": "Jelly merge 2026 — free online game",
       "embedUrl": "https://html5.gamemonetize.co/5pducpoyf5edlgcq6f80pdgzbad4w3cy/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -5203,7 +5463,7 @@
         "stickman"
       ],
       "thumbnail": "https://img.gamemonetize.com/ju0qzw6fpcb0mctu71i85cge96sq47sb/512x384.jpg",
-      "thumbnailAlt": "Stickman Kart Hero \u2014 free online game",
+      "thumbnailAlt": "Stickman Kart Hero — free online game",
       "embedUrl": "https://html5.gamemonetize.co/ju0qzw6fpcb0mctu71i85cge96sq47sb/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -5239,7 +5499,7 @@
         "run"
       ],
       "thumbnail": "https://img.gamemonetize.com/q5phh2jp2zubx4hzc2xhh6qki73g21u8/512x384.jpg",
-      "thumbnailAlt": "Nail Stack Run Challenge \u2014 free online game",
+      "thumbnailAlt": "Nail Stack Run Challenge — free online game",
       "embedUrl": "https://html5.gamemonetize.co/q5phh2jp2zubx4hzc2xhh6qki73g21u8/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -5271,14 +5531,14 @@
         "hypercasual"
       ],
       "thumbnail": "https://img.gamemonetize.com/4xwg353vpjpvle2lmkl8jy2y3wag9b6n/512x384.jpg",
-      "thumbnailAlt": "Ninja Jump fighting \u2014 free online game",
+      "thumbnailAlt": "Ninja Jump fighting — free online game",
       "embedUrl": "https://html5.gamemonetize.co/4xwg353vpjpvle2lmkl8jy2y3wag9b6n/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "4/3",
       "featured": false,
       "plays": 21928,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "Space W uarr rarr Jump K or J rarr Attack",
@@ -5305,7 +5565,7 @@
         "webgl"
       ],
       "thumbnail": "https://img.gamemonetize.com/rpt63wnb02mf115ji991bxziuhoorxeo/512x384.jpg",
-      "thumbnailAlt": "Crazy Traffick Racing 2026 \u2014 free online game",
+      "thumbnailAlt": "Crazy Traffick Racing 2026 — free online game",
       "embedUrl": "https://html5.gamemonetize.co/rpt63wnb02mf115ji991bxziuhoorxeo/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -5341,7 +5601,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/s18an78ssvcmznnatxs89mte7yj9nj9h/512x384.jpg",
-      "thumbnailAlt": "Arrow Escape Puzzle \u2014 free online game",
+      "thumbnailAlt": "Arrow Escape Puzzle — free online game",
       "embedUrl": "https://html5.gamemonetize.co/s18an78ssvcmznnatxs89mte7yj9nj9h/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -5373,7 +5633,7 @@
         "running"
       ],
       "thumbnail": "https://img.gamemonetize.com/iqssfajejvin5lc9h0wj3k32dipowy6b/512x384.jpg",
-      "thumbnailAlt": "Crazy Runner \u2014 free online game",
+      "thumbnailAlt": "Crazy Runner — free online game",
       "embedUrl": "https://html5.gamemonetize.co/iqssfajejvin5lc9h0wj3k32dipowy6b/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -5407,7 +5667,7 @@
         "tetris"
       ],
       "thumbnail": "https://img.gamemonetize.com/lzmvl7lb9neqlm17xwyyayiicro36rbu/512x384.jpg",
-      "thumbnailAlt": "BLOKKU \u2014 free online game",
+      "thumbnailAlt": "BLOKKU — free online game",
       "embedUrl": "https://html5.gamemonetize.co/lzmvl7lb9neqlm17xwyyayiicro36rbu/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -5439,7 +5699,7 @@
         "wizard"
       ],
       "thumbnail": "https://img.gamemonetize.com/gwj6s3f1tuaxtedswlch77qulqy92mql/512x384.jpg",
-      "thumbnailAlt": "Wizzard Adventure \u2014 free online game",
+      "thumbnailAlt": "Wizzard Adventure — free online game",
       "embedUrl": "https://html5.gamemonetize.co/gwj6s3f1tuaxtedswlch77qulqy92mql/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -5475,7 +5735,7 @@
         "gun"
       ],
       "thumbnail": "https://img.gamemonetize.com/u0r63pta0g4ow3bwpdr7aj77dnfhi9id/512x384.jpg",
-      "thumbnailAlt": "Tiny Army \u2014 free online game",
+      "thumbnailAlt": "Tiny Army — free online game",
       "embedUrl": "https://html5.gamemonetize.co/u0r63pta0g4ow3bwpdr7aj77dnfhi9id/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -5511,7 +5771,7 @@
         "fighting"
       ],
       "thumbnail": "https://img.gamemonetize.com/nw87d6s1mqe0qxsv8nn55nnoerqolxi8/512x384.jpg",
-      "thumbnailAlt": "War Commander \u2014 free online game",
+      "thumbnailAlt": "War Commander — free online game",
       "embedUrl": "https://html5.gamemonetize.co/nw87d6s1mqe0qxsv8nn55nnoerqolxi8/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -5533,8 +5793,8 @@
       "id": "gm-pkbpdkhg",
       "slug": "tower-defender",
       "title": "Tower Defender",
-      "description": "You\u2019ve always dreamed to become a super-heroe ? You\u2019ve always wanted to fly in the sky, save people and stuff? Well, in this case you\u2019re at the wrong house but if you feel like a super-villain, you rang the right bell. Crime geniuses of all kind, be welcomed in this great and beautiful operation that is TD Super Heroes. We have bank to rob, building to blow up and all we ask of you\u2026 is to defend us in front of an army of super-heroes that are slightly pissed and potentially lethally aggressive\u2026 Easy, right?",
-      "shortDescription": "You\u2019ve always dreamed to become a super-heroe ?",
+      "description": "You’ve always dreamed to become a super-heroe ? You’ve always wanted to fly in the sky, save people and stuff? Well, in this case you’re at the wrong house but if you feel like a super-villain, you rang the right bell. Crime geniuses of all kind, be welcomed in this great and beautiful operation that is TD Super Heroes. We have bank to rob, building to blow up and all we ask of you… is to defend us in front of an army of super-heroes that are slightly pissed and potentially lethally aggressive… Easy, right?",
+      "shortDescription": "You’ve always dreamed to become a super-heroe ?",
       "category": "action",
       "tags": [
         "defense",
@@ -5547,7 +5807,7 @@
         "killing"
       ],
       "thumbnail": "https://img.gamemonetize.com/pkbpdkhgcmxmny7pvjqwoq8fatrvajb0/512x384.jpg",
-      "thumbnailAlt": "Tower Defender \u2014 free online game",
+      "thumbnailAlt": "Tower Defender — free online game",
       "embedUrl": "https://html5.gamemonetize.co/pkbpdkhgcmxmny7pvjqwoq8fatrvajb0/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -5577,7 +5837,7 @@
         "bubble shooter"
       ],
       "thumbnail": "https://img.gamemonetize.com/ndtlm2cnumvwmnzjob8iyuz8irj7m059/512x384.jpg",
-      "thumbnailAlt": "Color Bubble Shooter \u2014 free online game",
+      "thumbnailAlt": "Color Bubble Shooter — free online game",
       "embedUrl": "https://html5.gamemonetize.co/ndtlm2cnumvwmnzjob8iyuz8irj7m059/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -5609,7 +5869,7 @@
         "skill"
       ],
       "thumbnail": "https://img.gamemonetize.com/3deuy9lkl1v0c4ubw51hbyimugzrf0uq/512x384.jpg",
-      "thumbnailAlt": "Torn Pieces \u2014 free online game",
+      "thumbnailAlt": "Torn Pieces — free online game",
       "embedUrl": "https://html5.gamemonetize.co/3deuy9lkl1v0c4ubw51hbyimugzrf0uq/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -5639,7 +5899,7 @@
         "quest"
       ],
       "thumbnail": "https://img.gamemonetize.com/70m8qj0elih68bb2n6p1or0rfg1uz8dr/512x384.jpg",
-      "thumbnailAlt": "Crown Crusher \u2014 free online game",
+      "thumbnailAlt": "Crown Crusher — free online game",
       "embedUrl": "https://html5.gamemonetize.co/70m8qj0elih68bb2n6p1or0rfg1uz8dr/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -5671,7 +5931,7 @@
         "zombie"
       ],
       "thumbnail": "https://img.gamemonetize.com/k6tbgyposhywdmtc60ukjuikixcq76qa/512x384.jpg",
-      "thumbnailAlt": "Hypnotic Zombie Escape Endless Jump \u2014 free online game",
+      "thumbnailAlt": "Hypnotic Zombie Escape Endless Jump — free online game",
       "embedUrl": "https://html5.gamemonetize.co/k6tbgyposhywdmtc60ukjuikixcq76qa/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -5707,7 +5967,7 @@
         "strategy"
       ],
       "thumbnail": "https://img.gamemonetize.com/7q4e5a8rhdg12at56tgbnef4ao8abvqr/512x384.jpg",
-      "thumbnailAlt": "Steel Advance \u2014 free online game",
+      "thumbnailAlt": "Steel Advance — free online game",
       "embedUrl": "https://html5.gamemonetize.co/7q4e5a8rhdg12at56tgbnef4ao8abvqr/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -5742,7 +6002,7 @@
         "racing"
       ],
       "thumbnail": "https://img.gamemonetize.com/9t3fhzfhaacnd8x0lpv37a9n3egsfxbf/512x384.jpg",
-      "thumbnailAlt": "Spike Rush \u2014 free online game",
+      "thumbnailAlt": "Spike Rush — free online game",
       "embedUrl": "https://html5.gamemonetize.co/9t3fhzfhaacnd8x0lpv37a9n3egsfxbf/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -5773,7 +6033,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/0n1c8zmzd6yt3117rprl0em2e758fwnb/512x384.jpg",
-      "thumbnailAlt": "Nuts Color Sorting Game \u2014 free online game",
+      "thumbnailAlt": "Nuts Color Sorting Game — free online game",
       "embedUrl": "https://html5.gamemonetize.co/0n1c8zmzd6yt3117rprl0em2e758fwnb/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -5806,7 +6066,7 @@
         "fun"
       ],
       "thumbnail": "https://img.gamemonetize.com/eg0ss1cre57lx3jzlns6bdcp5amw2vj3/512x384.jpg",
-      "thumbnailAlt": "Arrow Swipe Game \u2014 free online game",
+      "thumbnailAlt": "Arrow Swipe Game — free online game",
       "embedUrl": "https://html5.gamemonetize.co/eg0ss1cre57lx3jzlns6bdcp5amw2vj3/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -5842,7 +6102,7 @@
         "girl"
       ],
       "thumbnail": "https://img.gamemonetize.com/izmuinch2qc0zhnuixx9gyo7okvoljj3/512x384.jpg",
-      "thumbnailAlt": "Battle For Kingdom \u2014 free online game",
+      "thumbnailAlt": "Battle For Kingdom — free online game",
       "embedUrl": "https://html5.gamemonetize.co/izmuinch2qc0zhnuixx9gyo7okvoljj3/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -5878,7 +6138,7 @@
         "fun"
       ],
       "thumbnail": "https://img.gamemonetize.com/z0qtf5j33xm32zfhs9tnyce84iq9oiqo/512x384.jpg",
-      "thumbnailAlt": "Game of Goose-2 \u2014 free online game",
+      "thumbnailAlt": "Game of Goose-2 — free online game",
       "embedUrl": "https://html5.gamemonetize.co/z0qtf5j33xm32zfhs9tnyce84iq9oiqo/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -5914,7 +6174,7 @@
         "girls"
       ],
       "thumbnail": "https://img.gamemonetize.com/ihthaxc6ge36jbq8yg6szal8sk4xvfwd/512x384.jpg",
-      "thumbnailAlt": "Dracula run \u2014 free online game",
+      "thumbnailAlt": "Dracula run — free online game",
       "embedUrl": "https://html5.gamemonetize.co/ihthaxc6ge36jbq8yg6szal8sk4xvfwd/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -5936,7 +6196,7 @@
       "id": "gm-srrt321m",
       "slug": "punch-champions",
       "title": "Punch Champions",
-      "description": "In BOXING HERO : PUNCH CHAMPIONS, fight 8 epic boxers in intense combats. Jab, cross, uppercut, use all possible tricks, give in all you have, but don\u2019t forget to dodge or you'll be KO. Punch-out all opponents, and win the world belt in this superb arcade game.",
+      "description": "In BOXING HERO : PUNCH CHAMPIONS, fight 8 epic boxers in intense combats. Jab, cross, uppercut, use all possible tricks, give in all you have, but don’t forget to dodge or you'll be KO. Punch-out all opponents, and win the world belt in this superb arcade game.",
       "shortDescription": "In BOXING HERO : PUNCH CHAMPIONS, fight 8 epic boxers in intense combats.",
       "category": "sports",
       "tags": [
@@ -5950,7 +6210,7 @@
         "kid"
       ],
       "thumbnail": "https://img.gamemonetize.com/srrt321m4vrngn2h6gg9bnt8t6govsxo/512x384.jpg",
-      "thumbnailAlt": "Punch Champions \u2014 free online game",
+      "thumbnailAlt": "Punch Champions — free online game",
       "embedUrl": "https://html5.gamemonetize.co/srrt321m4vrngn2h6gg9bnt8t6govsxo/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -5972,8 +6232,8 @@
       "id": "gm-p6r0udj0",
       "slug": "billy-the-kid-2",
       "title": "Billy The Kid-2",
-      "description": "Get ready to shoot cowboy, because it\u2019s time to deal with Billy the Kid and his gang of rascals. Those vermin are trying to take control of the city and if we want to be able to drink peacefully in the saloon, we are going to have to make them understand who\u2019s the sheriff in this town\u2026 which is you in fact so your are the one who\u2019s doing the shooting part. While you\u2019re at it, if you could save the daughter of the mayor and avoid shooting civilian, that would be nice.",
-      "shortDescription": "Get ready to shoot cowboy, because it\u2019s time to deal with Billy the Kid and his gang of rascals.",
+      "description": "Get ready to shoot cowboy, because it’s time to deal with Billy the Kid and his gang of rascals. Those vermin are trying to take control of the city and if we want to be able to drink peacefully in the saloon, we are going to have to make them understand who’s the sheriff in this town… which is you in fact so your are the one who’s doing the shooting part. While you’re at it, if you could save the daughter of the mayor and avoid shooting civilian, that would be nice.",
+      "shortDescription": "Get ready to shoot cowboy, because it’s time to deal with Billy the Kid and his gang of rascals.",
       "category": "action",
       "tags": [
         "action",
@@ -5986,7 +6246,7 @@
         "killing"
       ],
       "thumbnail": "https://img.gamemonetize.com/p6r0udj0rezn7ee19qzacga9yl7l1wzq/512x384.jpg",
-      "thumbnailAlt": "Billy The Kid-2 \u2014 free online game",
+      "thumbnailAlt": "Billy The Kid-2 — free online game",
       "embedUrl": "https://html5.gamemonetize.co/p6r0udj0rezn7ee19qzacga9yl7l1wzq/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -6019,7 +6279,7 @@
         "sorting"
       ],
       "thumbnail": "https://img.gamemonetize.com/nijmk0kzyqgls4iarr10d4m9scmg2k98/512x384.jpg",
-      "thumbnailAlt": "Goods Sort \u2014 free online game",
+      "thumbnailAlt": "Goods Sort — free online game",
       "embedUrl": "https://html5.gamemonetize.co/nijmk0kzyqgls4iarr10d4m9scmg2k98/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -6053,7 +6313,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/raah22u3hz6nwjtwy4a184bqk2fosukb/512x384.jpg",
-      "thumbnailAlt": "Cloud Hopper \u2014 free online game",
+      "thumbnailAlt": "Cloud Hopper — free online game",
       "embedUrl": "https://html5.gamemonetize.co/raah22u3hz6nwjtwy4a184bqk2fosukb/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -6089,14 +6349,14 @@
         "spaceship"
       ],
       "thumbnail": "https://img.gamemonetize.com/xq5bk34wodk6p684qhpchyqbbtw5anse/512x384.jpg",
-      "thumbnailAlt": "Space Rover \u2014 free online game",
+      "thumbnailAlt": "Space Rover — free online game",
       "embedUrl": "https://html5.gamemonetize.co/xq5bk34wodk6p684qhpchyqbbtw5anse/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "4/3",
       "featured": false,
       "plays": 71304,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "W Arrow Up mdash Drive S Arrow Down mdash Brake Reverse A D mdash Steer Left Right SHIFT mdash Boost Nitro SPACE mdash Brake Lock C mdash Switch Camera R mdash Reset Rover",
@@ -6121,7 +6381,7 @@
         "fight"
       ],
       "thumbnail": "https://img.gamemonetize.com/u4ozxxk5g2hqt0506safq7j5zefzce1n/512x384.jpg",
-      "thumbnailAlt": "Animal Boxing \u2014 free online game",
+      "thumbnailAlt": "Animal Boxing — free online game",
       "embedUrl": "https://html5.gamemonetize.co/u4ozxxk5g2hqt0506safq7j5zefzce1n/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -6155,7 +6415,7 @@
         "shooting"
       ],
       "thumbnail": "https://img.gamemonetize.com/ydtce6n2lgilszfuk7bl1cvs2png5tsw/512x384.jpg",
-      "thumbnailAlt": "Pixel Commando \u2014 free online game",
+      "thumbnailAlt": "Pixel Commando — free online game",
       "embedUrl": "https://html5.gamemonetize.co/ydtce6n2lgilszfuk7bl1cvs2png5tsw/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -6185,7 +6445,7 @@
         "worms"
       ],
       "thumbnail": "https://img.gamemonetize.com/tpiqd3n9w5dvzdfcngi1whaebcrsvab6/512x384.jpg",
-      "thumbnailAlt": "Shell Strikers 1 \u2014 free online game",
+      "thumbnailAlt": "Shell Strikers 1 — free online game",
       "embedUrl": "https://html5.gamemonetize.co/tpiqd3n9w5dvzdfcngi1whaebcrsvab6/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -6221,7 +6481,7 @@
         "race"
       ],
       "thumbnail": "https://img.gamemonetize.com/831mmgpd6esv8e8q9cr5ul5kp2nx0pd6/512x384.jpg",
-      "thumbnailAlt": "Morph Racers \u2014 free online game",
+      "thumbnailAlt": "Morph Racers — free online game",
       "embedUrl": "https://html5.gamemonetize.co/831mmgpd6esv8e8q9cr5ul5kp2nx0pd6/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -6257,7 +6517,7 @@
         "jumping"
       ],
       "thumbnail": "https://img.gamemonetize.com/rgeolikmb6ud41wkfj3hotromkio3myu/512x384.jpg",
-      "thumbnailAlt": "Dark Runner \u2014 free online game",
+      "thumbnailAlt": "Dark Runner — free online game",
       "embedUrl": "https://html5.gamemonetize.co/rgeolikmb6ud41wkfj3hotromkio3myu/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -6293,7 +6553,7 @@
         "mobile"
       ],
       "thumbnail": "https://img.gamemonetize.com/krnkfr4ejuo6auvrz1i79eas82n7nv08/512x384.jpg",
-      "thumbnailAlt": "Super Racing GT \u2014 free online game",
+      "thumbnailAlt": "Super Racing GT — free online game",
       "embedUrl": "https://html5.gamemonetize.co/krnkfr4ejuo6auvrz1i79eas82n7nv08/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -6329,7 +6589,7 @@
         "jumping"
       ],
       "thumbnail": "https://img.gamemonetize.com/zmmsiiwdj6u9fk4x4qu6v9tr40mmtbss/512x384.jpg",
-      "thumbnailAlt": "Stickman Army 2 \u2014 free online game",
+      "thumbnailAlt": "Stickman Army 2 — free online game",
       "embedUrl": "https://html5.gamemonetize.co/zmmsiiwdj6u9fk4x4qu6v9tr40mmtbss/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -6365,7 +6625,7 @@
         "funny"
       ],
       "thumbnail": "https://img.gamemonetize.com/rdsntktkho23afsptyo6d05jlet321vt/512x384.jpg",
-      "thumbnailAlt": "Stickman Fighter Training \u2014 free online game",
+      "thumbnailAlt": "Stickman Fighter Training — free online game",
       "embedUrl": "https://html5.gamemonetize.co/rdsntktkho23afsptyo6d05jlet321vt/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -6401,7 +6661,7 @@
         "logic"
       ],
       "thumbnail": "https://img.gamemonetize.com/vcp973s0omz5ektyrorkzxzk30y7v2f5/512x384.jpg",
-      "thumbnailAlt": "Tetricon Minimalism \u2014 free online game",
+      "thumbnailAlt": "Tetricon Minimalism — free online game",
       "embedUrl": "https://html5.gamemonetize.co/vcp973s0omz5ektyrorkzxzk30y7v2f5/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -6433,7 +6693,7 @@
         "girls"
       ],
       "thumbnail": "https://img.gamemonetize.com/fyo5pk2yiz34mwgiex6288zykf138dv8/512x384.jpg",
-      "thumbnailAlt": "Cute Craft Lab \u2014 free online game",
+      "thumbnailAlt": "Cute Craft Lab — free online game",
       "embedUrl": "https://html5.gamemonetize.co/fyo5pk2yiz34mwgiex6288zykf138dv8/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -6469,7 +6729,7 @@
         "multiplayer"
       ],
       "thumbnail": "https://img.gamemonetize.com/04t5e3o75gx15osfi4l16bv00b2m7rl1/512x384.jpg",
-      "thumbnailAlt": "Fishy Feast \u2014 free online game",
+      "thumbnailAlt": "Fishy Feast — free online game",
       "embedUrl": "https://html5.gamemonetize.co/04t5e3o75gx15osfi4l16bv00b2m7rl1/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -6501,7 +6761,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/qevihhzihsfuigzvzg8m0n6yywy0gekc/512x384.jpg",
-      "thumbnailAlt": "FindTheDifferent \u2014 free online game",
+      "thumbnailAlt": "FindTheDifferent — free online game",
       "embedUrl": "https://html5.gamemonetize.co/qevihhzihsfuigzvzg8m0n6yywy0gekc/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -6537,14 +6797,14 @@
         "mind"
       ],
       "thumbnail": "https://img.gamemonetize.com/38zhf4fnds95r8xgmj3v2dn17zibgepc/512x384.jpg",
-      "thumbnailAlt": "Tile Hill Descent \u2014 free online game",
+      "thumbnailAlt": "Tile Hill Descent — free online game",
       "embedUrl": "https://html5.gamemonetize.co/38zhf4fnds95r8xgmj3v2dn17zibgepc/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "1/1",
       "featured": false,
       "plays": 6426,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "The emoji continuously bounces diagonally downward Tap to switch direction between left and right Land on tiles to keep descending safely Go as far as possible to achieve a high score",
@@ -6569,7 +6829,7 @@
         "card"
       ],
       "thumbnail": "https://img.gamemonetize.com/usceisycqm2lscyz38v8115ftml2s4fy/512x384.jpg",
-      "thumbnailAlt": "Triple Combo \u2014 free online game",
+      "thumbnailAlt": "Triple Combo — free online game",
       "embedUrl": "https://html5.gamemonetize.co/usceisycqm2lscyz38v8115ftml2s4fy/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -6599,7 +6859,7 @@
         "zombie"
       ],
       "thumbnail": "https://img.gamemonetize.com/w4oguacv97vmwgn6ksie9huzc3u721hi/512x384.jpg",
-      "thumbnailAlt": "Undead Shooter \u2014 free online game",
+      "thumbnailAlt": "Undead Shooter — free online game",
       "embedUrl": "https://html5.gamemonetize.co/w4oguacv97vmwgn6ksie9huzc3u721hi/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -6634,7 +6894,7 @@
         "unblockedgamesatschool"
       ],
       "thumbnail": "https://img.gamemonetize.com/tvjv6nj4yqy2ust03u54l9ek0g53nvui/512x384.jpg",
-      "thumbnailAlt": "Rocket Fuel Tycoon \u2014 free online game",
+      "thumbnailAlt": "Rocket Fuel Tycoon — free online game",
       "embedUrl": "https://html5.gamemonetize.co/tvjv6nj4yqy2ust03u54l9ek0g53nvui/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -6666,14 +6926,14 @@
         "matching"
       ],
       "thumbnail": "https://img.gamemonetize.com/9g5bi3ihzosg9yrxty43f4qytv0qpucr/512x384.jpg",
-      "thumbnailAlt": "Farm Animal Sort Puzzle \u2014 free online game",
+      "thumbnailAlt": "Farm Animal Sort Puzzle — free online game",
       "embedUrl": "https://html5.gamemonetize.co/9g5bi3ihzosg9yrxty43f4qytv0qpucr/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "1/1",
       "featured": false,
       "plays": 15164,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "Mouse click or tap to play",
@@ -6698,7 +6958,7 @@
         "sorting"
       ],
       "thumbnail": "https://img.gamemonetize.com/h55kn768i19pgkip4usrnrfghboclf9q/512x384.jpg",
-      "thumbnailAlt": "Goods Sorting Shopping Master 2 \u2014 free online game",
+      "thumbnailAlt": "Goods Sorting Shopping Master 2 — free online game",
       "embedUrl": "https://html5.gamemonetize.co/h55kn768i19pgkip4usrnrfghboclf9q/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -6731,7 +6991,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/9x8utbfbfngfonj2hgyhj177ggs9r0gr/512x384.jpg",
-      "thumbnailAlt": "Police Here \u2014 free online game",
+      "thumbnailAlt": "Police Here — free online game",
       "embedUrl": "https://html5.gamemonetize.co/9x8utbfbfngfonj2hgyhj177ggs9r0gr/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -6767,7 +7027,7 @@
         "machine"
       ],
       "thumbnail": "https://img.gamemonetize.com/og2m74ho3ajggl47n4gtsj9hhq1pjj79/512x384.jpg",
-      "thumbnailAlt": "Merge Factory Idle \u2014 free online game",
+      "thumbnailAlt": "Merge Factory Idle — free online game",
       "embedUrl": "https://html5.gamemonetize.co/og2m74ho3ajggl47n4gtsj9hhq1pjj79/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -6799,14 +7059,14 @@
         "tetris"
       ],
       "thumbnail": "https://img.gamemonetize.com/72djui35eoe7fo2wp8ltdo2ra6so2iix/512x384.jpg",
-      "thumbnailAlt": "Sand Blocks: Clear the Lines \u2014 free online game",
+      "thumbnailAlt": "Sand Blocks: Clear the Lines — free online game",
       "embedUrl": "https://html5.gamemonetize.co/72djui35eoe7fo2wp8ltdo2ra6so2iix/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "4/3",
       "featured": false,
       "plays": 7554,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "Your goal is to place or guide falling tetrominoes so they form sand lines or structures When enough sand fills a row or area it clears and gives you points Use boosters and bombs to control large sand piles and manage difficult situations You can con",
@@ -6833,14 +7093,14 @@
         "skill"
       ],
       "thumbnail": "https://img.gamemonetize.com/7101lwi19j9cicrhb2soic22wa92ew8p/512x384.jpg",
-      "thumbnailAlt": "Poop Away \u2014 free online game",
+      "thumbnailAlt": "Poop Away — free online game",
       "embedUrl": "https://html5.gamemonetize.co/7101lwi19j9cicrhb2soic22wa92ew8p/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "16/9",
       "featured": false,
       "plays": 9409,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "Mouse click or tap to playDesktop Click and drag to aim then release to launch Mobile Tap and drag to aim then release to launch",
@@ -6869,7 +7129,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/eb6fuew9429xcb4hj1q9bjqvwkzi5wzu/512x384.jpg",
-      "thumbnailAlt": "Color Pop Mania \u2014 free online game",
+      "thumbnailAlt": "Color Pop Mania — free online game",
       "embedUrl": "https://html5.gamemonetize.co/eb6fuew9429xcb4hj1q9bjqvwkzi5wzu/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -6901,7 +7161,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/jlspxaiqg2lz82h7pzne3jcdb9qy0ieh/512x384.jpg",
-      "thumbnailAlt": "Brain Train Puzzle Game \u2014 free online game",
+      "thumbnailAlt": "Brain Train Puzzle Game — free online game",
       "embedUrl": "https://html5.gamemonetize.co/jlspxaiqg2lz82h7pzne3jcdb9qy0ieh/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -6934,7 +7194,7 @@
         "matching"
       ],
       "thumbnail": "https://img.gamemonetize.com/ccnq2djkyktsdszzk69fyuezytdzsvro/512x384.jpg",
-      "thumbnailAlt": "Emoji Merge: Pop Frenzy \u2014 free online game",
+      "thumbnailAlt": "Emoji Merge: Pop Frenzy — free online game",
       "embedUrl": "https://html5.gamemonetize.co/ccnq2djkyktsdszzk69fyuezytdzsvro/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -6969,7 +7229,7 @@
         "word"
       ],
       "thumbnail": "https://img.gamemonetize.com/0njrzkkitzt7u8o1i78yekyatxkgtmev/512x384.jpg",
-      "thumbnailAlt": "Word Safari \u2014 free online game",
+      "thumbnailAlt": "Word Safari — free online game",
       "embedUrl": "https://html5.gamemonetize.co/0njrzkkitzt7u8o1i78yekyatxkgtmev/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -7001,7 +7261,7 @@
         "pixel"
       ],
       "thumbnail": "https://img.gamemonetize.com/shm2tov3b0k29xcqpmlgr6pf0djq2e8c/512x384.jpg",
-      "thumbnailAlt": "Pixel Flow 2 \u2014 free online game",
+      "thumbnailAlt": "Pixel Flow 2 — free online game",
       "embedUrl": "https://html5.gamemonetize.co/shm2tov3b0k29xcqpmlgr6pf0djq2e8c/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -7030,7 +7290,7 @@
         "1 player"
       ],
       "thumbnail": "https://img.gamemonetize.com/ym3rluctwaeh0mgo9agd7mzv2lgxabxy/512x384.jpg",
-      "thumbnailAlt": "Onet Puzzle \u2014 free online game",
+      "thumbnailAlt": "Onet Puzzle — free online game",
       "embedUrl": "https://html5.gamemonetize.co/ym3rluctwaeh0mgo9agd7mzv2lgxabxy/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -7066,7 +7326,7 @@
         "endless"
       ],
       "thumbnail": "https://img.gamemonetize.com/g3a0vux2of02fedynwoawswa5uqufj84/512x384.jpg",
-      "thumbnailAlt": "Mazes Draw The Path \u2014 free online game",
+      "thumbnailAlt": "Mazes Draw The Path — free online game",
       "embedUrl": "https://html5.gamemonetize.co/g3a0vux2of02fedynwoawswa5uqufj84/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -7098,7 +7358,7 @@
         "stack"
       ],
       "thumbnail": "https://img.gamemonetize.com/qxc5w4jz7hxfaj9i2r9o7li1slmvwt19/512x384.jpg",
-      "thumbnailAlt": "ChickZ Stack \u2014 free online game",
+      "thumbnailAlt": "ChickZ Stack — free online game",
       "embedUrl": "https://html5.gamemonetize.co/qxc5w4jz7hxfaj9i2r9o7li1slmvwt19/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -7130,7 +7390,7 @@
         "makeover"
       ],
       "thumbnail": "https://img.gamemonetize.com/24yl9usuemedm0qtq7gfulclrafbvcdm/512x384.jpg",
-      "thumbnailAlt": "Ayla World Avatar City \u2014 free online game",
+      "thumbnailAlt": "Ayla World Avatar City — free online game",
       "embedUrl": "https://html5.gamemonetize.co/24yl9usuemedm0qtq7gfulclrafbvcdm/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -7163,7 +7423,7 @@
         "match3"
       ],
       "thumbnail": "https://img.gamemonetize.com/17zke6h8fsxoco8167tql0cjcdx33qle/512x384.jpg",
-      "thumbnailAlt": "Magic Jewels Castle \u2014 free online game",
+      "thumbnailAlt": "Magic Jewels Castle — free online game",
       "embedUrl": "https://html5.gamemonetize.co/17zke6h8fsxoco8167tql0cjcdx33qle/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -7193,7 +7453,7 @@
         "hypercasual"
       ],
       "thumbnail": "https://img.gamemonetize.com/rrogzzfh00gw6e7h1ru7s64efs0t8kl7/512x384.jpg",
-      "thumbnailAlt": "Pop Frenzy Cannon Blast \u2014 free online game",
+      "thumbnailAlt": "Pop Frenzy Cannon Blast — free online game",
       "embedUrl": "https://html5.gamemonetize.co/rrogzzfh00gw6e7h1ru7s64efs0t8kl7/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -7228,7 +7488,7 @@
         "math"
       ],
       "thumbnail": "https://img.gamemonetize.com/tsa97y9kfv4620ba6h22f05ozk4k7xok/512x384.jpg",
-      "thumbnailAlt": "Solve or Suffer \u2014 free online game",
+      "thumbnailAlt": "Solve or Suffer — free online game",
       "embedUrl": "https://html5.gamemonetize.co/tsa97y9kfv4620ba6h22f05ozk4k7xok/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -7264,7 +7524,7 @@
         "road"
       ],
       "thumbnail": "https://img.gamemonetize.com/n3co5b02s1nwvo2ux6o1knl0tskamhrb/512x384.jpg",
-      "thumbnailAlt": "Crosswalk Chaos \u2014 free online game",
+      "thumbnailAlt": "Crosswalk Chaos — free online game",
       "embedUrl": "https://html5.gamemonetize.co/n3co5b02s1nwvo2ux6o1knl0tskamhrb/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -7295,7 +7555,7 @@
         "tetris"
       ],
       "thumbnail": "https://img.gamemonetize.com/yvapk21r7zv0306a1g3gag8p8hkazh1k/512x384.jpg",
-      "thumbnailAlt": "PIXEL DRIFT RETRO TETRIS \u2014 free online game",
+      "thumbnailAlt": "PIXEL DRIFT RETRO TETRIS — free online game",
       "embedUrl": "https://html5.gamemonetize.co/yvapk21r7zv0306a1g3gag8p8hkazh1k/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -7331,14 +7591,14 @@
         "nail"
       ],
       "thumbnail": "https://img.gamemonetize.com/q662za2h4ew3qlt2e3z9prb1gnsdwqln/512x384.jpg",
-      "thumbnailAlt": "Superhero Nails Makeover \u2014 free online game",
+      "thumbnailAlt": "Superhero Nails Makeover — free online game",
       "embedUrl": "https://html5.gamemonetize.co/q662za2h4ew3qlt2e3z9prb1gnsdwqln/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "4/3",
       "featured": false,
       "plays": 41748,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "Swipe and hold the left mouse button or tap to play",
@@ -7366,7 +7626,7 @@
         "roblox"
       ],
       "thumbnail": "https://img.gamemonetize.com/kp3t95t8xn73gqv7w8t7zz65crtdppy0/512x384.jpg",
-      "thumbnailAlt": "Roll or Fall \u2014 free online game",
+      "thumbnailAlt": "Roll or Fall — free online game",
       "embedUrl": "https://html5.gamemonetize.co/kp3t95t8xn73gqv7w8t7zz65crtdppy0/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -7402,14 +7662,14 @@
         "water"
       ],
       "thumbnail": "https://img.gamemonetize.com/jzr2qz9ccnrpru8iy0rhakfvsjykxo4k/512x384.jpg",
-      "thumbnailAlt": "SPLIT \u2014 free online game",
+      "thumbnailAlt": "SPLIT — free online game",
       "embedUrl": "https://html5.gamemonetize.co/jzr2qz9ccnrpru8iy0rhakfvsjykxo4k/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "4/3",
       "featured": false,
       "plays": 68117,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "Controls are straightforward On desktop use the Left and Right arrow keys or A and D to drift sideways and hold Spacebar to split your bubble On mobile tap and hold anywhere on screen to split and swipe or tilt your touch to navigate Press or tap o",
@@ -7438,7 +7698,7 @@
         "platform"
       ],
       "thumbnail": "https://img.gamemonetize.com/01orsjrbckcratc0m9lnkoqdt5mttb5b/512x384.jpg",
-      "thumbnailAlt": "Hopnova \u2014 free online game",
+      "thumbnailAlt": "Hopnova — free online game",
       "embedUrl": "https://html5.gamemonetize.co/01orsjrbckcratc0m9lnkoqdt5mttb5b/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -7474,7 +7734,7 @@
         "maze"
       ],
       "thumbnail": "https://img.gamemonetize.com/jgl9qn3meq496p7envd6kxdtl7l2dyrk/512x384.jpg",
-      "thumbnailAlt": "NeonRoll \u2014 free online game",
+      "thumbnailAlt": "NeonRoll — free online game",
       "embedUrl": "https://html5.gamemonetize.co/jgl9qn3meq496p7envd6kxdtl7l2dyrk/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -7505,7 +7765,7 @@
         "water"
       ],
       "thumbnail": "https://img.gamemonetize.com/rh9yiuehzwdskvcqir25s0oa2pe0zs00/512x384.jpg",
-      "thumbnailAlt": "FishFlip \u2014 free online game",
+      "thumbnailAlt": "FishFlip — free online game",
       "embedUrl": "https://html5.gamemonetize.co/rh9yiuehzwdskvcqir25s0oa2pe0zs00/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -7541,7 +7801,7 @@
         "mobile"
       ],
       "thumbnail": "https://img.gamemonetize.com/82tsbmpufkv1nu5e2lhf4no6uwihuc9y/512x384.jpg",
-      "thumbnailAlt": "Magic Coloring Book for Little Artists \u2014 free online game",
+      "thumbnailAlt": "Magic Coloring Book for Little Artists — free online game",
       "embedUrl": "https://html5.gamemonetize.co/82tsbmpufkv1nu5e2lhf4no6uwihuc9y/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -7573,14 +7833,14 @@
         "hypercasual"
       ],
       "thumbnail": "https://img.gamemonetize.com/gvhmyjbpbwl5w5aqpr5bah8xjeh7cnjv/512x384.jpg",
-      "thumbnailAlt": "Antistress   relaxation toys Mini Games \u2014 free online game",
+      "thumbnailAlt": "Antistress   relaxation toys Mini Games — free online game",
       "embedUrl": "https://html5.gamemonetize.co/gvhmyjbpbwl5w5aqpr5bah8xjeh7cnjv/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "4/3",
       "featured": false,
       "plays": 18662,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "use mouse and keyboard controls",
@@ -7608,7 +7868,7 @@
         "space"
       ],
       "thumbnail": "https://img.gamemonetize.com/skq5w0gwq9coozmm0spmn6r92ayjo0gj/512x384.jpg",
-      "thumbnailAlt": "Orbit Tap Rush   One Tap Game \u2014 free online game",
+      "thumbnailAlt": "Orbit Tap Rush   One Tap Game — free online game",
       "embedUrl": "https://html5.gamemonetize.co/skq5w0gwq9coozmm0spmn6r92ayjo0gj/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -7642,7 +7902,7 @@
         "snake"
       ],
       "thumbnail": "https://img.gamemonetize.com/x6zhl44u5cjsovf3yai77l9zgt6kfnrh/512x384.jpg",
-      "thumbnailAlt": "Geometry Snake \u2014 free online game",
+      "thumbnailAlt": "Geometry Snake — free online game",
       "embedUrl": "https://html5.gamemonetize.co/x6zhl44u5cjsovf3yai77l9zgt6kfnrh/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -7675,7 +7935,7 @@
         "jumping"
       ],
       "thumbnail": "https://img.gamemonetize.com/6cmeexyonhbwmtymr3w5q24ebphb4isu/512x384.jpg",
-      "thumbnailAlt": "BirdFlying \u2014 free online game",
+      "thumbnailAlt": "BirdFlying — free online game",
       "embedUrl": "https://html5.gamemonetize.co/6cmeexyonhbwmtymr3w5q24ebphb4isu/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -7707,7 +7967,7 @@
         "thief"
       ],
       "thumbnail": "https://img.gamemonetize.com/ta6wm53uvpvizef4515zrc4kdcjapqgh/512x384.jpg",
-      "thumbnailAlt": "Tunnel Heist \u2014 free online game",
+      "thumbnailAlt": "Tunnel Heist — free online game",
       "embedUrl": "https://html5.gamemonetize.co/ta6wm53uvpvizef4515zrc4kdcjapqgh/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -7739,7 +7999,7 @@
         "war"
       ],
       "thumbnail": "https://img.gamemonetize.com/j5adn527pxfr0qdx1gz6nepbhouheoiv/512x384.jpg",
-      "thumbnailAlt": "ZingAliens \u2014 free online game",
+      "thumbnailAlt": "ZingAliens — free online game",
       "embedUrl": "https://html5.gamemonetize.co/j5adn527pxfr0qdx1gz6nepbhouheoiv/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -7771,7 +8031,7 @@
         "casual"
       ],
       "thumbnail": "https://img.gamemonetize.com/jky2ccbui6itaxvfia0tms9bo0zorn48/512x384.jpg",
-      "thumbnailAlt": "HogHavoc \u2014 free online game",
+      "thumbnailAlt": "HogHavoc — free online game",
       "embedUrl": "https://html5.gamemonetize.co/jky2ccbui6itaxvfia0tms9bo0zorn48/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -7807,14 +8067,14 @@
         "html"
       ],
       "thumbnail": "https://img.gamemonetize.com/3z3sbbpqn85ujl25j6d9i9meqz7ukpvv/512x384.jpg",
-      "thumbnailAlt": "Crazy Lumberjack: Cut Them All \u2014 free online game",
+      "thumbnailAlt": "Crazy Lumberjack: Cut Them All — free online game",
       "embedUrl": "https://html5.gamemonetize.co/3z3sbbpqn85ujl25j6d9i9meqz7ukpvv/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "4/3",
       "featured": false,
       "plays": 59930,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "Use your mouse or finger to control the tractor and cut down trees You can switch to collecting mode to gather firewood Sell the wood and upgrade your tractor as you go",
@@ -7843,7 +8103,7 @@
         "crash"
       ],
       "thumbnail": "https://img.gamemonetize.com/doz6r9wbxylynd9wm0e7us3l4hnbi48o/512x384.jpg",
-      "thumbnailAlt": "Crazy Fast Food Crash \u2014 free online game",
+      "thumbnailAlt": "Crazy Fast Food Crash — free online game",
       "embedUrl": "https://html5.gamemonetize.co/doz6r9wbxylynd9wm0e7us3l4hnbi48o/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -7876,7 +8136,7 @@
         "fly"
       ],
       "thumbnail": "https://img.gamemonetize.com/7oftpghduw8433h7nk9i1tzprwv14dq7/512x384.jpg",
-      "thumbnailAlt": "Fly vs Giant \u2014 free online game",
+      "thumbnailAlt": "Fly vs Giant — free online game",
       "embedUrl": "https://html5.gamemonetize.co/7oftpghduw8433h7nk9i1tzprwv14dq7/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -7906,7 +8166,7 @@
         "king"
       ],
       "thumbnail": "https://img.gamemonetize.com/j0p9b0lsu6sb2ie9n0mciq64hwn0so59/512x384.jpg",
-      "thumbnailAlt": "SandGems \u2014 free online game",
+      "thumbnailAlt": "SandGems — free online game",
       "embedUrl": "https://html5.gamemonetize.co/j0p9b0lsu6sb2ie9n0mciq64hwn0so59/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -7938,7 +8198,7 @@
         "baby hazel"
       ],
       "thumbnail": "https://img.gamemonetize.com/o6k49dxjpsbwesebqd6o6gi6igydsqme/512x384.jpg",
-      "thumbnailAlt": "Baby Care Mommay Game \u2014 free online game",
+      "thumbnailAlt": "Baby Care Mommay Game — free online game",
       "embedUrl": "https://html5.gamemonetize.co/o6k49dxjpsbwesebqd6o6gi6igydsqme/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -7968,7 +8228,7 @@
         "number"
       ],
       "thumbnail": "https://img.gamemonetize.com/1bdzxyp9qoj84dyszujxllkt0zzkpt3n/512x384.jpg",
-      "thumbnailAlt": "Number Slide \u2014 free online game",
+      "thumbnailAlt": "Number Slide — free online game",
       "embedUrl": "https://html5.gamemonetize.co/1bdzxyp9qoj84dyszujxllkt0zzkpt3n/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -8003,7 +8263,7 @@
         "skill"
       ],
       "thumbnail": "https://img.gamemonetize.com/d96wlodem0r6r46zclxxgwyrlu7s73t1/512x384.jpg",
-      "thumbnailAlt": "Go Up Tap ZigZag Box Challenge \u2014 free online game",
+      "thumbnailAlt": "Go Up Tap ZigZag Box Challenge — free online game",
       "embedUrl": "https://html5.gamemonetize.co/d96wlodem0r6r46zclxxgwyrlu7s73t1/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -8039,7 +8299,7 @@
         "jump"
       ],
       "thumbnail": "https://img.gamemonetize.com/19sdynw6ubih1bwt9c76bsj9zurgh170/512x384.jpg",
-      "thumbnailAlt": "Drop Merge Fruit Characters \u2014 free online game",
+      "thumbnailAlt": "Drop Merge Fruit Characters — free online game",
       "embedUrl": "https://html5.gamemonetize.co/19sdynw6ubih1bwt9c76bsj9zurgh170/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -8070,7 +8330,7 @@
         "skill"
       ],
       "thumbnail": "https://img.gamemonetize.com/kzgg4cq1s0i8s2t0ed68pio88or5caim/512x384.jpg",
-      "thumbnailAlt": "UniPairs \u2014 free online game",
+      "thumbnailAlt": "UniPairs — free online game",
       "embedUrl": "https://html5.gamemonetize.co/kzgg4cq1s0i8s2t0ed68pio88or5caim/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -8106,7 +8366,7 @@
         "coloring"
       ],
       "thumbnail": "https://img.gamemonetize.com/81ln1c58lucnu0co9yqimrz4h7mrimce/512x384.jpg",
-      "thumbnailAlt": "Crazy Neon Square Rush \u2014 free online game",
+      "thumbnailAlt": "Crazy Neon Square Rush — free online game",
       "embedUrl": "https://html5.gamemonetize.co/81ln1c58lucnu0co9yqimrz4h7mrimce/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -8142,7 +8402,7 @@
         "funny"
       ],
       "thumbnail": "https://img.gamemonetize.com/7vtcduvq2xn03kfpl020pvj0ww7om2h2/512x384.jpg",
-      "thumbnailAlt": "CHROMASPIN \u2014 free online game",
+      "thumbnailAlt": "CHROMASPIN — free online game",
       "embedUrl": "https://html5.gamemonetize.co/7vtcduvq2xn03kfpl020pvj0ww7om2h2/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -8175,7 +8435,7 @@
         "swipe"
       ],
       "thumbnail": "https://img.gamemonetize.com/t7cxoc339947au0byb9jz46crkdj6p3t/512x384.jpg",
-      "thumbnailAlt": "Neon Switch \u2014 free online game",
+      "thumbnailAlt": "Neon Switch — free online game",
       "embedUrl": "https://html5.gamemonetize.co/t7cxoc339947au0byb9jz46crkdj6p3t/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -8209,7 +8469,7 @@
         "jump"
       ],
       "thumbnail": "https://img.gamemonetize.com/l0t4l08q7wex6y2l01cpdr0at0cudyap/512x384.jpg",
-      "thumbnailAlt": "Geometry Dash Cube Adventure \u2014 free online game",
+      "thumbnailAlt": "Geometry Dash Cube Adventure — free online game",
       "embedUrl": "https://html5.gamemonetize.co/l0t4l08q7wex6y2l01cpdr0at0cudyap/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -8241,7 +8501,7 @@
         "movie"
       ],
       "thumbnail": "https://img.gamemonetize.com/4vvhtynbh90lnwmtiy9pjyvj3zwl7uxy/512x384.jpg",
-      "thumbnailAlt": "Car Move Game \u2014 free online game",
+      "thumbnailAlt": "Car Move Game — free online game",
       "embedUrl": "https://html5.gamemonetize.co/4vvhtynbh90lnwmtiy9pjyvj3zwl7uxy/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -8272,7 +8532,7 @@
         "monster"
       ],
       "thumbnail": "https://img.gamemonetize.com/vg6cu73yscgkhfkuh57ulzb0r5mjbmgh/512x384.jpg",
-      "thumbnailAlt": "Digit Doom \u2014 free online game",
+      "thumbnailAlt": "Digit Doom — free online game",
       "embedUrl": "https://html5.gamemonetize.co/vg6cu73yscgkhfkuh57ulzb0r5mjbmgh/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -8304,7 +8564,7 @@
         "skill"
       ],
       "thumbnail": "https://img.gamemonetize.com/5qln8gtopz34c9liu2h9h7tsqikjxayt/512x384.jpg",
-      "thumbnailAlt": "Mythiq \u2014 free online game",
+      "thumbnailAlt": "Mythiq — free online game",
       "embedUrl": "https://html5.gamemonetize.co/5qln8gtopz34c9liu2h9h7tsqikjxayt/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -8340,7 +8600,7 @@
         "jumping"
       ],
       "thumbnail": "https://img.gamemonetize.com/xx6c12ib4b18r0xx8gt4jhg9kriltsjt/512x384.jpg",
-      "thumbnailAlt": "Run Mario Run \u2014 free online game",
+      "thumbnailAlt": "Run Mario Run — free online game",
       "embedUrl": "https://html5.gamemonetize.co/xx6c12ib4b18r0xx8gt4jhg9kriltsjt/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -8372,7 +8632,7 @@
         "memory"
       ],
       "thumbnail": "https://img.gamemonetize.com/d0s7yaqs961ls3owrzqy339vtvwbyxmq/512x384.jpg",
-      "thumbnailAlt": "PairScape \u2014 free online game",
+      "thumbnailAlt": "PairScape — free online game",
       "embedUrl": "https://html5.gamemonetize.co/d0s7yaqs961ls3owrzqy339vtvwbyxmq/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -8403,14 +8663,14 @@
         "hypercasual"
       ],
       "thumbnail": "https://img.gamemonetize.com/fnh4fmpaodixj4amaddmksr1r97ma0g5/512x384.jpg",
-      "thumbnailAlt": "How High \u2014 free online game",
+      "thumbnailAlt": "How High — free online game",
       "embedUrl": "https://html5.gamemonetize.co/fnh4fmpaodixj4amaddmksr1r97ma0g5/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "4/3",
       "featured": false,
       "plays": 69627,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "Mouse swipe or Swipe to play",
@@ -8434,7 +8694,7 @@
         "swipe"
       ],
       "thumbnail": "https://img.gamemonetize.com/1kei87mxhcff1ootx55gnsfrbu0j67ut/512x384.jpg",
-      "thumbnailAlt": "Swipe Box Physics Arcade Game \u2014 free online game",
+      "thumbnailAlt": "Swipe Box Physics Arcade Game — free online game",
       "embedUrl": "https://html5.gamemonetize.co/1kei87mxhcff1ootx55gnsfrbu0j67ut/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -8470,7 +8730,7 @@
         "mobile"
       ],
       "thumbnail": "https://img.gamemonetize.com/8a5s94i50250nks9653hbcp8zayylkey/512x384.jpg",
-      "thumbnailAlt": "Gliding over Dunes \u2014 free online game",
+      "thumbnailAlt": "Gliding over Dunes — free online game",
       "embedUrl": "https://html5.gamemonetize.co/8a5s94i50250nks9653hbcp8zayylkey/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -8502,7 +8762,7 @@
         "casual"
       ],
       "thumbnail": "https://img.gamemonetize.com/b5pjnykwobonj07j3md9jydtb2elqvu4/512x384.jpg",
-      "thumbnailAlt": "Tilt It Addictive Arcade Skill Game \u2014 free online game",
+      "thumbnailAlt": "Tilt It Addictive Arcade Skill Game — free online game",
       "embedUrl": "https://html5.gamemonetize.co/b5pjnykwobonj07j3md9jydtb2elqvu4/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -8534,7 +8794,7 @@
         "girls"
       ],
       "thumbnail": "https://img.gamemonetize.com/6mtbxhbdm760ge7ur1cewuefkz8p5vim/512x384.jpg",
-      "thumbnailAlt": "Bridge Cleaner Runner Game \u2014 free online game",
+      "thumbnailAlt": "Bridge Cleaner Runner Game — free online game",
       "embedUrl": "https://html5.gamemonetize.co/6mtbxhbdm760ge7ur1cewuefkz8p5vim/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -8566,7 +8826,7 @@
         "hypercasual"
       ],
       "thumbnail": "https://img.gamemonetize.com/twor2ll47z2aqyn5xlhl8gavr6qwhrcx/512x384.jpg",
-      "thumbnailAlt": "Antistress   relaxation toys \u2014 free online game",
+      "thumbnailAlt": "Antistress   relaxation toys — free online game",
       "embedUrl": "https://html5.gamemonetize.co/twor2ll47z2aqyn5xlhl8gavr6qwhrcx/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -8598,7 +8858,7 @@
         "girls"
       ],
       "thumbnail": "https://img.gamemonetize.com/ajnl8savw2dtd900qjfah6lwarogmvcg/512x384.jpg",
-      "thumbnailAlt": "Blush Fashion Girl Room \u2014 free online game",
+      "thumbnailAlt": "Blush Fashion Girl Room — free online game",
       "embedUrl": "https://html5.gamemonetize.co/ajnl8savw2dtd900qjfah6lwarogmvcg/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -8631,7 +8891,7 @@
         "shoot"
       ],
       "thumbnail": "https://img.gamemonetize.com/8euymbb6petowjphgs3aax7be81qv1mo/512x384.jpg",
-      "thumbnailAlt": "Prism Pulse \u2014 free online game",
+      "thumbnailAlt": "Prism Pulse — free online game",
       "embedUrl": "https://html5.gamemonetize.co/8euymbb6petowjphgs3aax7be81qv1mo/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -8664,7 +8924,7 @@
         "survival"
       ],
       "thumbnail": "https://img.gamemonetize.com/h0yn15shfo0centrh5lpm45c2iun248s/512x384.jpg",
-      "thumbnailAlt": "Geometry Dash Stars \u2014 free online game",
+      "thumbnailAlt": "Geometry Dash Stars — free online game",
       "embedUrl": "https://html5.gamemonetize.co/h0yn15shfo0centrh5lpm45c2iun248s/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -8697,7 +8957,7 @@
         "hypercasual"
       ],
       "thumbnail": "https://img.gamemonetize.com/by6pcqjkgdyvn6jg4w58av40qpw3hfpe/512x384.jpg",
-      "thumbnailAlt": "Candy Maker Game \u2014 free online game",
+      "thumbnailAlt": "Candy Maker Game — free online game",
       "embedUrl": "https://html5.gamemonetize.co/by6pcqjkgdyvn6jg4w58av40qpw3hfpe/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -8733,14 +8993,14 @@
         "jelly"
       ],
       "thumbnail": "https://img.gamemonetize.com/locbzfgmt83yfatibjm1ery319o84q6b/512x384.jpg",
-      "thumbnailAlt": "Blob Merge \u2014 free online game",
+      "thumbnailAlt": "Blob Merge — free online game",
       "embedUrl": "https://html5.gamemonetize.co/locbzfgmt83yfatibjm1ery319o84q6b/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "4/3",
       "featured": false,
       "plays": 10171,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "PC mdash Use WASD or Arrow keys to move Mobile mdash Tap and hold anywhere on the screen then drag to move",
@@ -8765,7 +9025,7 @@
         "fun"
       ],
       "thumbnail": "https://img.gamemonetize.com/vfk8sdjfegxgh21ik6razbped9d7dndd/512x384.jpg",
-      "thumbnailAlt": "Amusement Park Tycoon Game \u2014 free online game",
+      "thumbnailAlt": "Amusement Park Tycoon Game — free online game",
       "embedUrl": "https://html5.gamemonetize.co/vfk8sdjfegxgh21ik6razbped9d7dndd/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -8797,7 +9057,7 @@
         "clicker"
       ],
       "thumbnail": "https://img.gamemonetize.com/0ucwyfpfuz3w70a7oqt457fpw7f51zvy/512x384.jpg",
-      "thumbnailAlt": "gravity shift space edition \u2014 free online game",
+      "thumbnailAlt": "gravity shift space edition — free online game",
       "embedUrl": "https://html5.gamemonetize.co/0ucwyfpfuz3w70a7oqt457fpw7f51zvy/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -8833,7 +9093,7 @@
         "minecraft"
       ],
       "thumbnail": "https://img.gamemonetize.com/tqjwr9k20es2xgcky9ct9m8t65qxdbj2/512x384.jpg",
-      "thumbnailAlt": "Idle Blocks Tycoon \u2014 free online game",
+      "thumbnailAlt": "Idle Blocks Tycoon — free online game",
       "embedUrl": "https://html5.gamemonetize.co/tqjwr9k20es2xgcky9ct9m8t65qxdbj2/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -8865,14 +9125,14 @@
         "endless"
       ],
       "thumbnail": "https://img.gamemonetize.com/j6z9mgbe7n12tuymdl0bi5tj2b6cm5zp/512x384.jpg",
-      "thumbnailAlt": "Earth Dunk Physics Arcade Game \u2014 free online game",
+      "thumbnailAlt": "Earth Dunk Physics Arcade Game — free online game",
       "embedUrl": "https://html5.gamemonetize.co/j6z9mgbe7n12tuymdl0bi5tj2b6cm5zp/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "1/1",
       "featured": false,
       "plays": 9683,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "Tap to control the Earth ball Aim carefully and dunk the Earth through the rings",
@@ -8894,7 +9154,7 @@
         "2d"
       ],
       "thumbnail": "https://img.gamemonetize.com/vsf88b8snzr58i4l3ofi50smfxor4o2r/512x384.jpg",
-      "thumbnailAlt": "Merge Animals \u2014 free online game",
+      "thumbnailAlt": "Merge Animals — free online game",
       "embedUrl": "https://html5.gamemonetize.co/vsf88b8snzr58i4l3ofi50smfxor4o2r/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -8926,7 +9186,7 @@
         "bounce"
       ],
       "thumbnail": "https://img.gamemonetize.com/fbrietx7ygdrsxdmu6nxsxphwnhq6vc7/512x384.jpg",
-      "thumbnailAlt": "Color Spin Puzzle \u2014 free online game",
+      "thumbnailAlt": "Color Spin Puzzle — free online game",
       "embedUrl": "https://html5.gamemonetize.co/fbrietx7ygdrsxdmu6nxsxphwnhq6vc7/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -8956,7 +9216,7 @@
         "adventure"
       ],
       "thumbnail": "https://img.gamemonetize.com/9b1kjwz4qya40ukb5s8fg9v27oh90jmb/512x384.jpg",
-      "thumbnailAlt": "Find the Intruder \u2014 free online game",
+      "thumbnailAlt": "Find the Intruder — free online game",
       "embedUrl": "https://html5.gamemonetize.co/9b1kjwz4qya40ukb5s8fg9v27oh90jmb/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -8985,7 +9245,7 @@
         "ski"
       ],
       "thumbnail": "https://img.gamemonetize.com/m8s2esn1r56013miafqgscnttn5upxzd/512x384.jpg",
-      "thumbnailAlt": "Skiing Downhill \u2014 free online game",
+      "thumbnailAlt": "Skiing Downhill — free online game",
       "embedUrl": "https://html5.gamemonetize.co/m8s2esn1r56013miafqgscnttn5upxzd/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -9015,14 +9275,14 @@
         "arcade"
       ],
       "thumbnail": "https://img.gamemonetize.com/zvyd5t1t4ap5xiidv1d7q2cw7frrpuqk/512x384.jpg",
-      "thumbnailAlt": "Endless Tunnel Run \u2014 free online game",
+      "thumbnailAlt": "Endless Tunnel Run — free online game",
       "embedUrl": "https://html5.gamemonetize.co/zvyd5t1t4ap5xiidv1d7q2cw7frrpuqk/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "4/3",
       "featured": false,
       "plays": 27794,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "is a fast 2D arcade endless runner colorful tunnel Test your reflexes",
@@ -9051,7 +9311,7 @@
         "run"
       ],
       "thumbnail": "https://img.gamemonetize.com/s5ifyoxh5ikobi6kelie0mqlnkotl5ib/512x384.jpg",
-      "thumbnailAlt": "Dino Game Unblocked \u2014 free online game",
+      "thumbnailAlt": "Dino Game Unblocked — free online game",
       "embedUrl": "https://html5.gamemonetize.co/s5ifyoxh5ikobi6kelie0mqlnkotl5ib/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -9080,7 +9340,7 @@
         "arcade"
       ],
       "thumbnail": "https://img.gamemonetize.com/1kfyksfch519ruwmky6frsyc7sx6d6rl/512x384.jpg",
-      "thumbnailAlt": "stellar dash \u2014 free online game",
+      "thumbnailAlt": "stellar dash — free online game",
       "embedUrl": "https://html5.gamemonetize.co/1kfyksfch519ruwmky6frsyc7sx6d6rl/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -9111,7 +9371,7 @@
         "drawing"
       ],
       "thumbnail": "https://img.gamemonetize.com/lpkk3oshakph2lsljw07cthymwkxk0vc/512x384.jpg",
-      "thumbnailAlt": "Draw Bridge Puzzle 2 \u2014 free online game",
+      "thumbnailAlt": "Draw Bridge Puzzle 2 — free online game",
       "embedUrl": "https://html5.gamemonetize.co/lpkk3oshakph2lsljw07cthymwkxk0vc/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -9144,14 +9404,14 @@
         "arcade"
       ],
       "thumbnail": "https://img.gamemonetize.com/ofogtc6oriyl247yrhv2runxb20vn9io/512x384.jpg",
-      "thumbnailAlt": "Night Loot Run \u2014 free online game",
+      "thumbnailAlt": "Night Loot Run — free online game",
       "embedUrl": "https://html5.gamemonetize.co/ofogtc6oriyl247yrhv2runxb20vn9io/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "4/3",
       "featured": false,
       "plays": 51440,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "Mouse click or tap to play",
@@ -9177,7 +9437,7 @@
         "arcade"
       ],
       "thumbnail": "https://img.gamemonetize.com/pl8gzye5iug5shfc8jx6a4x3gzt6gran/512x384.jpg",
-      "thumbnailAlt": "Star Breakout \u2014 free online game",
+      "thumbnailAlt": "Star Breakout — free online game",
       "embedUrl": "https://html5.gamemonetize.co/pl8gzye5iug5shfc8jx6a4x3gzt6gran/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -9213,7 +9473,7 @@
         "super"
       ],
       "thumbnail": "https://img.gamemonetize.com/nnk8pcs8cglrd59wycux2mmjvwjdna6h/512x384.jpg",
-      "thumbnailAlt": "candy tap world \u2014 free online game",
+      "thumbnailAlt": "candy tap world — free online game",
       "embedUrl": "https://html5.gamemonetize.co/nnk8pcs8cglrd59wycux2mmjvwjdna6h/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -9246,7 +9506,7 @@
         "spaceship"
       ],
       "thumbnail": "https://img.gamemonetize.com/zpvbbddwvqh1oljm9lgc156fb1kqohzy/512x384.jpg",
-      "thumbnailAlt": "War Space Defender \u2014 free online game",
+      "thumbnailAlt": "War Space Defender — free online game",
       "embedUrl": "https://html5.gamemonetize.co/zpvbbddwvqh1oljm9lgc156fb1kqohzy/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -9281,7 +9541,7 @@
         "survival"
       ],
       "thumbnail": "https://img.gamemonetize.com/87g2ud84ogwty2tam636h507juf5g2ws/512x384.jpg",
-      "thumbnailAlt": "Shape Shift Survival \u2014 free online game",
+      "thumbnailAlt": "Shape Shift Survival — free online game",
       "embedUrl": "https://html5.gamemonetize.co/87g2ud84ogwty2tam636h507juf5g2ws/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -9316,7 +9576,7 @@
         "webgl"
       ],
       "thumbnail": "https://img.gamemonetize.com/s4fcgpadzw8nfgqiede354iy6gys1p9m/512x384.jpg",
-      "thumbnailAlt": "Aqua Fish Rush \u2014 free online game",
+      "thumbnailAlt": "Aqua Fish Rush — free online game",
       "embedUrl": "https://html5.gamemonetize.co/s4fcgpadzw8nfgqiede354iy6gys1p9m/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -9348,7 +9608,7 @@
         "survival"
       ],
       "thumbnail": "https://img.gamemonetize.com/7rw9ll8efbvho5y5ga9zhcv92s95od0j/512x384.jpg",
-      "thumbnailAlt": "Colosseum Battle \u2014 free online game",
+      "thumbnailAlt": "Colosseum Battle — free online game",
       "embedUrl": "https://html5.gamemonetize.co/7rw9ll8efbvho5y5ga9zhcv92s95od0j/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -9380,7 +9640,7 @@
         "number"
       ],
       "thumbnail": "https://img.gamemonetize.com/pfq6zfqjtfe2ghlllurdbdm3618ke3t9/512x384.jpg",
-      "thumbnailAlt": "Digit Hunter \u2014 free online game",
+      "thumbnailAlt": "Digit Hunter — free online game",
       "embedUrl": "https://html5.gamemonetize.co/pfq6zfqjtfe2ghlllurdbdm3618ke3t9/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -9416,7 +9676,7 @@
         "point and click"
       ],
       "thumbnail": "https://img.gamemonetize.com/b2mu0m7nkeipo8oc38tdybm4qeudbo0g/512x384.jpg",
-      "thumbnailAlt": "Idle Factory Game Tycoon \u2014 free online game",
+      "thumbnailAlt": "Idle Factory Game Tycoon — free online game",
       "embedUrl": "https://html5.gamemonetize.co/b2mu0m7nkeipo8oc38tdybm4qeudbo0g/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -9451,7 +9711,7 @@
         "clicker"
       ],
       "thumbnail": "https://img.gamemonetize.com/vx8bws60g7pzct7o0r0izxb76ay4yogm/512x384.jpg",
-      "thumbnailAlt": "TRAP CURSOR \u2014 free online game",
+      "thumbnailAlt": "TRAP CURSOR — free online game",
       "embedUrl": "https://html5.gamemonetize.co/vx8bws60g7pzct7o0r0izxb76ay4yogm/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -9480,7 +9740,7 @@
         "casual"
       ],
       "thumbnail": "https://img.gamemonetize.com/jt5k4vhyfbpke8fdv1dpcivdwm4id0uo/512x384.jpg",
-      "thumbnailAlt": "Zig Zag Color \u2014 free online game",
+      "thumbnailAlt": "Zig Zag Color — free online game",
       "embedUrl": "https://html5.gamemonetize.co/jt5k4vhyfbpke8fdv1dpcivdwm4id0uo/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -9511,7 +9771,7 @@
         "clicker"
       ],
       "thumbnail": "https://img.gamemonetize.com/oi2wl66w5hi6xf77dfkfebjx1qn62p78/512x384.jpg",
-      "thumbnailAlt": "Balloon Buddies    Flat Edition \u2014 free online game",
+      "thumbnailAlt": "Balloon Buddies    Flat Edition — free online game",
       "embedUrl": "https://html5.gamemonetize.co/oi2wl66w5hi6xf77dfkfebjx1qn62p78/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -9542,7 +9802,7 @@
         "blocky"
       ],
       "thumbnail": "https://img.gamemonetize.com/dlnb4987u5ap9i4p8phnryzhuqulufa5/512x384.jpg",
-      "thumbnailAlt": "MetaStack \u2014 free online game",
+      "thumbnailAlt": "MetaStack — free online game",
       "embedUrl": "https://html5.gamemonetize.co/dlnb4987u5ap9i4p8phnryzhuqulufa5/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -9576,7 +9836,7 @@
         "timing"
       ],
       "thumbnail": "https://img.gamemonetize.com/4sq7lw5if1rq337i7wkq4c9ww11ox940/512x384.jpg",
-      "thumbnailAlt": "Hand Or Money \u2014 free online game",
+      "thumbnailAlt": "Hand Or Money — free online game",
       "embedUrl": "https://html5.gamemonetize.co/4sq7lw5if1rq337i7wkq4c9ww11ox940/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -9612,7 +9872,7 @@
         "idle"
       ],
       "thumbnail": "https://img.gamemonetize.com/ylbicwd30vva0awbilt3x3ryxjkg5v59/512x384.jpg",
-      "thumbnailAlt": "number merger \u2014 free online game",
+      "thumbnailAlt": "number merger — free online game",
       "embedUrl": "https://html5.gamemonetize.co/ylbicwd30vva0awbilt3x3ryxjkg5v59/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -9643,14 +9903,14 @@
         "survival"
       ],
       "thumbnail": "https://img.gamemonetize.com/54o8e31n5pikjwkpbotk09ffg09eluy1/512x384.jpg",
-      "thumbnailAlt": "Neon Pulse Arena \u2014 free online game",
+      "thumbnailAlt": "Neon Pulse Arena — free online game",
       "embedUrl": "https://html5.gamemonetize.co/54o8e31n5pikjwkpbotk09ffg09eluy1/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "4/3",
       "featured": false,
       "plays": 14398,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "Mouse Touch to move Avoid shapes Survive as long as possible",
@@ -9676,7 +9936,7 @@
         "monster"
       ],
       "thumbnail": "https://img.gamemonetize.com/i1rtpeo3qo7zryifwmr83hxtmouv2z9v/512x384.jpg",
-      "thumbnailAlt": "Cave Crusade \u2014 free online game",
+      "thumbnailAlt": "Cave Crusade — free online game",
       "embedUrl": "https://html5.gamemonetize.co/i1rtpeo3qo7zryifwmr83hxtmouv2z9v/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -9710,14 +9970,14 @@
         "logic"
       ],
       "thumbnail": "https://img.gamemonetize.com/y7slbqpvz04dac94kf770a7lpy76oz03/512x384.jpg",
-      "thumbnailAlt": "Fast Fruit Juice \u2014 free online game",
+      "thumbnailAlt": "Fast Fruit Juice — free online game",
       "embedUrl": "https://html5.gamemonetize.co/y7slbqpvz04dac94kf770a7lpy76oz03/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "4/3",
       "featured": false,
       "plays": 10542,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "Mouse click or tap to play",
@@ -9745,7 +10005,7 @@
         "noviolence"
       ],
       "thumbnail": "https://img.gamemonetize.com/ek2mqvg6azeayh1l3bwjkfdbzc2myesz/512x384.jpg",
-      "thumbnailAlt": "Raccoon Clicker \u2014 free online game",
+      "thumbnailAlt": "Raccoon Clicker — free online game",
       "embedUrl": "https://html5.gamemonetize.co/ek2mqvg6azeayh1l3bwjkfdbzc2myesz/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -9779,7 +10039,7 @@
         "timing"
       ],
       "thumbnail": "https://img.gamemonetize.com/9fmzaqn02wmdbvc4vmy8nfbkufkly271/512x384.jpg",
-      "thumbnailAlt": "Blow King \u2014 free online game",
+      "thumbnailAlt": "Blow King — free online game",
       "embedUrl": "https://html5.gamemonetize.co/9fmzaqn02wmdbvc4vmy8nfbkufkly271/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -9813,7 +10073,7 @@
         "shoot"
       ],
       "thumbnail": "https://img.gamemonetize.com/03tc5rchi1y4b1t9ieviywsstoimwohn/512x384.jpg",
-      "thumbnailAlt": "Frozen Race 3D \u2014 free online game",
+      "thumbnailAlt": "Frozen Race 3D — free online game",
       "embedUrl": "https://html5.gamemonetize.co/03tc5rchi1y4b1t9ieviywsstoimwohn/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -9849,7 +10109,7 @@
         "clicker"
       ],
       "thumbnail": "https://img.gamemonetize.com/iv0rr9mpq9q1de8da57me49fslkhtzdy/512x384.jpg",
-      "thumbnailAlt": "Ninja Poof \u2014 free online game",
+      "thumbnailAlt": "Ninja Poof — free online game",
       "embedUrl": "https://html5.gamemonetize.co/iv0rr9mpq9q1de8da57me49fslkhtzdy/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -9881,7 +10141,7 @@
         "space"
       ],
       "thumbnail": "https://img.gamemonetize.com/okleig3hu0svc45xwhme8vvnxi5bfij5/512x384.jpg",
-      "thumbnailAlt": "Idle Space Miner Tycoon \u2014 free online game",
+      "thumbnailAlt": "Idle Space Miner Tycoon — free online game",
       "embedUrl": "https://html5.gamemonetize.co/okleig3hu0svc45xwhme8vvnxi5bfij5/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -9912,7 +10172,7 @@
         "slot machine"
       ],
       "thumbnail": "https://img.gamemonetize.com/xdyftm223gh5010i1kh0620m39g4oxiy/512x384.jpg",
-      "thumbnailAlt": "Pinata Fiesta Slots \u2014 free online game",
+      "thumbnailAlt": "Pinata Fiesta Slots — free online game",
       "embedUrl": "https://html5.gamemonetize.co/xdyftm223gh5010i1kh0620m39g4oxiy/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -9948,7 +10208,7 @@
         "game"
       ],
       "thumbnail": "https://img.gamemonetize.com/8adxlj3n9i12qxlrs9dl91b3otpjbkhs/512x384.jpg",
-      "thumbnailAlt": "Musical Labubu: Make a Melody \u2014 free online game",
+      "thumbnailAlt": "Musical Labubu: Make a Melody — free online game",
       "embedUrl": "https://html5.gamemonetize.co/8adxlj3n9i12qxlrs9dl91b3otpjbkhs/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -9984,7 +10244,7 @@
         "ball"
       ],
       "thumbnail": "https://img.gamemonetize.com/zg27rg61nqjy6oaxt5puqpcn78g6q46a/512x384.jpg",
-      "thumbnailAlt": "Quiz Education \u2014 free online game",
+      "thumbnailAlt": "Quiz Education — free online game",
       "embedUrl": "https://html5.gamemonetize.co/zg27rg61nqjy6oaxt5puqpcn78g6q46a/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -10015,7 +10275,7 @@
         "quiz"
       ],
       "thumbnail": "https://img.gamemonetize.com/b30iow7uizs4aeyv9pjz928ph4ylgfiy/512x384.jpg",
-      "thumbnailAlt": "Solo Quiz ing \u2014 free online game",
+      "thumbnailAlt": "Solo Quiz ing — free online game",
       "embedUrl": "https://html5.gamemonetize.co/b30iow7uizs4aeyv9pjz928ph4ylgfiy/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -10048,7 +10308,7 @@
         "mobile"
       ],
       "thumbnail": "https://img.gamemonetize.com/3hh5z81ik1xz5o5epk7mpy6dtjtvwvma/512x384.jpg",
-      "thumbnailAlt": "Zippy Bird Game \u2014 free online game",
+      "thumbnailAlt": "Zippy Bird Game — free online game",
       "embedUrl": "https://html5.gamemonetize.co/3hh5z81ik1xz5o5epk7mpy6dtjtvwvma/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -10084,7 +10344,7 @@
         "rocket"
       ],
       "thumbnail": "https://img.gamemonetize.com/882isa4b37an4ap1p7dv7akabupe7awf/512x384.jpg",
-      "thumbnailAlt": "Rocket Adventure \u2014 free online game",
+      "thumbnailAlt": "Rocket Adventure — free online game",
       "embedUrl": "https://html5.gamemonetize.co/882isa4b37an4ap1p7dv7akabupe7awf/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -10120,7 +10380,7 @@
         "click"
       ],
       "thumbnail": "https://img.gamemonetize.com/urgeu3uta5umpjhn02ihyql5ouwc1hfq/512x384.jpg",
-      "thumbnailAlt": "Zippy Bird \u2014 free online game",
+      "thumbnailAlt": "Zippy Bird — free online game",
       "embedUrl": "https://html5.gamemonetize.co/urgeu3uta5umpjhn02ihyql5ouwc1hfq/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -10156,7 +10416,7 @@
         "mobile"
       ],
       "thumbnail": "https://img.gamemonetize.com/6b7ug211k0d8bv11s05fyb8qhm2hpaei/512x384.jpg",
-      "thumbnailAlt": "Alien Clicker Invaders \u2014 free online game",
+      "thumbnailAlt": "Alien Clicker Invaders — free online game",
       "embedUrl": "https://html5.gamemonetize.co/6b7ug211k0d8bv11s05fyb8qhm2hpaei/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -10188,7 +10448,7 @@
         "spaceship"
       ],
       "thumbnail": "https://img.gamemonetize.com/tf0cmqoj5s9s26jxbydpmjm3to76pncz/512x384.jpg",
-      "thumbnailAlt": "Cosmic Clicker \u2014 free online game",
+      "thumbnailAlt": "Cosmic Clicker — free online game",
       "embedUrl": "https://html5.gamemonetize.co/tf0cmqoj5s9s26jxbydpmjm3to76pncz/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -10219,7 +10479,7 @@
         "clicker"
       ],
       "thumbnail": "https://img.gamemonetize.com/dt780txhz9ncslrwuvqpyrbeit30ei9k/512x384.jpg",
-      "thumbnailAlt": "flappy climate \u2014 free online game",
+      "thumbnailAlt": "flappy climate — free online game",
       "embedUrl": "https://html5.gamemonetize.co/dt780txhz9ncslrwuvqpyrbeit30ei9k/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -10250,7 +10510,7 @@
         "idle"
       ],
       "thumbnail": "https://img.gamemonetize.com/aiht7jx9eiy1uvttc053mzub9cx1zzg4/512x384.jpg",
-      "thumbnailAlt": "BTC clicker \u2014 free online game",
+      "thumbnailAlt": "BTC clicker — free online game",
       "embedUrl": "https://html5.gamemonetize.co/aiht7jx9eiy1uvttc053mzub9cx1zzg4/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -10282,14 +10542,14 @@
         "mapi games"
       ],
       "thumbnail": "https://img.gamemonetize.com/zskepvf53bt5bcmcj8sah3xap3vxqk2f/512x384.jpg",
-      "thumbnailAlt": "Fun Farm For Kids \u2014 free online game",
+      "thumbnailAlt": "Fun Farm For Kids — free online game",
       "embedUrl": "https://html5.gamemonetize.co/zskepvf53bt5bcmcj8sah3xap3vxqk2f/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "4/3",
       "featured": false,
       "plays": 55422,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "Mouse click or tap to play",
@@ -10318,7 +10578,7 @@
         "fly"
       ],
       "thumbnail": "https://img.gamemonetize.com/yqabq4g5ci6bkf35yt7860k2dgn9wcsc/512x384.jpg",
-      "thumbnailAlt": "Flap Hero \u2014 free online game",
+      "thumbnailAlt": "Flap Hero — free online game",
       "embedUrl": "https://html5.gamemonetize.co/yqabq4g5ci6bkf35yt7860k2dgn9wcsc/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -10349,7 +10609,7 @@
         "turn based"
       ],
       "thumbnail": "https://img.gamemonetize.com/9lcuehhwrgc8h9oqr36mbcffhtsufrbz/512x384.jpg",
-      "thumbnailAlt": "Defeat The Witch \u2014 free online game",
+      "thumbnailAlt": "Defeat The Witch — free online game",
       "embedUrl": "https://html5.gamemonetize.co/9lcuehhwrgc8h9oqr36mbcffhtsufrbz/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -10380,7 +10640,7 @@
         "turn based"
       ],
       "thumbnail": "https://img.gamemonetize.com/86wql13clu8uezt2fx9fnl0ugslh85d1/512x384.jpg",
-      "thumbnailAlt": "ZombsmiS \u2014 free online game",
+      "thumbnailAlt": "ZombsmiS — free online game",
       "embedUrl": "https://html5.gamemonetize.co/86wql13clu8uezt2fx9fnl0ugslh85d1/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -10412,7 +10672,7 @@
         "brain"
       ],
       "thumbnail": "https://img.gamemonetize.com/upf7jow3akcirma7ysj1ku0j2m0vn4fi/512x384.jpg",
-      "thumbnailAlt": "tic tac toe html \u2014 free online game",
+      "thumbnailAlt": "tic tac toe html — free online game",
       "embedUrl": "https://html5.gamemonetize.co/upf7jow3akcirma7ysj1ku0j2m0vn4fi/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -10444,14 +10704,14 @@
         "clicker"
       ],
       "thumbnail": "https://img.gamemonetize.com/g57vca72wr68ebe46uz0t2hz5gdg7lem/512x384.jpg",
-      "thumbnailAlt": "gem clicker pro \u2014 free online game",
+      "thumbnailAlt": "gem clicker pro — free online game",
       "embedUrl": "https://html5.gamemonetize.co/g57vca72wr68ebe46uz0t2hz5gdg7lem/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "4/3",
       "featured": false,
       "plays": 14180,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "Basic Controls Primary Action Left Click or Tap on the central diamond to collect gems Each click awards gems based on your current click power Watch for visual effects and particle explosions with each successful click Game Interface Stats Panel Top",
@@ -10476,7 +10736,7 @@
         "pirate"
       ],
       "thumbnail": "https://img.gamemonetize.com/2hltbaf2wlgvs5ayr9z631t5812gj7yb/512x384.jpg",
-      "thumbnailAlt": "Skulls And Bombs \u2014 free online game",
+      "thumbnailAlt": "Skulls And Bombs — free online game",
       "embedUrl": "https://html5.gamemonetize.co/2hltbaf2wlgvs5ayr9z631t5812gj7yb/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -10507,7 +10767,7 @@
         "turn based"
       ],
       "thumbnail": "https://img.gamemonetize.com/rhcgv1e11i4b969i0me6m3hgxn99295d/512x384.jpg",
-      "thumbnailAlt": "Martial Artist \u2014 free online game",
+      "thumbnailAlt": "Martial Artist — free online game",
       "embedUrl": "https://html5.gamemonetize.co/rhcgv1e11i4b969i0me6m3hgxn99295d/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -10539,7 +10799,7 @@
         "point and click"
       ],
       "thumbnail": "https://img.gamemonetize.com/g7uysbgy2gxhui81qftkqyewt7rmdv0h/512x384.jpg",
-      "thumbnailAlt": "Bubble Pop Frenzy \u2014 free online game",
+      "thumbnailAlt": "Bubble Pop Frenzy — free online game",
       "embedUrl": "https://html5.gamemonetize.co/g7uysbgy2gxhui81qftkqyewt7rmdv0h/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -10573,7 +10833,7 @@
         "physics"
       ],
       "thumbnail": "https://img.gamemonetize.com/2er4hiizbdlsbszayxfnc0jyymxnawxe/512x384.jpg",
-      "thumbnailAlt": "Physical Ball \u2014 free online game",
+      "thumbnailAlt": "Physical Ball — free online game",
       "embedUrl": "https://html5.gamemonetize.co/2er4hiizbdlsbszayxfnc0jyymxnawxe/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -10605,7 +10865,7 @@
         "monster"
       ],
       "thumbnail": "https://img.gamemonetize.com/2fv0ll1x7y0tpbax9wv27skdijx8nxs1/512x384.jpg",
-      "thumbnailAlt": "Mysterious Familiars Enchanted Bestiary \u2014 free online game",
+      "thumbnailAlt": "Mysterious Familiars Enchanted Bestiary — free online game",
       "embedUrl": "https://html5.gamemonetize.co/2fv0ll1x7y0tpbax9wv27skdijx8nxs1/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -10641,7 +10901,7 @@
         "quest"
       ],
       "thumbnail": "https://img.gamemonetize.com/kquj0hb1ll5vfxjkkmfrnunez1kaxqbp/512x384.jpg",
-      "thumbnailAlt": "Block Breaker: Miner Quest \u2014 free online game",
+      "thumbnailAlt": "Block Breaker: Miner Quest — free online game",
       "embedUrl": "https://html5.gamemonetize.co/kquj0hb1ll5vfxjkkmfrnunez1kaxqbp/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -10674,7 +10934,7 @@
         "turn based"
       ],
       "thumbnail": "https://img.gamemonetize.com/k5gebrkgqyvki7du6k1d8hk2bozpdlo8/512x384.jpg",
-      "thumbnailAlt": "Slime Smile \u2014 free online game",
+      "thumbnailAlt": "Slime Smile — free online game",
       "embedUrl": "https://html5.gamemonetize.co/k5gebrkgqyvki7du6k1d8hk2bozpdlo8/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -10707,7 +10967,7 @@
         "naptech games"
       ],
       "thumbnail": "https://img.gamemonetize.com/so25mwq4jbenzxwlxfro8yvnecnvltix/512x384.jpg",
-      "thumbnailAlt": "Pick The Number \u2014 free online game",
+      "thumbnailAlt": "Pick The Number — free online game",
       "embedUrl": "https://html5.gamemonetize.co/so25mwq4jbenzxwlxfro8yvnecnvltix/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -10743,7 +11003,7 @@
         "tung tung tung sahur"
       ],
       "thumbnail": "https://img.gamemonetize.com/vwbavd1dr61w3y7h0ha3f5hsphef00vu/512x384.jpg",
-      "thumbnailAlt": "Tung Tung  Sahur \u2014 free online game",
+      "thumbnailAlt": "Tung Tung  Sahur — free online game",
       "embedUrl": "https://html5.gamemonetize.co/vwbavd1dr61w3y7h0ha3f5hsphef00vu/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -10776,7 +11036,7 @@
         "mapi games"
       ],
       "thumbnail": "https://img.gamemonetize.com/ynortnp159708cfngdw020e21mz7y8gk/512x384.jpg",
-      "thumbnailAlt": "Little Dentist For Kid \u2014 free online game",
+      "thumbnailAlt": "Little Dentist For Kid — free online game",
       "embedUrl": "https://html5.gamemonetize.co/ynortnp159708cfngdw020e21mz7y8gk/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -10812,7 +11072,7 @@
         "html5 games for your site"
       ],
       "thumbnail": "https://img.gamemonetize.com/pi59ob2e68whmfav5unp04fvph7m2dtq/512x384.jpg",
-      "thumbnailAlt": "Sprunki Final Adventure \u2014 free online game",
+      "thumbnailAlt": "Sprunki Final Adventure — free online game",
       "embedUrl": "https://html5.gamemonetize.co/pi59ob2e68whmfav5unp04fvph7m2dtq/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -10843,7 +11103,7 @@
         "match-3"
       ],
       "thumbnail": "https://img.gamemonetize.com/kzrf9dx7zolud55vm1irqmqfwed1831c/512x384.jpg",
-      "thumbnailAlt": "Shell Swap Pro \u2014 free online game",
+      "thumbnailAlt": "Shell Swap Pro — free online game",
       "embedUrl": "https://html5.gamemonetize.co/kzrf9dx7zolud55vm1irqmqfwed1831c/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -10875,7 +11135,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/ep91f5duzfn2n5ogsquz79e7hpoek8ws/512x384.jpg",
-      "thumbnailAlt": "Classify \u2014 free online game",
+      "thumbnailAlt": "Classify — free online game",
       "embedUrl": "https://html5.gamemonetize.co/ep91f5duzfn2n5ogsquz79e7hpoek8ws/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -10906,14 +11166,14 @@
         "hypercasual"
       ],
       "thumbnail": "https://img.gamemonetize.com/ynkb6r6vdbuc5j2u6mx622uxorvuwccy/512x384.jpg",
-      "thumbnailAlt": "Bitcoin Crypto Tycoon \u2014 free online game",
+      "thumbnailAlt": "Bitcoin Crypto Tycoon — free online game",
       "embedUrl": "https://html5.gamemonetize.co/ynkb6r6vdbuc5j2u6mx622uxorvuwccy/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "4/3",
       "featured": false,
       "plays": 19947,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "Click n click you win when multiply factor changes",
@@ -10938,7 +11198,7 @@
         "sky"
       ],
       "thumbnail": "https://img.gamemonetize.com/qzx6zsjerkd3t8c55jwzx5hy7gcl9kjm/512x384.jpg",
-      "thumbnailAlt": "Icicle Run \u2014 free online game",
+      "thumbnailAlt": "Icicle Run — free online game",
       "embedUrl": "https://html5.gamemonetize.co/qzx6zsjerkd3t8c55jwzx5hy7gcl9kjm/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -10970,7 +11230,7 @@
         "weapons"
       ],
       "thumbnail": "https://img.gamemonetize.com/0fzijtg4os9ml71lmto25h1l1q2kjikq/512x384.jpg",
-      "thumbnailAlt": "Echoes of Bushido \u2014 free online game",
+      "thumbnailAlt": "Echoes of Bushido — free online game",
       "embedUrl": "https://html5.gamemonetize.co/0fzijtg4os9ml71lmto25h1l1q2kjikq/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -11001,14 +11261,14 @@
         "jump"
       ],
       "thumbnail": "https://img.gamemonetize.com/l2eukw1jrjnqtmposot6d4dmqtnr8lku/512x384.jpg",
-      "thumbnailAlt": "GeometryJump \u2014 free online game",
+      "thumbnailAlt": "GeometryJump — free online game",
       "embedUrl": "https://html5.gamemonetize.co/l2eukw1jrjnqtmposot6d4dmqtnr8lku/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
       "aspectRatio": "1/1",
       "featured": false,
       "plays": 59820,
-      "rating": 4.0,
+      "rating": 4,
       "releaseYear": 2024,
       "developer": "GameMonetize",
       "instructions": "Mouse click or tap to play",
@@ -11033,7 +11293,7 @@
         "hypercasual"
       ],
       "thumbnail": "https://img.gamemonetize.com/7iiy02z33u6fk19atrfe80gx7wkny4nt/512x384.jpg",
-      "thumbnailAlt": "Ghost Jump \u2014 free online game",
+      "thumbnailAlt": "Ghost Jump — free online game",
       "embedUrl": "https://html5.gamemonetize.co/7iiy02z33u6fk19atrfe80gx7wkny4nt/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -11065,7 +11325,7 @@
         "skills"
       ],
       "thumbnail": "https://img.gamemonetize.com/lbcm83t4ztup4jztu6ur7h2o8dqoa30k/512x384.jpg",
-      "thumbnailAlt": "Word Tangle \u2014 free online game",
+      "thumbnailAlt": "Word Tangle — free online game",
       "embedUrl": "https://html5.gamemonetize.co/lbcm83t4ztup4jztu6ur7h2o8dqoa30k/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -11096,7 +11356,7 @@
         "clicker"
       ],
       "thumbnail": "https://img.gamemonetize.com/ncqiptu7hxaj72x3ijlmp83kl9pbd7c4/512x384.jpg",
-      "thumbnailAlt": "Brainrot Clicker Game \u2014 free online game",
+      "thumbnailAlt": "Brainrot Clicker Game — free online game",
       "embedUrl": "https://html5.gamemonetize.co/ncqiptu7hxaj72x3ijlmp83kl9pbd7c4/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -11131,7 +11391,7 @@
         "rabbit"
       ],
       "thumbnail": "https://img.gamemonetize.com/xibm247w64szllpx1fuilkh4rwmlgvud/512x384.jpg",
-      "thumbnailAlt": "Bunny Jumpy \u2014 free online game",
+      "thumbnailAlt": "Bunny Jumpy — free online game",
       "embedUrl": "https://html5.gamemonetize.co/xibm247w64szllpx1fuilkh4rwmlgvud/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -11163,7 +11423,7 @@
         "run"
       ],
       "thumbnail": "https://img.gamemonetize.com/g71lnohdua7vzhb93czo8dn6ncoja0bc/512x384.jpg",
-      "thumbnailAlt": "Vovan Velocity \u2014 free online game",
+      "thumbnailAlt": "Vovan Velocity — free online game",
       "embedUrl": "https://html5.gamemonetize.co/g71lnohdua7vzhb93czo8dn6ncoja0bc/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -11194,7 +11454,7 @@
         "skills"
       ],
       "thumbnail": "https://img.gamemonetize.com/jvo3adnrbfs2shl9w6yrdeqrnjliojyr/512x384.jpg",
-      "thumbnailAlt": "Tiny Word Grid&amp;nbsp; \u2014 free online game",
+      "thumbnailAlt": "Tiny Word Grid&amp;nbsp; — free online game",
       "embedUrl": "https://html5.gamemonetize.co/jvo3adnrbfs2shl9w6yrdeqrnjliojyr/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -11225,7 +11485,7 @@
         "sky"
       ],
       "thumbnail": "https://img.gamemonetize.com/zlxzwe98miso16zowpaguqdupkhpqiaz/512x384.jpg",
-      "thumbnailAlt": "Twilight Trek \u2014 free online game",
+      "thumbnailAlt": "Twilight Trek — free online game",
       "embedUrl": "https://html5.gamemonetize.co/zlxzwe98miso16zowpaguqdupkhpqiaz/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -11256,7 +11516,7 @@
         "skill"
       ],
       "thumbnail": "https://img.gamemonetize.com/r1uxbjssy1w3s1g8zywmkgupxpdkw26k/512x384.jpg",
-      "thumbnailAlt": "Lowercase Loops \u2014 free online game",
+      "thumbnailAlt": "Lowercase Loops — free online game",
       "embedUrl": "https://html5.gamemonetize.co/r1uxbjssy1w3s1g8zywmkgupxpdkw26k/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -11288,7 +11548,7 @@
         "stack"
       ],
       "thumbnail": "https://img.gamemonetize.com/vfwkfj3y6a7n1yyx7894pqcyjpa2dk2p/512x384.jpg",
-      "thumbnailAlt": "Kitty Litter \u2014 free online game",
+      "thumbnailAlt": "Kitty Litter — free online game",
       "embedUrl": "https://html5.gamemonetize.co/vfwkfj3y6a7n1yyx7894pqcyjpa2dk2p/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -11318,7 +11578,7 @@
         "clicker"
       ],
       "thumbnail": "https://img.gamemonetize.com/geq5dovku57oke401v1sk7sx23rkzrj5/512x384.jpg",
-      "thumbnailAlt": "Crypto Detective Finder \u2014 free online game",
+      "thumbnailAlt": "Crypto Detective Finder — free online game",
       "embedUrl": "https://html5.gamemonetize.co/geq5dovku57oke401v1sk7sx23rkzrj5/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -11350,7 +11610,7 @@
         "quiz"
       ],
       "thumbnail": "https://img.gamemonetize.com/pkxwciwnmuvscqtcpq9z4360cqk6ib3f/512x384.jpg",
-      "thumbnailAlt": "The Hyperbolic Trivia Chamber \u2014 free online game",
+      "thumbnailAlt": "The Hyperbolic Trivia Chamber — free online game",
       "embedUrl": "https://html5.gamemonetize.co/pkxwciwnmuvscqtcpq9z4360cqk6ib3f/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -11381,7 +11641,7 @@
         "bird"
       ],
       "thumbnail": "https://img.gamemonetize.com/3pfhniq2exy97nw1jp07ehb5832l1adk/512x384.jpg",
-      "thumbnailAlt": "Angry Battle Birds Mania \u2014 free online game",
+      "thumbnailAlt": "Angry Battle Birds Mania — free online game",
       "embedUrl": "https://html5.gamemonetize.co/3pfhniq2exy97nw1jp07ehb5832l1adk/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -11414,7 +11674,7 @@
         "idle"
       ],
       "thumbnail": "https://img.gamemonetize.com/v2539kszysap1rx6vixdrl9v25aatj3w/512x384.jpg",
-      "thumbnailAlt": "dogecoin clicker \u2014 free online game",
+      "thumbnailAlt": "dogecoin clicker — free online game",
       "embedUrl": "https://html5.gamemonetize.co/v2539kszysap1rx6vixdrl9v25aatj3w/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -11450,7 +11710,7 @@
         "puzzle"
       ],
       "thumbnail": "https://img.gamemonetize.com/ktcp5ggni1njw270cohcqhr2qx8h8am5/512x384.jpg",
-      "thumbnailAlt": "Baby Dino Planet \u2014 free online game",
+      "thumbnailAlt": "Baby Dino Planet — free online game",
       "embedUrl": "https://html5.gamemonetize.co/ktcp5ggni1njw270cohcqhr2qx8h8am5/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -11486,7 +11746,7 @@
         "fighting"
       ],
       "thumbnail": "https://img.gamemonetize.com/yoxy6vzt9nu1h0uqzgngm8a9vht6fgjk/512x384.jpg",
-      "thumbnailAlt": "The Best Warrior \u2014 free online game",
+      "thumbnailAlt": "The Best Warrior — free online game",
       "embedUrl": "https://html5.gamemonetize.co/yoxy6vzt9nu1h0uqzgngm8a9vht6fgjk/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -11518,7 +11778,7 @@
         "quiz"
       ],
       "thumbnail": "https://img.gamemonetize.com/ys8sy6t84keayfz8sig4lw1oliew06wa/512x384.jpg",
-      "thumbnailAlt": "Dragon Ball Trivia Showdown \u2014 free online game",
+      "thumbnailAlt": "Dragon Ball Trivia Showdown — free online game",
       "embedUrl": "https://html5.gamemonetize.co/ys8sy6t84keayfz8sig4lw1oliew06wa/",
       "embedType": "gamemonetize",
       "source": "GameMonetize",
@@ -11552,7 +11812,7 @@
         "classic"
       ],
       "thumbnail": "https://gabrielecirulli.github.io/2048/meta/og_image.png",
-      "thumbnailAlt": "2048 \u2014 free number puzzle game",
+      "thumbnailAlt": "2048 — free number puzzle game",
       "embedUrl": "https://gabrielecirulli.github.io/2048/",
       "embedType": "other",
       "source": "Open Source",
@@ -11575,7 +11835,7 @@
       "slug": "hexgl",
       "title": "HexGL",
       "description": "A stunning futuristic racing game built with HTML5, WebGL and JavaScript. Race through neon-lit tracks at insane speeds in this open-source racing masterpiece. One of the most impressive browser games ever made.",
-      "shortDescription": "Futuristic WebGL racing game \u2014 no ads, stunning visuals.",
+      "shortDescription": "Futuristic WebGL racing game — no ads, stunning visuals.",
       "category": "racing",
       "tags": [
         "racing",
@@ -11586,7 +11846,7 @@
         "neon"
       ],
       "thumbnail": "https://hexgl.bkcore.com/image.png",
-      "thumbnailAlt": "HexGL \u2014 futuristic racing game",
+      "thumbnailAlt": "HexGL — futuristic racing game",
       "embedUrl": "https://hexgl.bkcore.com/play/",
       "embedType": "other",
       "source": "Open Source",
@@ -11608,8 +11868,8 @@
       "id": "free-wordl",
       "slug": "hello-wordl",
       "title": "Hello Wordl",
-      "description": "A fun and addictive word guessing game \u2014 guess the hidden word in 6 tries. Each guess reveals which letters are correct and in the right position. A clean, ad-free Wordle experience.",
-      "shortDescription": "Guess the hidden word in 6 tries \u2014 ad-free Wordle.",
+      "description": "A fun and addictive word guessing game — guess the hidden word in 6 tries. Each guess reveals which letters are correct and in the right position. A clean, ad-free Wordle experience.",
+      "shortDescription": "Guess the hidden word in 6 tries — ad-free Wordle.",
       "category": "puzzle",
       "tags": [
         "word",
@@ -11620,7 +11880,7 @@
         "daily"
       ],
       "thumbnail": "https://hellowordl.net/logo192.png",
-      "thumbnailAlt": "Hello Wordl \u2014 word guessing game",
+      "thumbnailAlt": "Hello Wordl — word guessing game",
       "embedUrl": "https://hellowordl.net",
       "embedType": "other",
       "source": "Open Source",
@@ -11653,7 +11913,7 @@
         "story"
       ],
       "thumbnail": "https://ncase.me/trust/social/thumbnail.png",
-      "thumbnailAlt": "The Evolution of Trust \u2014 interactive game theory",
+      "thumbnailAlt": "The Evolution of Trust — interactive game theory",
       "embedUrl": "https://ncase.me/trust/",
       "embedType": "other",
       "source": "Open Source",
@@ -11663,7 +11923,7 @@
       "rating": 4.9,
       "releaseYear": 2017,
       "developer": "Nicky Case",
-      "instructions": "Click to interact. Read through the story and make choices. No wrong answers \u2014 just explore and learn.",
+      "instructions": "Click to interact. Read through the story and make choices. No wrong answers — just explore and learn.",
       "relatedSlugs": [
         "minecraft-flappy-creeper",
         "boom-chain",
@@ -11676,7 +11936,7 @@
       "slug": "emberwind",
       "title": "Emberwind",
       "description": "A classic HTML5 canvas platformer adventure. Fight through waves of enemies, collect loot, and battle your way through challenging levels. One of the earliest and most impressive HTML5 games ever built.",
-      "shortDescription": "Classic HTML5 platformer \u2014 fight enemies and collect loot.",
+      "shortDescription": "Classic HTML5 platformer — fight enemies and collect loot.",
       "category": "adventure",
       "tags": [
         "platformer",
@@ -11686,7 +11946,7 @@
         "html5"
       ],
       "thumbnail": "https://operasoftware.github.io/Emberwind/icon_114x114.png",
-      "thumbnailAlt": "Emberwind \u2014 HTML5 platformer game",
+      "thumbnailAlt": "Emberwind — HTML5 platformer game",
       "embedUrl": "https://operasoftware.github.io/Emberwind/",
       "embedType": "other",
       "source": "Open Source",

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flappy Block</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0f0f1a;
+    color: #fff;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    touch-action: none;
+  }
+  h1 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #8b5cf6, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+  }
+  #gameCanvas {
+    border: 2px solid #7c3aed;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(124,58,237,0.4);
+    display: block;
+  }
+  .hint {
+    margin-top: 10px;
+    font-size: 0.72rem;
+    color: #6b7280;
+    letter-spacing: 1px;
+  }
+</style>
+</head>
+<body>
+<h1>Flappy Block</h1>
+<canvas id="gameCanvas"></canvas>
+<div class="hint" id="hintText">Click or Space to start</div>
+
+<script>
+const canvas = document.getElementById('gameCanvas');
+const ctx = canvas.getContext('2d');
+const hintText = document.getElementById('hintText');
+
+const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+
+let W, H;
+function resize() {
+  const maxW = Math.min(window.innerWidth - 24, 360);
+  const maxH = Math.min(window.innerHeight - 130, 560);
+  W = maxW;
+  H = maxH;
+  canvas.width = W;
+  canvas.height = H;
+}
+resize();
+
+const BIRD_SIZE = 22;
+const GRAVITY = 0.45;
+const JUMP_VEL = -8.5;
+const PIPE_W = 52;
+const PIPE_GAP = 160;
+const PIPE_SPEED = 2.8;
+const PIPE_INTERVAL = 1500;
+
+let bird, pipes, score, highScore, state, lastPipe, animId, particles;
+// states: 'idle', 'playing', 'dead'
+
+highScore = parseInt(localStorage.getItem('flappy_hs') || '0');
+
+function initBird() {
+  bird = { x: W * 0.25, y: H / 2, vy: 0, angle: 0 };
+}
+
+function newGame() {
+  initBird();
+  pipes = [];
+  score = 0;
+  lastPipe = 0;
+  particles = [];
+  state = 'idle';
+}
+
+function jump() {
+  if (state === 'dead') { newGame(); return; }
+  if (state === 'idle') state = 'playing';
+  bird.vy = JUMP_VEL;
+  spawnParticles(bird.x, bird.y, '#8b5cf6', 6);
+}
+
+document.addEventListener('keydown', e => {
+  if (e.code === 'Space') { e.preventDefault(); jump(); }
+});
+canvas.addEventListener('click', jump);
+canvas.addEventListener('touchstart', e => { e.preventDefault(); jump(); }, { passive: false });
+
+function spawnPipe() {
+  const minY = H * 0.15;
+  const maxY = H * 0.75;
+  const topH = minY + Math.random() * (maxY - minY);
+  pipes.push({ x: W, topH, scored: false });
+}
+
+function spawnParticles(x, y, color, count) {
+  for (let i = 0; i < count; i++) {
+    particles.push({
+      x, y,
+      vx: (Math.random() - 0.5) * 5,
+      vy: (Math.random() - 0.5) * 5,
+      life: 1,
+      color,
+      r: 2 + Math.random() * 3
+    });
+  }
+}
+
+function update(now) {
+  if (state === 'playing') {
+    bird.vy += GRAVITY;
+    bird.y += bird.vy;
+    bird.angle = Math.min(Math.max(bird.vy * 3, -25), 70);
+
+    if (now - lastPipe > PIPE_INTERVAL) {
+      spawnPipe();
+      lastPipe = now;
+    }
+
+    for (let i = pipes.length - 1; i >= 0; i--) {
+      pipes[i].x -= PIPE_SPEED;
+
+      if (!pipes[i].scored && pipes[i].x + PIPE_W < bird.x) {
+        pipes[i].scored = true;
+        score++;
+        if (score > highScore) { highScore = score; localStorage.setItem('flappy_hs', highScore); }
+        spawnParticles(bird.x + BIRD_SIZE, bird.y, '#f472b6', 8);
+      }
+
+      const bx1 = bird.x - BIRD_SIZE/2 + 3, bx2 = bird.x + BIRD_SIZE/2 - 3;
+      const by1 = bird.y - BIRD_SIZE/2 + 3, by2 = bird.y + BIRD_SIZE/2 - 3;
+      const px1 = pipes[i].x, px2 = pipes[i].x + PIPE_W;
+      const topY2 = pipes[i].topH, botY1 = pipes[i].topH + PIPE_GAP;
+
+      if (bx2 > px1 && bx1 < px2) {
+        if (by1 < topY2 || by2 > botY1) { die(); return; }
+      }
+
+      if (pipes[i].x + PIPE_W < 0) pipes.splice(i, 1);
+    }
+
+    if (bird.y - BIRD_SIZE/2 < 0 || bird.y + BIRD_SIZE/2 > H) { die(); return; }
+  }
+
+  particles = particles.filter(p => {
+    p.x += p.vx; p.y += p.vy; p.vy += 0.15; p.life -= 0.04;
+    return p.life > 0;
+  });
+}
+
+function die() {
+  state = 'dead';
+  spawnParticles(bird.x, bird.y, '#f43f5e', 20);
+}
+
+function drawBg() {
+  ctx.fillStyle = '#0f0f1a';
+  ctx.fillRect(0, 0, W, H);
+
+  // stars
+  ctx.fillStyle = 'rgba(255,255,255,0.3)';
+  for (let i = 0; i < 40; i++) {
+    const sx = (i * 97 + 13) % W;
+    const sy = (i * 137 + 7) % H;
+    const r = (i % 3 === 0) ? 1.5 : 0.8;
+    ctx.beginPath(); ctx.arc(sx, sy, r, 0, Math.PI * 2); ctx.fill();
+  }
+}
+
+function drawPipes() {
+  for (const p of pipes) {
+    const grad1 = ctx.createLinearGradient(p.x, 0, p.x + PIPE_W, 0);
+    grad1.addColorStop(0, '#5b21b6');
+    grad1.addColorStop(0.5, '#7c3aed');
+    grad1.addColorStop(1, '#4c1d95');
+    ctx.fillStyle = grad1;
+
+    // top pipe
+    ctx.beginPath(); ctx.roundRect(p.x, 0, PIPE_W, p.topH, [0, 0, 8, 8]); ctx.fill();
+    // top cap
+    ctx.fillStyle = '#8b5cf6';
+    ctx.beginPath(); ctx.roundRect(p.x - 4, p.topH - 18, PIPE_W + 8, 18, [0, 0, 4, 4]); ctx.fill();
+
+    // bottom pipe
+    ctx.fillStyle = grad1;
+    const botY = p.topH + PIPE_GAP;
+    ctx.beginPath(); ctx.roundRect(p.x, botY, PIPE_W, H - botY, [8, 8, 0, 0]); ctx.fill();
+    // bottom cap
+    ctx.fillStyle = '#8b5cf6';
+    ctx.beginPath(); ctx.roundRect(p.x - 4, botY, PIPE_W + 8, 18, [4, 4, 0, 0]); ctx.fill();
+  }
+}
+
+function drawBird() {
+  ctx.save();
+  ctx.translate(bird.x, bird.y);
+  ctx.rotate(bird.angle * Math.PI / 180);
+  const grad = ctx.createLinearGradient(-BIRD_SIZE/2, -BIRD_SIZE/2, BIRD_SIZE/2, BIRD_SIZE/2);
+  grad.addColorStop(0, '#a855f7');
+  grad.addColorStop(1, '#7c3aed');
+  ctx.fillStyle = grad;
+  ctx.shadowColor = '#8b5cf6';
+  ctx.shadowBlur = 10;
+  ctx.beginPath();
+  ctx.roundRect(-BIRD_SIZE/2, -BIRD_SIZE/2, BIRD_SIZE, BIRD_SIZE, 6);
+  ctx.fill();
+  ctx.shadowBlur = 0;
+  // eye
+  ctx.fillStyle = '#fff';
+  ctx.beginPath(); ctx.arc(5, -4, 4, 0, Math.PI * 2); ctx.fill();
+  ctx.fillStyle = '#1a1a2e';
+  ctx.beginPath(); ctx.arc(6, -4, 2, 0, Math.PI * 2); ctx.fill();
+  // highlight
+  ctx.fillStyle = 'rgba(255,255,255,0.3)';
+  ctx.beginPath(); ctx.roundRect(-BIRD_SIZE/2 + 3, -BIRD_SIZE/2 + 3, 8, 5, 2); ctx.fill();
+  ctx.restore();
+}
+
+function drawParticles() {
+  for (const p of particles) {
+    ctx.globalAlpha = p.life;
+    ctx.fillStyle = p.color;
+    ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2); ctx.fill();
+  }
+  ctx.globalAlpha = 1;
+}
+
+function drawHUD() {
+  ctx.textAlign = 'center';
+  if (state === 'idle') {
+    ctx.fillStyle = 'rgba(15,15,26,0.7)';
+    ctx.fillRect(W/2 - 100, H/2 - 30, 200, 60);
+    ctx.strokeStyle = '#7c3aed';
+    ctx.lineWidth = 1.5;
+    ctx.strokeRect(W/2 - 100, H/2 - 30, 200, 60);
+    ctx.fillStyle = '#fff';
+    ctx.font = 'bold 18px Segoe UI';
+    ctx.fillText(isMobile ? 'Tap to Start' : 'Click or Space', W/2, H/2 - 5);
+    ctx.font = '13px Segoe UI';
+    ctx.fillStyle = '#8b5cf6';
+    ctx.fillText(`Best: ${highScore}`, W/2, H/2 + 18);
+    return;
+  }
+
+  // score
+  ctx.fillStyle = 'rgba(0,0,0,0.4)';
+  ctx.beginPath(); ctx.roundRect(W/2 - 40, 14, 80, 36, 8); ctx.fill();
+  ctx.fillStyle = '#fff';
+  ctx.font = 'bold 26px Segoe UI';
+  ctx.fillText(score, W/2, 40);
+
+  if (state === 'dead') {
+    ctx.fillStyle = 'rgba(15,15,26,0.85)';
+    ctx.fillRect(0, 0, W, H);
+    ctx.fillStyle = '#f43f5e';
+    ctx.font = 'bold 32px Segoe UI';
+    ctx.fillText('GAME OVER', W/2, H/2 - 55);
+    ctx.fillStyle = '#fff';
+    ctx.font = 'bold 20px Segoe UI';
+    ctx.fillText(`Score: ${score}`, W/2, H/2 - 15);
+    ctx.fillStyle = '#8b5cf6';
+    ctx.font = '16px Segoe UI';
+    ctx.fillText(`Best: ${highScore}`, W/2, H/2 + 15);
+    ctx.fillStyle = '#fff';
+    ctx.font = 'bold 15px Segoe UI';
+    ctx.fillText(isMobile ? 'Tap to Restart' : 'Click or Space to Restart', W/2, H/2 + 52);
+  }
+}
+
+let lastTime = 0;
+function loop(now = 0) {
+  update(now);
+  drawBg();
+  drawPipes();
+  drawParticles();
+  drawBird();
+  drawHUD();
+  animId = requestAnimationFrame(loop);
+}
+
+newGame();
+loop();
+</script>
+</body>
+</html>

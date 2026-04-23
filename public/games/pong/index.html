@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pong</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0f0f1a;
+    color: #fff;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    touch-action: none;
+  }
+  h1 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #8b5cf6, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+  }
+  #gameCanvas {
+    border: 2px solid #7c3aed;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(124,58,237,0.4);
+    display: block;
+  }
+  .hint { margin-top: 10px; font-size: 0.72rem; color: #6b7280; letter-spacing: 1px; }
+  #overlay {
+    position: fixed; inset: 0;
+    background: rgba(15,15,26,0.93);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    z-index: 10;
+  }
+  #overlay h2 {
+    font-size: 2.4rem; font-weight: 800; margin-bottom: 10px;
+    background: linear-gradient(135deg, #8b5cf6, #ec4899);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  #overlay p { color: #d1d5db; margin-bottom: 8px; font-size: 1rem; text-align: center; line-height: 1.6; }
+  .winner { font-size: 1.6rem; font-weight: 900; margin-bottom: 10px; }
+  .btn {
+    background: linear-gradient(135deg, #7c3aed, #8b5cf6);
+    color: #fff; border: none; padding: 13px 36px;
+    font-size: 0.95rem; font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase; border-radius: 8px; cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s;
+    box-shadow: 0 4px 20px rgba(124,58,237,0.5);
+    margin-top: 10px;
+  }
+  .btn:hover { transform: translateY(-2px); }
+</style>
+</head>
+<body>
+<h1>Pong</h1>
+<canvas id="gameCanvas"></canvas>
+<div class="hint">W/S or Mouse to move | First to 7 wins</div>
+
+<div id="overlay">
+  <h2>PONG</h2>
+  <p>You control the LEFT paddle.<br>First to 7 points wins!</p>
+  <button class="btn" id="startBtn">Start Game</button>
+</div>
+
+<script>
+const canvas = document.getElementById('gameCanvas');
+const ctx = canvas.getContext('2d');
+const overlay = document.getElementById('overlay');
+const startBtn = document.getElementById('startBtn');
+
+let W, H;
+function resize() {
+  const maxW = Math.min(window.innerWidth - 24, 640);
+  const maxH = Math.min(window.innerHeight - 120, 400);
+  W = maxW;
+  H = Math.round(maxW * 0.625);
+  if (H > maxH) { H = maxH; W = Math.round(maxH * 1.6); }
+  canvas.width = W;
+  canvas.height = H;
+}
+resize();
+
+const PW = 12, PH_BASE = 80;
+let PH;
+const WIN_SCORE = 7;
+const BALL_R = 7;
+const AI_MAX = 4.5;
+
+let player, ai, ball, pScore, aScore, keys, running, animId, particles;
+let touchY = null;
+
+function initGame() {
+  PH = Math.round(PH_BASE * (H / 400));
+  player = { x: 18, y: H / 2 - PH / 2, w: PW, h: PH, vy: 0 };
+  ai = { x: W - 18 - PW, y: H / 2 - PH / 2, w: PW, h: PH };
+  resetBall();
+  pScore = 0; aScore = 0;
+  keys = {};
+  particles = [];
+  running = true;
+}
+
+function resetBall(dir = 1) {
+  const spd = 4 + (pScore + aScore) * 0.1;
+  const angle = (Math.random() * 40 - 20) * Math.PI / 180;
+  ball = {
+    x: W / 2, y: H / 2,
+    vx: dir * spd * Math.cos(angle),
+    vy: spd * Math.sin(angle),
+    r: BALL_R,
+    speed: spd
+  };
+}
+
+function spawnParticles(x, y, color, n) {
+  for (let i = 0; i < n; i++) {
+    particles.push({
+      x, y,
+      vx: (Math.random() - 0.5) * 6,
+      vy: (Math.random() - 0.5) * 6,
+      life: 1, r: 2 + Math.random() * 3,
+      color
+    });
+  }
+}
+
+document.addEventListener('keydown', e => { keys[e.key] = true; });
+document.addEventListener('keyup', e => { keys[e.key] = false; });
+canvas.addEventListener('mousemove', e => {
+  const rect = canvas.getBoundingClientRect();
+  const my = e.clientY - rect.top;
+  player.y = my - player.h / 2;
+});
+canvas.addEventListener('touchmove', e => {
+  e.preventDefault();
+  const rect = canvas.getBoundingClientRect();
+  touchY = e.touches[0].clientY - rect.top;
+}, { passive: false });
+canvas.addEventListener('touchend', () => { touchY = null; });
+
+startBtn.addEventListener('click', () => {
+  overlay.style.display = 'none';
+  initGame();
+  if (animId) cancelAnimationFrame(animId);
+  loop();
+});
+
+function updatePlayer() {
+  if (touchY !== null) { player.y = touchY - player.h / 2; }
+  if (keys['w'] || keys['W'] || keys['ArrowUp']) player.y -= 6;
+  if (keys['s'] || keys['S'] || keys['ArrowDown']) player.y += 6;
+  player.y = Math.max(0, Math.min(H - player.h, player.y));
+}
+
+function updateAI() {
+  const target = ball.y - ai.h / 2;
+  const diff = target - ai.y;
+  const speed = Math.min(AI_MAX + (pScore + aScore) * 0.15, 7);
+  if (Math.abs(diff) < speed) ai.y = target;
+  else ai.y += Math.sign(diff) * speed;
+  ai.y = Math.max(0, Math.min(H - ai.h, ai.y));
+}
+
+function updateBall() {
+  ball.x += ball.vx;
+  ball.y += ball.vy;
+
+  // top/bottom
+  if (ball.y - ball.r < 0) { ball.y = ball.r; ball.vy = Math.abs(ball.vy); spawnParticles(ball.x, ball.r, '#a78bfa', 4); }
+  if (ball.y + ball.r > H) { ball.y = H - ball.r; ball.vy = -Math.abs(ball.vy); spawnParticles(ball.x, H - ball.r, '#a78bfa', 4); }
+
+  // player paddle
+  if (ball.vx < 0 &&
+      ball.x - ball.r < player.x + player.w &&
+      ball.y > player.y && ball.y < player.y + player.h) {
+    const rel = (ball.y - (player.y + player.h / 2)) / (player.h / 2);
+    const newSpd = Math.min(ball.speed + 0.4, 14);
+    const angle = rel * 60 * Math.PI / 180;
+    ball.vx = newSpd * Math.cos(angle);
+    ball.vy = newSpd * Math.sin(angle);
+    ball.speed = newSpd;
+    ball.x = player.x + player.w + ball.r;
+    spawnParticles(ball.x, ball.y, '#8b5cf6', 8);
+  }
+
+  // ai paddle
+  if (ball.vx > 0 &&
+      ball.x + ball.r > ai.x &&
+      ball.y > ai.y && ball.y < ai.y + ai.h) {
+    const rel = (ball.y - (ai.y + ai.h / 2)) / (ai.h / 2);
+    const newSpd = Math.min(ball.speed + 0.4, 14);
+    const angle = rel * 60 * Math.PI / 180;
+    ball.vx = -newSpd * Math.cos(angle);
+    ball.vy = newSpd * Math.sin(angle);
+    ball.speed = newSpd;
+    ball.x = ai.x - ball.r;
+    spawnParticles(ball.x, ball.y, '#ec4899', 8);
+  }
+
+  // scoring
+  if (ball.x + ball.r < 0) {
+    aScore++;
+    spawnParticles(0, ball.y, '#f43f5e', 16);
+    if (aScore >= WIN_SCORE) { endGame(false); return; }
+    setTimeout(() => resetBall(1), 600);
+    ball.x = W / 2; ball.y = H / 2; ball.vx = 0; ball.vy = 0;
+  }
+  if (ball.x - ball.r > W) {
+    pScore++;
+    spawnParticles(W, ball.y, '#4ade80', 16);
+    if (pScore >= WIN_SCORE) { endGame(true); return; }
+    setTimeout(() => resetBall(-1), 600);
+    ball.x = W / 2; ball.y = H / 2; ball.vx = 0; ball.vy = 0;
+  }
+}
+
+function updateParticles() {
+  particles = particles.filter(p => {
+    p.x += p.vx; p.y += p.vy; p.vy += 0.1; p.life -= 0.04;
+    return p.life > 0;
+  });
+}
+
+function draw() {
+  ctx.fillStyle = '#0f0f1a';
+  ctx.fillRect(0, 0, W, H);
+
+  // center line
+  ctx.setLineDash([8, 8]);
+  ctx.strokeStyle = 'rgba(124,58,237,0.3)';
+  ctx.lineWidth = 2;
+  ctx.beginPath(); ctx.moveTo(W / 2, 0); ctx.lineTo(W / 2, H); ctx.stroke();
+  ctx.setLineDash([]);
+
+  // scores
+  ctx.textAlign = 'center';
+  ctx.font = `bold ${Math.round(H * 0.18)}px Segoe UI`;
+  ctx.fillStyle = 'rgba(124,58,237,0.2)';
+  ctx.fillText(pScore, W / 4, H * 0.55);
+  ctx.fillText(aScore, W * 3 / 4, H * 0.55);
+
+  // player paddle
+  const pg = ctx.createLinearGradient(player.x, player.y, player.x + player.w, player.y + player.h);
+  pg.addColorStop(0, '#a855f7');
+  pg.addColorStop(1, '#7c3aed');
+  ctx.fillStyle = pg;
+  ctx.shadowColor = '#8b5cf6';
+  ctx.shadowBlur = 12;
+  ctx.beginPath(); ctx.roundRect(player.x, player.y, player.w, player.h, 5); ctx.fill();
+
+  // ai paddle
+  const ag = ctx.createLinearGradient(ai.x, ai.y, ai.x + ai.w, ai.y + ai.h);
+  ag.addColorStop(0, '#ec4899');
+  ag.addColorStop(1, '#be185d');
+  ctx.fillStyle = ag;
+  ctx.shadowColor = '#ec4899';
+  ctx.beginPath(); ctx.roundRect(ai.x, ai.y, ai.w, ai.h, 5); ctx.fill();
+  ctx.shadowBlur = 0;
+
+  // ball
+  if (ball.vx !== 0 || ball.vy !== 0) {
+    const bg = ctx.createRadialGradient(ball.x - 2, ball.y - 2, 1, ball.x, ball.y, ball.r);
+    bg.addColorStop(0, '#fff');
+    bg.addColorStop(0.6, '#c4b5fd');
+    bg.addColorStop(1, '#7c3aed');
+    ctx.fillStyle = bg;
+    ctx.shadowColor = '#a855f7';
+    ctx.shadowBlur = 14;
+    ctx.beginPath(); ctx.arc(ball.x, ball.y, ball.r, 0, Math.PI * 2); ctx.fill();
+    ctx.shadowBlur = 0;
+  }
+
+  // particles
+  for (const p of particles) {
+    ctx.globalAlpha = p.life;
+    ctx.fillStyle = p.color;
+    ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2); ctx.fill();
+  }
+  ctx.globalAlpha = 1;
+
+  // labels
+  ctx.font = `bold 11px Segoe UI`;
+  ctx.fillStyle = 'rgba(139,92,246,0.7)';
+  ctx.fillText('YOU', W / 4, 18);
+  ctx.fillText('AI', W * 3 / 4, 18);
+}
+
+function loop() {
+  if (!running) return;
+  updatePlayer();
+  updateAI();
+  updateBall();
+  updateParticles();
+  draw();
+  animId = requestAnimationFrame(loop);
+}
+
+function endGame(playerWon) {
+  running = false;
+  draw();
+  setTimeout(() => {
+    const ov = document.getElementById('overlay');
+    ov.innerHTML = `
+      <h2>${playerWon ? 'YOU WIN! 🎉' : 'AI WINS'}</h2>
+      <p class="winner" style="color:${playerWon ? '#4ade80' : '#f43f5e'}">${playerWon ? 'Excellent!' : 'Better luck next time!'}</p>
+      <p>Score: <strong>${pScore} – ${aScore}</strong></p>
+      <button class="btn" id="startBtn">Play Again</button>
+    `;
+    ov.querySelector('#startBtn').addEventListener('click', () => {
+      ov.style.display = 'none';
+      initGame();
+      loop();
+    });
+    ov.style.display = 'flex';
+  }, 800);
+}
+</script>
+</body>
+</html>
