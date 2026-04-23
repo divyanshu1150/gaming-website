@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useState } from "react";
 
 interface GameThumbnailProps {
@@ -10,7 +9,7 @@ interface GameThumbnailProps {
   priority?: boolean;
 }
 
-export default function GameThumbnail({ src, alt, title, priority = false }: GameThumbnailProps) {
+export default function GameThumbnail({ src, alt, title }: GameThumbnailProps) {
   const [failed, setFailed] = useState(false);
 
   if (failed || !src) {
@@ -23,14 +22,13 @@ export default function GameThumbnail({ src, alt, title, priority = false }: Gam
   }
 
   return (
-    <Image
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
       src={src}
       alt={alt}
-      fill
-      sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-      className="object-cover group-hover:scale-105 transition-transform duration-300"
-      priority={priority}
       onError={() => setFailed(true)}
+      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+      loading="lazy"
     />
   );
 }

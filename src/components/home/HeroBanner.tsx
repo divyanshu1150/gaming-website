@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useState } from "react";
 import { Game } from "@/types/game";
 
@@ -16,12 +15,11 @@ export default function HeroBanner({ game }: HeroBannerProps) {
     <section className="relative rounded-2xl overflow-hidden bg-[#1a1a2e] min-h-[260px] flex items-end">
       <div className="absolute inset-0">
         {!imgFailed && (
-          <Image
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
             src={game.thumbnail}
             alt={game.thumbnailAlt}
-            fill
-            className="object-cover opacity-40"
-            priority
+            className="absolute inset-0 w-full h-full object-cover opacity-40"
             onError={() => setImgFailed(true)}
           />
         )}

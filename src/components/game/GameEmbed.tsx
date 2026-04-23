@@ -1,7 +1,6 @@
 "use client";
 
 import { useRef, useState, useEffect } from "react";
-import Image from "next/image";
 import { Game } from "@/types/game";
 
 interface GameEmbedProps {
@@ -87,13 +86,12 @@ export default function GameEmbed({ game }: GameEmbedProps) {
           <div className="absolute inset-0 z-20">
             {/* Blurred thumbnail background */}
             {!imgError ? (
-              <Image
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
                 src={game.thumbnail}
                 alt={game.title}
-                fill
-                className="object-cover brightness-50"
+                className="absolute inset-0 w-full h-full object-cover brightness-50"
                 onError={() => setImgError(true)}
-                priority
               />
             ) : (
               <div className="absolute inset-0 bg-[#1a1a2e]" />

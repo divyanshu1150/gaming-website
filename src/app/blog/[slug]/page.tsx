@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
+
 import {
   getPostBySlug,
   getAllPostSlugs,
@@ -154,12 +154,11 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             {/* Game thumbnail + quick facts */}
             <div className="flex flex-col sm:flex-row gap-6 mb-8 p-5 bg-[#1a1a2e] rounded-xl border border-white/10">
               <div className="relative w-full sm:w-48 aspect-video sm:aspect-square rounded-lg overflow-hidden shrink-0">
-                <Image
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
                   src={game.thumbnail}
                   alt={game.title}
-                  fill
-                  className="object-cover"
-                  sizes="192px"
+                  className="absolute inset-0 w-full h-full object-cover"
                 />
               </div>
               <div className="flex flex-col justify-center gap-2">
