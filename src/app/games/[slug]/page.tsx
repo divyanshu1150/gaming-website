@@ -27,15 +27,33 @@ export async function generateMetadata({ params }: GamePageProps): Promise<Metad
   const pageUrl = `${BASE_URL}/games/${slug}`;
   const thumbUrl = `${BASE_URL}${game.thumbnail}`;
 
+  const metaDesc = `Play ${game.title} free online — no download, no sign-up required. ${game.shortDescription} Works on desktop and mobile instantly in your browser.`;
+
   return {
-    title: `${game.title} — Play Free Online`,
-    description: `Play ${game.title} free online — no download required. ${game.shortDescription}. ${game.instructions}`,
-    keywords: [game.title, ...game.tags, game.category, "free online game", "play free"],
+    title: `${game.title} — Play Free Online | No Download`,
+    description: metaDesc,
+    keywords: [
+      `play ${game.title} online`,
+      `${game.title} free`,
+      `${game.title} online`,
+      `${game.title} no download`,
+      ...game.tags,
+      game.category,
+      "free online game",
+      "browser game",
+    ],
     openGraph: {
-      title: `Play ${game.title} Free Online`,
-      description: game.shortDescription,
+      title: `Play ${game.title} Free Online — No Download`,
+      description: metaDesc,
       url: pageUrl,
-      images: [{ url: thumbUrl, width: 512, height: 512, alt: game.thumbnailAlt }],
+      type: "website",
+      images: [{ url: thumbUrl, width: 512, height: 384, alt: game.thumbnailAlt }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `Play ${game.title} Free Online`,
+      description: metaDesc,
+      images: [thumbUrl],
     },
     alternates: { canonical: pageUrl },
   };

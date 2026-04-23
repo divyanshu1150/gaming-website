@@ -6,6 +6,36 @@ import AdSlot from "@/components/ads/AdSlot";
 import HeroBanner from "@/components/home/HeroBanner";
 import RecentlyPlayed from "@/components/home/RecentlyPlayed";
 
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://freeplayarena.com";
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "FreePlayArena",
+  url: BASE_URL,
+  logo: `${BASE_URL}/icon.png`,
+  description: "Free online games — no download, no sign-up. Play hundreds of HTML5 browser games instantly.",
+  sameAs: [
+    "https://twitter.com/freeplayarena",
+    "https://youtube.com/@freeplayarena",
+  ],
+};
+
+const siteLinksSearchBoxSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "FreePlayArena",
+  url: BASE_URL,
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: `${BASE_URL}/games?q={search_term_string}`,
+    },
+    "query-input": "required name=search_term_string",
+  },
+};
+
 export default function HomePage() {
   const featured = getFeaturedGames(6);
   const popular = getPopularGames(10);
@@ -15,6 +45,15 @@ export default function HomePage() {
   const gameCount = allGames.length;
 
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(siteLinksSearchBoxSchema) }}
+      />
     <div className="max-w-7xl mx-auto px-4 py-8 space-y-12">
       {/* Hero banner */}
       {heroGame && <HeroBanner game={heroGame} />}
@@ -208,5 +247,6 @@ export default function HomePage() {
         </Link>
       </section>
     </div>
+    </>
   );
 }
