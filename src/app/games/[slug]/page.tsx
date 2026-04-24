@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: GamePageProps): Promise<Metad
   const metaDesc = `Play ${game.title} free online — no download, no sign-up required. ${game.shortDescription} Works on desktop and mobile instantly in your browser.`;
 
   return {
-    title: `${game.title} — Play Free Online | No Download`,
+    title: `Play ${game.title} Free Online — No Download, No Sign-Up`,
     description: metaDesc,
     keywords: [
       `play ${game.title} online`,

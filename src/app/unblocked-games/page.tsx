@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     "browser games unblocked",
     "games to play at school",
   ],
+  alternates: { canonical: "https://freeplayarena.com/unblocked-games" },
 };
 
 const UNBLOCKED_SLUGS = [

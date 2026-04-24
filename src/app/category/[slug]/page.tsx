@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   if (!category) return {};
 
   return {
-    title: `Free ${category.name} Games — Play Online Instantly`,
+    title: `Free ${category.name} Games Online — Play Instantly, No Download`,
     description: `Play the best free online ${category.name.toLowerCase()} games at FreePlayArena. ${category.description}. No download or sign-up required.`,
     keywords: [
       `${category.name.toLowerCase()} games`,
@@ -30,6 +30,7 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
       "html5 games",
       "no download",
     ],
+    alternates: { canonical: `https://freeplayarena.com/category/${slug}` },
   };
 }
 

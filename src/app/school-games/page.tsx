@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     "no download school games",
     "games at school free",
   ],
+  alternates: { canonical: "https://freeplayarena.com/school-games" },
 };
 
 export default function SchoolGamesPage() {

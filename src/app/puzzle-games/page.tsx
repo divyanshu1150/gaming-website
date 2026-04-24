@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     "word puzzle games free",
     "online puzzle games",
   ],
+  alternates: { canonical: "https://freeplayarena.com/puzzle-games" },
 };
 
 const TOP_SLUGS = [

@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     "browser html5 games",
     "html5 mobile games",
   ],
+  alternates: { canonical: "https://freeplayarena.com/html5-games" },
 };
 
 export default function Html5GamesPage() {

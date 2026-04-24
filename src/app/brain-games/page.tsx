@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     "free mind training games",
     "educational brain games",
   ],
+  alternates: { canonical: "https://freeplayarena.com/brain-games" },
 };
 
 const COGNITIVE_BENEFITS = [

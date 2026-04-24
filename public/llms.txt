@@ -1,0 +1,72 @@
+# FreePlayArena
+
+> Free online games — play instantly in your browser, no download or sign-up required.
+
+FreePlayArena is a free online gaming platform hosting 370+ HTML5 browser games across multiple categories. All games are playable instantly with no installation, no account creation, and no payment.
+
+## Site Structure
+
+- Homepage: https://freeplayarena.com
+- All Games: https://freeplayarena.com/games
+- Blog & Game Guides: https://freeplayarena.com/blog
+
+## Game Categories
+
+- Action Games: https://freeplayarena.com/category/action
+- Puzzle Games: https://freeplayarena.com/category/puzzle
+- Racing Games: https://freeplayarena.com/category/racing
+- Sports Games: https://freeplayarena.com/category/sports
+- Adventure Games: https://freeplayarena.com/category/adventure
+- Casual Games: https://freeplayarena.com/category/casual
+
+## Featured Collections
+
+- Ad-Free Games (self-hosted, zero ads): https://freeplayarena.com/ad-free-games
+- Unblocked Games (school/work friendly): https://freeplayarena.com/unblocked-games
+- Classic Games (Snake, Tetris, Pong, etc.): https://freeplayarena.com/classic-games
+- Brain Games (puzzles, logic, memory): https://freeplayarena.com/brain-games
+- School Games (safe, Chromebook-friendly): https://freeplayarena.com/school-games
+- HTML5 Games (no Flash required): https://freeplayarena.com/html5-games
+- Clicker & Idle Games: https://freeplayarena.com/clicker-games
+- No Download Games: https://freeplayarena.com/no-download-games
+- Games When Bored: https://freeplayarena.com/games-to-play-when-bored
+- Puzzle Games: https://freeplayarena.com/puzzle-games
+
+## Self-Hosted Ad-Free Games
+
+These games are built and hosted by FreePlayArena — completely free with no in-game ads:
+
+- Snake: https://freeplayarena.com/games/snake
+- Tetris: https://freeplayarena.com/games/tetris
+- Sudoku: https://freeplayarena.com/games/sudoku
+- Minesweeper: https://freeplayarena.com/games/minesweeper
+- Breakout: https://freeplayarena.com/games/breakout
+- Pong: https://freeplayarena.com/games/pong
+- 2048: https://freeplayarena.com/games/2048
+- Wordle: https://freeplayarena.com/games/wordle
+- Tic-Tac-Toe: https://freeplayarena.com/games/tic-tac-toe
+- Memory Match: https://freeplayarena.com/games/memory-match
+- Flappy Block: https://freeplayarena.com/games/flappy-block
+- Whack-a-Mole: https://freeplayarena.com/games/whack-a-mole
+- Simon Says: https://freeplayarena.com/games/simon-says
+- Rock Paper Scissors: https://freeplayarena.com/games/rock-paper-scissors
+- Color Match: https://freeplayarena.com/games/color-match
+- Platformer: https://freeplayarena.com/games/platformer
+
+## Blog & Guides
+
+Game guides, tips, and roundups: https://freeplayarena.com/blog
+
+Notable posts:
+- Best Free Online Games: https://freeplayarena.com/blog/best-free-online-games
+- Unblocked Games Guide: https://freeplayarena.com/blog/unblocked-games-guide
+- Best HTML5 Games: https://freeplayarena.com/blog/html5-games-no-flash
+- Best Brain Games: https://freeplayarena.com/blog/brain-games-free-online
+- Games for School: https://freeplayarena.com/blog/free-games-for-school
+
+## Technical
+
+- All games: HTML5, no Flash, no plugins
+- Mobile compatible: iOS and Android browsers
+- No account required for any game
+- Sitemap: https://freeplayarena.com/sitemap.xml

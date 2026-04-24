@@ -6,6 +6,7 @@ import { CATEGORIES } from "@/lib/categories";
 export const metadata: Metadata = {
   title: "About Us",
   description: "Learn about FreePlayArena — your home for free online HTML5 games, no download or sign-up required.",
+  alternates: { canonical: "https://freeplayarena.com/about" },
 };
 
 export default function AboutPage() {

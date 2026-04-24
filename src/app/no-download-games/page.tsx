@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     "games that dont need download",
     "free online games without downloading",
   ],
+  alternates: { canonical: "https://freeplayarena.com/no-download-games" },
 };
 
 export default function NoDownloadGamesPage() {

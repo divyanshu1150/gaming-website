@@ -16,12 +16,12 @@ export const metadata: Metadata = {
     "google-adsense-account": "ca-pub-9318459431952179",
   },
   title: {
-    default: "FreePlayArena — Play Free Online Games",
-    template: "%s | FreePlayArena",
+    default: "FreePlayArena — Play Free Online Games, No Download Required",
+    template: "%s | FreePlayArena — Free Online Games",
   },
   description:
-    "Play hundreds of free online games instantly at FreePlayArena — no download required. Action, puzzle, racing, sports, adventure and more.",
-  keywords: ["free online games", "play games online", "browser games", "no download games", "html5 games"],
+    "Play 370+ free online games instantly at FreePlayArena — no download, no sign-up required. Action, puzzle, racing, sports, adventure, casual and more. Works on any device.",
+  keywords: ["free online games", "play games online", "browser games", "no download games", "html5 games", "free games no sign up", "online games free"],
   openGraph: {
     siteName: "FreePlayArena",
     type: "website",

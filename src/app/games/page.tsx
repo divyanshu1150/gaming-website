@@ -8,6 +8,7 @@ interface GamesPageProps {
 export const metadata = {
   title: "All Games",
   description: "Browse and search hundreds of free online games. Filter by category, search by name, and find your next favorite game.",
+  alternates: { canonical: "https://freeplayarena.com/games" },
 };
 
 export default async function GamesPage({ searchParams }: GamesPageProps) {

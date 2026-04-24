@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     "old school games browser",
     "classic puzzle games free",
   ],
+  alternates: { canonical: "https://freeplayarena.com/classic-games" },
 };
 
 const CLASSIC_SLUGS = [

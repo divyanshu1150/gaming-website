@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     "clicker games no download",
     "cookie clicker style games",
   ],
+  alternates: { canonical: "https://freeplayarena.com/clicker-games" },
 };
 
 export default function ClickerGamesPage() {

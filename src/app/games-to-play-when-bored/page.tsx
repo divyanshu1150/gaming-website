@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     "addictive browser games",
     "games to play for free",
   ],
+  alternates: { canonical: "https://freeplayarena.com/games-to-play-when-bored" },
 };
 
 const PICKS = [

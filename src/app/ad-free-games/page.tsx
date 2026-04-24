@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     "ad free browser games",
     "games with no interruptions",
   ],
+  alternates: { canonical: "https://freeplayarena.com/ad-free-games" },
 };
 
 export default function AdFreeGamesPage() {

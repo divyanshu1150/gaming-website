@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact Us",
   description: "Contact FreePlayArena — report a broken game, suggest a new game, or get in touch with our team.",
+  alternates: { canonical: "https://freeplayarena.com/contact" },
 };
 
 export default function ContactPage() {

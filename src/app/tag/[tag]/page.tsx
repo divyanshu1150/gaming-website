@@ -19,11 +19,12 @@ export async function generateMetadata({ params }: TagPageProps): Promise<Metada
   if (games.length === 0) return {};
 
   return {
-    title: `${tag.charAt(0).toUpperCase() + tag.slice(1)} Games — Play Free Online`,
-    description: `Play ${games.length} free online ${tag} game${games.length !== 1 ? "s" : ""} instantly in your browser. No download or sign-up required.`,
+    title: `Free ${tag.charAt(0).toUpperCase() + tag.slice(1)} Games Online — Play Instantly, No Download`,
+    description: `Play ${games.length} free online ${tag} game${games.length !== 1 ? "s" : ""} instantly in your browser — no download, no sign-up required. Works on any device.`,
     keywords: [tag, `${tag} games`, "free online games", "browser games", "html5 games"],
     // Noindex tags with only 1-2 games — thin content
     robots: games.length < 3 ? { index: false, follow: true } : { index: true, follow: true },
+    alternates: { canonical: `https://freeplayarena.com/tag/${tag}` },
   };
 }
 
