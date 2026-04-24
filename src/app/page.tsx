@@ -13,7 +13,7 @@ const organizationSchema = {
   "@type": "Organization",
   name: "FreePlayArena",
   url: BASE_URL,
-  logo: `${BASE_URL}/icon.png`,
+  logo: `${BASE_URL}/icon`,
   description: "Free online games — no download, no sign-up. Play hundreds of HTML5 browser games instantly.",
   sameAs: [
     "https://twitter.com/freeplayarena",
