@@ -175,6 +175,7 @@ export default function GameEmbed({ game }: GameEmbedProps) {
         {started && (
           <button
             onClick={handleFullscreen}
+            aria-label="Enter fullscreen"
             className="flex items-center gap-1.5 px-3 py-1.5 bg-white/10 hover:bg-violet-600 text-white text-xs rounded-lg transition-colors"
           >
             ⛶ Fullscreen

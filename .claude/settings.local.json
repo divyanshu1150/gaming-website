@@ -40,7 +40,8 @@
       "Bash(dir public\\\\thumbnails /B)",
       "Bash(dir public\\\\games /B)",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://img.gamemonetize.com/882isa4b37an4ap1p7dv7akabupe7awf/512x384.jpg\")",
-      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://img.gamemonetize.com/urgeu3uta5umpjhn02ihyql5ouwc1hfq/512x384.jpg\")"
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://img.gamemonetize.com/urgeu3uta5umpjhn02ihyql5ouwc1hfq/512x384.jpg\")",
+      "Bash(grep -v \"//\")"
     ]
   }
 }

@@ -133,9 +133,9 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-8 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-gray-500">
+        <div className="mt-8 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-gray-400">
           <p>© {new Date().getFullYear()} FreePlayArena.com — All games are property of their respective owners.</p>
-          <nav className="flex items-center gap-4">
+          <nav aria-label="Legal links" className="flex items-center gap-4">
             <Link href="/about" className="hover:text-violet-400 transition-colors">About</Link>
             <Link href="/contact" className="hover:text-violet-400 transition-colors">Contact</Link>
             <Link href="/privacy-policy" className="hover:text-violet-400 transition-colors">Privacy</Link>

@@ -30,7 +30,7 @@ export default function Header() {
         </Link>
 
         {/* Nav links — desktop */}
-        <nav className="hidden md:flex items-center gap-1 ml-4">
+        <nav aria-label="Main navigation" className="hidden md:flex items-center gap-1 ml-4">
           {CATEGORIES.map((cat) => (
             <Link
               key={cat.slug}
@@ -63,18 +63,24 @@ export default function Header() {
         {/* Search */}
         <form
           onSubmit={handleSearch}
+          role="search"
+          aria-label="Search games"
           className="flex-1 flex items-center max-w-sm ml-auto"
         >
           <div className="relative w-full">
+            <label htmlFor="game-search" className="sr-only">Search games</label>
             <input
-              type="text"
+              id="game-search"
+              type="search"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Search games..."
+              autoComplete="off"
               className="w-full bg-white/10 text-white placeholder-gray-400 rounded-lg px-4 py-2 text-sm border border-white/10 focus:outline-none focus:border-violet-500 focus:bg-white/15 transition-colors"
             />
             <button
               type="submit"
+              aria-label="Submit search"
               className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white"
             >
               🔍
