@@ -3,9 +3,30 @@ import Link from "next/link";
 import { getAllGames } from "@/lib/games";
 import GameGrid from "@/components/game/GameGrid";
 import AdSlot from "@/components/ads/AdSlot";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
+import { FAQPageSchema, CollectionPageSchema } from "@/components/seo/JsonLd";
+
+const SCHOOL_FAQS = [
+  {
+    question: "Are these games safe to play at school?",
+    answer: "Yes. These are HTML5 browser games — no downloads, no executables, no plugins. They run entirely in the browser tab and contain age-appropriate content suitable for school.",
+  },
+  {
+    question: "Do these games work on Chromebooks?",
+    answer: "Absolutely. All games are HTML5-based and run natively in Chrome browser on any Chromebook. No extensions or workarounds needed.",
+  },
+  {
+    question: "Will my school's firewall block these games?",
+    answer: "Most school firewalls block specific game domains, not FreePlayArena directly. If a particular game won't load, try a different one — we have 400+ alternatives, especially in our ad-free and educational sections.",
+  },
+  {
+    question: "Are there educational games for school?",
+    answer: "Yes. Our brain games, puzzle games, and math games sections include logic puzzles, vocabulary games, and number challenges that develop real skills while being genuinely fun.",
+  },
+];
 
 export const metadata: Metadata = {
-  title: "Free School Games — Play Online at School, No Download",
+  title: "Free School Games — Play Online at School",
   description:
     "Play free online games at school with no downloads, no sign-up, and no blocked content. Safe browser games that work on Chromebook, perfect for free period.",
   keywords: [
@@ -46,6 +67,19 @@ export default function SchoolGamesPage() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8 space-y-10">
+      <FAQPageSchema faqs={SCHOOL_FAQS} />
+      <CollectionPageSchema
+        name="Free School Games — Play at School"
+        description="Safe HTML5 games for school. Works on Chromebook, no download, no firewall issues."
+        url="/school-games"
+        games={schoolGames}
+      />
+      <Breadcrumbs
+        items={[
+          { name: "Home", url: "/" },
+          { name: "School Games", url: "/school-games" },
+        ]}
+      />
 
       {/* Hero */}
       <div className="bg-gradient-to-r from-green-900/60 to-teal-900/60 border border-green-500/20 rounded-2xl p-6 sm:p-10">

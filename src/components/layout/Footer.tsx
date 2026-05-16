@@ -128,6 +128,31 @@ export default function Footer() {
                   Unblocked Games Guide
                 </Link>
               </li>
+              <li>
+                <Link href="/game-of-the-day" className="text-yellow-400 hover:text-yellow-300 text-sm transition-colors">
+                  ⭐ Game of the Day
+                </Link>
+              </li>
+              <li>
+                <Link href="/free-games-for-kids" className="text-gray-400 hover:text-violet-400 text-sm transition-colors">
+                  Free Games for Kids
+                </Link>
+              </li>
+              <li>
+                <Link href="/2-player-games" className="text-gray-400 hover:text-violet-400 text-sm transition-colors">
+                  2 Player Games
+                </Link>
+              </li>
+              <li>
+                <Link href="/best-io-games" className="text-gray-400 hover:text-violet-400 text-sm transition-colors">
+                  Best IO Games
+                </Link>
+              </li>
+              <li>
+                <Link href="/games-like-wordle" className="text-gray-400 hover:text-violet-400 text-sm transition-colors">
+                  Games Like Wordle
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

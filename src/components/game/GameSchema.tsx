@@ -1,5 +1,7 @@
 import { Game } from "@/types/game";
 
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://freeplayarena.com";
+
 interface GameSchemaProps {
   game: Game;
   url: string;
@@ -8,6 +10,8 @@ interface GameSchemaProps {
 
 export default function GameSchema({ game, url, thumbnailUrl }: GameSchemaProps) {
   // VideoGame schema
+  // Note: aggregateRating omitted — we don't collect real reviews and Google
+  // tightened review-schema policy. Plays are tracked separately via InteractionCounter.
   const videoGameSchema = {
     "@context": "https://schema.org",
     "@type": "VideoGame",
@@ -19,6 +23,7 @@ export default function GameSchema({ game, url, thumbnailUrl }: GameSchemaProps)
     gamePlatform: "Web Browser",
     applicationCategory: "Game",
     operatingSystem: "Any",
+    inLanguage: "en",
     offers: {
       "@type": "Offer",
       price: "0",
@@ -29,14 +34,12 @@ export default function GameSchema({ game, url, thumbnailUrl }: GameSchemaProps)
       "@type": "Organization",
       name: game.developer,
     },
-    aggregateRating:
+    interactionStatistic:
       game.plays > 0
         ? {
-            "@type": "AggregateRating",
-            ratingValue: game.rating,
-            bestRating: 5,
-            worstRating: 1,
-            ratingCount: Math.max(game.plays, 10),
+            "@type": "InteractionCounter",
+            interactionType: { "@type": "PlayAction" },
+            userInteractionCount: game.plays,
           }
         : undefined,
     keywords: game.tags.join(", "),
@@ -51,19 +54,19 @@ export default function GameSchema({ game, url, thumbnailUrl }: GameSchemaProps)
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: url.split("/games/")[0] + "/",
+        item: `${BASE_URL}/`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Games",
-        item: url.split("/games/")[0] + "/games",
+        item: `${BASE_URL}/games`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: game.category.charAt(0).toUpperCase() + game.category.slice(1),
-        item: url.split("/games/")[0] + "/category/" + game.category,
+        item: `${BASE_URL}/category/${game.category}`,
       },
       {
         "@type": "ListItem",

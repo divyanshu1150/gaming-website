@@ -4,9 +4,16 @@ import { getAllGames } from "@/lib/games";
 import { CATEGORIES } from "@/lib/categories";
 
 export const metadata: Metadata = {
-  title: "About Us",
-  description: "Learn about FreePlayArena — your home for free online HTML5 games, no download or sign-up required.",
+  title: "About FreePlayArena — Our Mission & Editorial Team",
+  description:
+    "Learn about FreePlayArena: our editorial team, how we curate 400+ free online HTML5 games, and why we make browser gaming accessible — no download, no sign-up.",
   alternates: { canonical: "https://freeplayarena.com/about" },
+  openGraph: {
+    title: "About FreePlayArena — Our Mission",
+    description: "How we curate hundreds of free browser games — no download, no sign-up.",
+    url: "https://freeplayarena.com/about",
+    type: "website",
+  },
 };
 
 export default function AboutPage() {

@@ -31,11 +31,19 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   const post = getPostBySlug(slug);
   if (!post) return {};
 
+  // Auto-generated how-to-play guides without curated sections are thin/duplicate
+  // content (their info is already on the game page). Noindex but allow follow
+  // so they don't dilute site quality scoring.
+  const isAutoGuide = post.slug.startsWith("how-to-play-") && (!post.sections || post.sections.length === 0);
+
   return {
     title: post.metaTitle,
     description: post.metaDescription,
     keywords: post.tags,
     alternates: { canonical: `${BASE_URL}/blog/${post.slug}` },
+    robots: isAutoGuide
+      ? { index: false, follow: true, googleBot: { index: false, follow: true } }
+      : { index: true, follow: true },
     openGraph: {
       title: post.metaTitle,
       description: post.metaDescription,
@@ -135,17 +143,31 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
         {/* Header */}
         <header className="mb-8">
-          <div className="flex items-center gap-3 mb-3">
+          <div className="flex items-center gap-3 mb-3 flex-wrap">
             <span className="px-2.5 py-1 text-xs font-semibold bg-violet-600/20 text-violet-400 rounded-full">
               {post.category.charAt(0).toUpperCase() + post.category.slice(1)}
             </span>
-            <span className="text-gray-500 text-sm">{formatDate(post.publishedAt)}</span>
-            <span className="text-gray-500 text-sm">· {readTime} min read</span>
+            <span className="text-gray-400 text-sm">{formatDate(post.publishedAt)}</span>
+            <span className="text-gray-400 text-sm">· {readTime} min read</span>
           </div>
           <h1 className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-4">
             {post.title}
           </h1>
-          <p className="text-gray-400 text-lg leading-relaxed">{post.excerpt}</p>
+          <p className="text-gray-300 text-lg leading-relaxed mb-4">{post.excerpt}</p>
+          {/* Author byline — supports E-E-A-T */}
+          <div className="flex items-center gap-3 pt-4 border-t border-white/10">
+            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-violet-500 to-pink-500 flex items-center justify-center text-white font-bold text-sm">
+              FP
+            </div>
+            <div>
+              <p className="text-white text-sm font-semibold">FreePlayArena Editorial Team</p>
+              <p className="text-gray-400 text-xs">
+                {post.updatedAt && post.updatedAt !== post.publishedAt
+                  ? `Updated ${formatDate(post.updatedAt)}`
+                  : "Game guides & reviews"}
+              </p>
+            </div>
+          </div>
         </header>
 
         {/* ── GUIDE layout ─────────────────────────────────────────────── */}

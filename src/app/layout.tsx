@@ -1,5 +1,5 @@
 // v3
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
@@ -10,6 +10,12 @@ const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://freeplayarena.com"
 const ADSENSE_ID = process.env.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID ?? "";
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "";
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#0f0f1a",
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   other: {
@@ -17,10 +23,10 @@ export const metadata: Metadata = {
   },
   title: {
     default: "FreePlayArena — Play Free Online Games, No Download Required",
-    template: "%s | FreePlayArena — Free Online Games",
+    template: "%s | FreePlayArena",
   },
   description:
-    "Play 370+ free online games instantly at FreePlayArena — no download, no sign-up required. Action, puzzle, racing, sports, adventure, casual and more. Works on any device.",
+    "Play 400+ free online games instantly at FreePlayArena — no download, no sign-up. Action, puzzle, racing, sports, adventure, casual, and more. Works on any device.",
   keywords: ["free online games", "play games online", "browser games", "no download games", "html5 games", "free games no sign up", "online games free"],
   openGraph: {
     siteName: "FreePlayArena",

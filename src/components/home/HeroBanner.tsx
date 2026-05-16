@@ -19,6 +19,10 @@ export default function HeroBanner({ game }: HeroBannerProps) {
           <img
             src={game.thumbnail}
             alt={game.thumbnailAlt}
+            width={1200}
+            height={400}
+            fetchPriority="high"
+            decoding="async"
             className="absolute inset-0 w-full h-full object-cover opacity-40"
             onError={() => setImgFailed(true)}
           />

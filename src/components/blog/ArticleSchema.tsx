@@ -17,22 +17,29 @@ export default function ArticleSchema({ post, game }: ArticleSchemaProps) {
     datePublished: post.publishedAt,
     dateModified: post.updatedAt ?? post.publishedAt,
     author: {
-      "@type": "Organization",
-      name: "FreePlayArena",
-      url: BASE_URL,
+      "@type": "Person",
+      name: "FreePlayArena Editorial Team",
+      url: `${BASE_URL}/about`,
     },
     publisher: {
       "@type": "Organization",
       name: "FreePlayArena",
+      url: BASE_URL,
       logo: {
         "@type": "ImageObject",
-        url: `${BASE_URL}/og-image.png`,
+        url: `${BASE_URL}/icon`,
+        width: 512,
+        height: 512,
       },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `${BASE_URL}/blog/${post.slug}`,
     },
+    image: game?.thumbnail
+      ? `${BASE_URL}${game.thumbnail}`
+      : `${BASE_URL}/opengraph-image`,
+    inLanguage: "en-US",
     ...(game
       ? {
           about: {

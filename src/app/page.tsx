@@ -5,6 +5,7 @@ import GameGrid from "@/components/game/GameGrid";
 import AdSlot from "@/components/ads/AdSlot";
 import HeroBanner from "@/components/home/HeroBanner";
 import RecentlyPlayed from "@/components/home/RecentlyPlayed";
+import { FAQPageSchema } from "@/components/seo/JsonLd";
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://freeplayarena.com";
 
@@ -36,6 +37,33 @@ const siteLinksSearchBoxSchema = {
   },
 };
 
+const HOMEPAGE_FAQS = [
+  {
+    question: "Are all games on FreePlayArena really free?",
+    answer: "Yes, absolutely. Every game is free to play with no hidden charges. The site is supported by advertising, which keeps everything free for players.",
+  },
+  {
+    question: "Do I need to create an account to play?",
+    answer: "No account required. You can start playing any game instantly. Your recently played games are saved locally in your browser for convenience.",
+  },
+  {
+    question: "Can I play on my phone or tablet?",
+    answer: "Yes. All games are HTML5-based and fully compatible with modern mobile browsers on iOS and Android. Simply visit the site on your device and play.",
+  },
+  {
+    question: "How often are new games added?",
+    answer: "We regularly add new games to the library. Check the homepage or browse All Games to discover the latest additions.",
+  },
+  {
+    question: "A game isn't loading — what should I do?",
+    answer: "Try refreshing the page or clearing your browser cache. Some games require a stable internet connection. If a game consistently fails to load, use our Contact page to report it.",
+  },
+  {
+    question: "Can I suggest a game to add?",
+    answer: "Definitely. Visit our Contact page and send us a suggestion with a link to the game. We review all submissions.",
+  },
+];
+
 export default function HomePage() {
   const featured = getFeaturedGames(6);
   const popular = getPopularGames(10);
@@ -54,6 +82,7 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(siteLinksSearchBoxSchema) }}
       />
+      <FAQPageSchema faqs={HOMEPAGE_FAQS} />
     <div className="max-w-7xl mx-auto px-4 py-8 space-y-12">
       {/* Hero banner */}
       {heroGame && <HeroBanner game={heroGame} />}

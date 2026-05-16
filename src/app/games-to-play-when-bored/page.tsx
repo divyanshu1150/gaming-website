@@ -3,6 +3,8 @@ import Link from "next/link";
 import { getAllGames } from "@/lib/games";
 import GameGrid from "@/components/game/GameGrid";
 import AdSlot from "@/components/ads/AdSlot";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
+import { CollectionPageSchema } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
   title: "Games to Play When Bored — Free Browser Games, No Download",
@@ -49,7 +51,18 @@ export default function BoredGamesPage() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8 space-y-10">
-
+      <CollectionPageSchema
+        name="Games to Play When Bored — Free Online"
+        description="The best free games to play when bored. Quick, fun browser games for instant entertainment."
+        url="/games-to-play-when-bored"
+        games={picks}
+      />
+      <Breadcrumbs
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Games When Bored", url: "/games-to-play-when-bored" },
+        ]}
+      />
       <div className="bg-gradient-to-br from-[#1a1a2e] to-[#16213e] rounded-2xl p-6 sm:p-10">
         <h1 className="text-white font-bold text-3xl sm:text-4xl mb-3">
           Games to Play When Bored 😴

@@ -1,9 +1,10 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getGamesByTag, getAllTagSlugs, getAllTags } from "@/lib/games";
+import { getGamesByTag, getAllTagSlugs } from "@/lib/games";
 import GameGrid from "@/components/game/GameGrid";
 import AdSlot from "@/components/ads/AdSlot";
+import { CollectionPageSchema, BreadcrumbSchema } from "@/components/seo/JsonLd";
 
 interface TagPageProps {
   params: Promise<{ tag: string }>;
@@ -38,15 +39,32 @@ export default async function TagPage({ params }: TagPageProps) {
   games.forEach((g) => g.tags.forEach((t) => { if (t !== tag) relatedTagSet.add(t); }));
   const relatedTags = [...relatedTagSet].slice(0, 12);
 
+  const isIndexable = games.length >= 3;
+
   return (
     <div className="max-w-7xl mx-auto px-4 py-8 space-y-8">
+      {isIndexable && (
+        <CollectionPageSchema
+          name={`${tag.charAt(0).toUpperCase() + tag.slice(1)} Games`}
+          description={`Browse ${games.length} free online ${tag} games. Play instantly in your browser, no download.`}
+          url={`/tag/${tag}`}
+          games={games}
+        />
+      )}
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Games", url: "/games" },
+          { name: `#${tag}`, url: `/tag/${tag}` },
+        ]}
+      />
       {/* Breadcrumb */}
-      <nav className="text-xs text-gray-500 flex items-center gap-1.5">
+      <nav className="text-xs text-gray-400 flex items-center gap-1.5" aria-label="Breadcrumb">
         <Link href="/" className="hover:text-violet-400">Home</Link>
-        <span>/</span>
+        <span aria-hidden="true">/</span>
         <Link href="/games" className="hover:text-violet-400">Games</Link>
-        <span>/</span>
-        <span className="text-gray-400">#{tag}</span>
+        <span aria-hidden="true">/</span>
+        <span className="text-gray-300" aria-current="page">#{tag}</span>
       </nav>
 
       {/* Header */}

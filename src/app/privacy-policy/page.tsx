@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy",
-  description: "Privacy Policy for FreePlayArena — learn how we collect and use your data.",
+  title: "Privacy Policy — FreePlayArena",
+  description:
+    "FreePlayArena Privacy Policy: how we collect, use, and protect your data including cookies, analytics, advertising partners, and your rights as a user.",
   alternates: { canonical: "https://freeplayarena.com/privacy-policy" },
 };
 

@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Service",
-  description: "Terms of Service for FreePlayArena — rules for using our free online games site.",
+  title: "Terms of Service — FreePlayArena",
+  description:
+    "FreePlayArena Terms of Service: rules for using our free online games site, intellectual property notices, acceptable use, disclaimers, and account terms.",
   alternates: { canonical: "https://freeplayarena.com/terms" },
 };
 

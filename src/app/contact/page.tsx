@@ -1,9 +1,16 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us",
-  description: "Contact FreePlayArena — report a broken game, suggest a new game, or get in touch with our team.",
+  title: "Contact FreePlayArena — Get in Touch",
+  description:
+    "Contact the FreePlayArena team to report a broken game, suggest a new title, request a partnership, or ask any other question. We read every message and reply quickly.",
   alternates: { canonical: "https://freeplayarena.com/contact" },
+  openGraph: {
+    title: "Contact FreePlayArena",
+    description: "Report broken games, suggest titles, or partner with us.",
+    url: "https://freeplayarena.com/contact",
+    type: "website",
+  },
 };
 
 export default function ContactPage() {

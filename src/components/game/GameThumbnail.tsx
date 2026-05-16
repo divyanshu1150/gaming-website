@@ -9,13 +9,13 @@ interface GameThumbnailProps {
   priority?: boolean;
 }
 
-export default function GameThumbnail({ src, alt, title }: GameThumbnailProps) {
+export default function GameThumbnail({ src, alt, title, priority = false }: GameThumbnailProps) {
   const [failed, setFailed] = useState(false);
 
   if (failed || !src) {
     return (
       <div className="absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-br from-violet-900/60 to-[#0f0f1a]">
-        <span className="text-4xl mb-2">🎮</span>
+        <span className="text-4xl mb-2" aria-hidden="true">🎮</span>
         <span className="text-gray-300 text-xs font-medium text-center px-2 line-clamp-2">{title}</span>
       </div>
     );
@@ -26,9 +26,13 @@ export default function GameThumbnail({ src, alt, title }: GameThumbnailProps) {
     <img
       src={src}
       alt={alt}
+      width={300}
+      height={200}
       onError={() => setFailed(true)}
       className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-      loading="lazy"
+      loading={priority ? "eager" : "lazy"}
+      fetchPriority={priority ? "high" : "auto"}
+      decoding="async"
     />
   );
 }

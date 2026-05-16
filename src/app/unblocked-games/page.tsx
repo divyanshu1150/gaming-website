@@ -3,11 +3,36 @@ import Link from "next/link";
 import { getAllGames } from "@/lib/games";
 import GameGrid from "@/components/game/GameGrid";
 import AdSlot from "@/components/ads/AdSlot";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
+import { FAQPageSchema, CollectionPageSchema } from "@/components/seo/JsonLd";
+
+const UNBLOCKED_FAQS = [
+  {
+    question: "Can I play these games at school?",
+    answer: "Yes. All games on FreePlayArena are HTML5-based browser games that work on any standard internet connection. They require no downloads, no plugins, and no special software — just a web browser.",
+  },
+  {
+    question: "Do unblocked games work on Chromebooks?",
+    answer: "Absolutely. HTML5 games run natively in Chrome browser on Chromebooks with no extensions or workarounds needed.",
+  },
+  {
+    question: "Are unblocked games safe?",
+    answer: "Yes. All games on this site are sourced from trusted HTML5 game publishers. There are no downloads, no executable files, and no malware. The games run entirely in your browser.",
+  },
+  {
+    question: "Do I need to create an account?",
+    answer: "No account required. Open any game and start playing instantly. Your recently played games are remembered in your browser automatically.",
+  },
+  {
+    question: "What if a game is still blocked on my network?",
+    answer: "Individual school or office firewalls may block specific domains. If a game doesn't load, try a different one — we have 400+ alternatives. You can also try accessing the site from a different network or using your phone's mobile data.",
+  },
+];
 
 export const metadata: Metadata = {
-  title: "Unblocked Games — Play Free Online at School or Work",
+  title: "Unblocked Games — Play Free at School or Work",
   description:
-    "Play unblocked games free online — no download, no login required. Works at school, work, or anywhere. 300+ HTML5 browser games that are never blocked.",
+    "Play unblocked games free online — no download, no login required. Works at school, work, or anywhere. 400+ HTML5 browser games that are never blocked.",
   keywords: [
     "unblocked games",
     "unblocked games at school",
@@ -87,17 +112,31 @@ export default function UnblockedGamesPage() {
     .map((slug) => allGames.find((g) => g.slug === slug))
     .filter(Boolean) as typeof allGames;
 
-  // Fill up with top-rated games not already in curated
+  // Fill up with top-rated games not already in curated.
+  // Cap at 40 to avoid duplicate-content with /games — landing page should
+  // be a curated subset, not the full library.
   const curatedSlugs = new Set(curatedGames.map((g) => g.slug));
   const fillGames = allGames
     .filter((g) => !curatedSlugs.has(g.slug) && g.category !== "racing" && g.category !== "sports")
     .sort((a, b) => b.rating - a.rating)
-    .slice(0, 60);
-
+    .slice(0, 40);
   const displayGames = [...curatedGames, ...fillGames];
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8 space-y-10">
+      <FAQPageSchema faqs={UNBLOCKED_FAQS} />
+      <CollectionPageSchema
+        name="Unblocked Games — Free at School & Work"
+        description="Play unblocked games free online. 400+ HTML5 browser games that are never blocked."
+        url="/unblocked-games"
+        games={displayGames}
+      />
+      <Breadcrumbs
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Unblocked Games", url: "/unblocked-games" },
+        ]}
+      />
 
       {/* Hero */}
       <div className="bg-gradient-to-r from-violet-900/50 to-indigo-900/50 border border-violet-500/20 rounded-2xl p-6 sm:p-10">

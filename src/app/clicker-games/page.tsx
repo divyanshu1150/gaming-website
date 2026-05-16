@@ -3,6 +3,8 @@ import Link from "next/link";
 import { getAllGames } from "@/lib/games";
 import GameGrid from "@/components/game/GameGrid";
 import AdSlot from "@/components/ads/AdSlot";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
+import { CollectionPageSchema } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
   title: "Free Clicker Games Online — Play Idle & Clicking Games",
@@ -53,7 +55,18 @@ export default function ClickerGamesPage() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8 space-y-10">
-
+      <CollectionPageSchema
+        name="Free Clicker & Idle Games Online"
+        description="Best free clicker and idle games online. Cookie clicker style games, incremental games, no download."
+        url="/clicker-games"
+        games={topClickers}
+      />
+      <Breadcrumbs
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Clicker Games", url: "/clicker-games" },
+        ]}
+      />
       {/* Hero */}
       <div className="bg-gradient-to-r from-orange-900/60 to-amber-900/60 border border-orange-500/20 rounded-2xl p-6 sm:p-10">
         <div className="max-w-2xl">

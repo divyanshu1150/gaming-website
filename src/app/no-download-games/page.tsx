@@ -3,6 +3,8 @@ import Link from "next/link";
 import { getAllGames, getFeaturedGames } from "@/lib/games";
 import GameGrid from "@/components/game/GameGrid";
 import AdSlot from "@/components/ads/AdSlot";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
+import { CollectionPageSchema } from "@/components/seo/JsonLd";
 import { CATEGORIES } from "@/lib/categories";
 
 export const metadata: Metadata = {
@@ -31,7 +33,18 @@ export default function NoDownloadGamesPage() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8 space-y-10">
-
+      <CollectionPageSchema
+        name="No Download Games — Free Online"
+        description="Free online games with no download required. Instant play in any browser, no installs."
+        url="/no-download-games"
+        games={featured}
+      />
+      <Breadcrumbs
+        items={[
+          { name: "Home", url: "/" },
+          { name: "No Download Games", url: "/no-download-games" },
+        ]}
+      />
       <div className="bg-[#1a1a2e] rounded-2xl p-6 sm:p-10">
         <div className="inline-flex items-center gap-2 bg-violet-500/20 border border-violet-500/30 text-violet-300 text-xs font-semibold px-3 py-1 rounded-full mb-4">
           ⚡ Instant Play — Zero Downloads

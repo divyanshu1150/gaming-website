@@ -5,6 +5,8 @@ import { getCategoryBySlug, CATEGORIES } from "@/lib/categories";
 import GameGrid from "@/components/game/GameGrid";
 import CategoryNav from "@/components/category/CategoryNav";
 import AdSlot from "@/components/ads/AdSlot";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
+import { CollectionPageSchema } from "@/components/seo/JsonLd";
 
 interface CategoryPageProps {
   params: Promise<{ slug: string }>;
@@ -84,6 +86,20 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8 space-y-8">
+      <CollectionPageSchema
+        name={`Free ${category.name} Games Online`}
+        description={`Play free online ${category.name.toLowerCase()} games. ${category.description}. No download or sign-up.`}
+        url={`/category/${slug}`}
+        games={games}
+      />
+      <Breadcrumbs
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Games", url: "/games" },
+          { name: `${category.name} Games`, url: `/category/${slug}` },
+        ]}
+      />
+
       {/* Category header */}
       <div className="bg-[#1a1a2e] rounded-2xl p-6 sm:p-8">
         <div className="flex items-center gap-4 mb-4">

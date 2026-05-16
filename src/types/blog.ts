@@ -30,6 +30,12 @@ export interface EditorialPost extends BlogPostBase {
 export interface GuidePost extends BlogPostBase {
   type: "guide";
   gameSlug: string;
+  /**
+   * Optional curated sections — if present, this is a hand-written guide
+   * (will be indexed). If absent, the page is auto-generated from game data
+   * (will be noindexed as thin content).
+   */
+  sections?: BlogSection[];
 }
 
 export type BlogPost = EditorialPost | GuidePost;

@@ -3,6 +3,8 @@ import Link from "next/link";
 import { getAllGames } from "@/lib/games";
 import GameGrid from "@/components/game/GameGrid";
 import AdSlot from "@/components/ads/AdSlot";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
+import { CollectionPageSchema } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
   title: "Classic Games Online Free — Play Retro Arcade Games",
@@ -64,7 +66,18 @@ export default function ClassicGamesPage() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8 space-y-10">
-
+      <CollectionPageSchema
+        name="Classic Games — Free Online Retro Arcade"
+        description="Play classic free online games. Snake, Tetris, Pong, Pac-Man, and more arcade classics in your browser."
+        url="/classic-games"
+        games={deduped}
+      />
+      <Breadcrumbs
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Classic Games", url: "/classic-games" },
+        ]}
+      />
       {/* Hero */}
       <div className="bg-gradient-to-r from-purple-900/70 to-violet-900/60 border border-purple-500/20 rounded-2xl p-6 sm:p-10">
         <div className="max-w-2xl">

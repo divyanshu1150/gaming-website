@@ -3,6 +3,8 @@ import Link from "next/link";
 import { getAllGames } from "@/lib/games";
 import GameGrid from "@/components/game/GameGrid";
 import AdSlot from "@/components/ads/AdSlot";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
+import { CollectionPageSchema } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
   title: "Free HTML5 Games — Play Online Without Flash or Download",
@@ -37,7 +39,18 @@ export default function Html5GamesPage() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8 space-y-10">
-
+      <CollectionPageSchema
+        name="HTML5 Games — Free Browser Games"
+        description="Free HTML5 games — runs in any browser without Flash, plugins, or downloads. 400+ games."
+        url="/html5-games"
+        games={featured}
+      />
+      <Breadcrumbs
+        items={[
+          { name: "Home", url: "/" },
+          { name: "HTML5 Games", url: "/html5-games" },
+        ]}
+      />
       {/* Hero */}
       <div className="bg-gradient-to-r from-blue-900/60 to-indigo-900/60 border border-blue-500/20 rounded-2xl p-6 sm:p-10">
         <div className="max-w-2xl">

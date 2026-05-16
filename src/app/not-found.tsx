@@ -1,6 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { getPopularGames } from "@/lib/games";
 import GameCard from "@/components/game/GameCard";
+
+export const metadata: Metadata = {
+  title: "Page Not Found",
+  robots: { index: false, follow: true },
+};
 
 export default function NotFound() {
   const suggestions = getPopularGames(6);

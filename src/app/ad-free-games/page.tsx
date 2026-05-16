@@ -3,6 +3,23 @@ import Link from "next/link";
 import { getAllGames } from "@/lib/games";
 import GameGrid from "@/components/game/GameGrid";
 import AdSlot from "@/components/ads/AdSlot";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
+import { FAQPageSchema, CollectionPageSchema } from "@/components/seo/JsonLd";
+
+const AD_FREE_FAQS = [
+  {
+    question: "Are these games really completely free of ads?",
+    answer: "Yes. Ad-free games on FreePlayArena contain no in-game advertising of any kind — no video ads, no banner ads, no reward ads. Note that FreePlayArena itself may show ads on the page around the game, but inside the game window there are none.",
+  },
+  {
+    question: "Why are there only a few ad-free games?",
+    answer: "Ad-free games are open-source projects that developers release freely. There are fewer of them compared to commercially distributed games, but we add more regularly as we find quality titles.",
+  },
+  {
+    question: "Can I suggest an ad-free game to add?",
+    answer: "Absolutely. If you know of a quality open-source HTML5 game that can be embedded freely, send us a link via our Contact page.",
+  },
+];
 
 export const metadata: Metadata = {
   title: "Ad Free Games — Play Online With No Ads",
@@ -28,6 +45,19 @@ export default function AdFreeGamesPage() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8 space-y-10">
+      <FAQPageSchema faqs={AD_FREE_FAQS} />
+      <CollectionPageSchema
+        name="Ad Free Games — Free Online With No Ads"
+        description="Browser games with absolutely no ads inside — open-source classics plus original titles. Free, no sign-up."
+        url="/ad-free-games"
+        games={adFreeGames}
+      />
+      <Breadcrumbs
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Ad Free Games", url: "/ad-free-games" },
+        ]}
+      />
 
       {/* Hero */}
       <div className="bg-gradient-to-r from-green-900/40 to-emerald-900/40 border border-green-500/20 rounded-2xl p-6 sm:p-10">

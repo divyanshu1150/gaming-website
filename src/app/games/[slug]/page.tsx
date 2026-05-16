@@ -27,10 +27,17 @@ export async function generateMetadata({ params }: GamePageProps): Promise<Metad
   const pageUrl = `${BASE_URL}/games/${slug}`;
   const thumbUrl = `${BASE_URL}${game.thumbnail}`;
 
-  const metaDesc = `Play ${game.title} free online — no download, no sign-up required. ${game.shortDescription} Works on desktop and mobile instantly in your browser.`;
+  // Cap shortDescription so total description stays under 160 chars
+  const shortDesc =
+    game.shortDescription.length > 80
+      ? `${game.shortDescription.slice(0, 80).trim()}…`
+      : game.shortDescription;
+  const metaDesc = `Play ${game.title} free online — no download, no sign-up. ${shortDesc}`;
 
   return {
-    title: `Play ${game.title} Free Online — No Download, No Sign-Up`,
+    // Use absolute title to skip the global template — keeps total length under 60 chars
+    // even after Google appends the brand.
+    title: { absolute: `Play ${game.title} Free Online — No Download | FreePlayArena` },
     description: metaDesc,
     keywords: [
       `play ${game.title} online`,
@@ -47,7 +54,7 @@ export async function generateMetadata({ params }: GamePageProps): Promise<Metad
       description: metaDesc,
       url: pageUrl,
       type: "website",
-      images: [{ url: thumbUrl, width: 512, height: 384, alt: game.thumbnailAlt }],
+      images: [{ url: thumbUrl, width: 1200, height: 630, alt: game.thumbnailAlt }],
     },
     twitter: {
       card: "summary_large_image",
@@ -244,8 +251,11 @@ export default async function GamePage({ params }: GamePageProps) {
                       <img
                         src={g.thumbnail}
                         alt={g.title}
+                        width={200}
+                        height={120}
                         className="w-full aspect-video object-cover"
                         loading="lazy"
+                        decoding="async"
                       />
                       <span className="px-2 py-1.5 text-gray-300 group-hover:text-white text-xs font-medium leading-tight">
                         {g.title}
@@ -261,6 +271,57 @@ export default async function GamePage({ params }: GamePageProps) {
 
             {/* Related games */}
             <RelatedGames games={related} />
+
+            {/* Contextual collection links — built from this game's properties */}
+            <div className="bg-[#1a1a2e] rounded-xl p-6">
+              <h2 className="text-white font-semibold mb-4 text-base">Explore More Collections</h2>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                {game.embedType === "other" || game.embedType === "self-hosted" ? (
+                  <Link href="/ad-free-games" className="px-3 py-2 bg-green-500/10 hover:bg-green-500/20 border border-green-500/20 text-green-300 hover:text-green-200 text-xs rounded-lg transition-colors text-center">
+                    ✓ Ad Free Games
+                  </Link>
+                ) : null}
+                <Link href="/unblocked-games" className="px-3 py-2 bg-white/5 hover:bg-white/10 text-gray-300 hover:text-white text-xs rounded-lg transition-colors text-center">
+                  🔓 Unblocked Games
+                </Link>
+                <Link href="/no-download-games" className="px-3 py-2 bg-white/5 hover:bg-white/10 text-gray-300 hover:text-white text-xs rounded-lg transition-colors text-center">
+                  ⚡ No Download
+                </Link>
+                {game.category === "puzzle" && (
+                  <Link href="/puzzle-games" className="px-3 py-2 bg-white/5 hover:bg-white/10 text-gray-300 hover:text-white text-xs rounded-lg transition-colors text-center">
+                    🧩 Puzzle Games
+                  </Link>
+                )}
+                {(game.tags?.includes("brain") || game.tags?.includes("logic") || game.tags?.includes("educational")) && (
+                  <Link href="/brain-games" className="px-3 py-2 bg-white/5 hover:bg-white/10 text-gray-300 hover:text-white text-xs rounded-lg transition-colors text-center">
+                    🧠 Brain Games
+                  </Link>
+                )}
+                {(game.tags?.some((t) => ["2 player", "2-player", "multiplayer", "board"].includes(t))) && (
+                  <Link href="/2-player-games" className="px-3 py-2 bg-white/5 hover:bg-white/10 text-gray-300 hover:text-white text-xs rounded-lg transition-colors text-center">
+                    👥 2 Player Games
+                  </Link>
+                )}
+                {(game.tags?.some((t) => ["kid", "kids", "children", "family", "cute", "animal"].some((k) => t.includes(k)))) && (
+                  <Link href="/free-games-for-kids" className="px-3 py-2 bg-white/5 hover:bg-white/10 text-gray-300 hover:text-white text-xs rounded-lg transition-colors text-center">
+                    👧 Games for Kids
+                  </Link>
+                )}
+                {(game.tags?.some((t) => ["word"].includes(t)) || game.category === "casual") && (
+                  <Link href="/games-like-wordle" className="px-3 py-2 bg-white/5 hover:bg-white/10 text-gray-300 hover:text-white text-xs rounded-lg transition-colors text-center">
+                    🟨 Games Like Wordle
+                  </Link>
+                )}
+                {(game.tags?.includes("classic") || game.tags?.includes("retro")) && (
+                  <Link href="/classic-games" className="px-3 py-2 bg-white/5 hover:bg-white/10 text-gray-300 hover:text-white text-xs rounded-lg transition-colors text-center">
+                    🎮 Classic Games
+                  </Link>
+                )}
+                <Link href="/game-of-the-day" className="px-3 py-2 bg-yellow-500/10 hover:bg-yellow-500/20 border border-yellow-500/20 text-yellow-300 hover:text-yellow-200 text-xs rounded-lg transition-colors text-center">
+                  ⭐ Game of the Day
+                </Link>
+              </div>
+            </div>
           </div>
 
           {/* Sidebar (desktop) */}

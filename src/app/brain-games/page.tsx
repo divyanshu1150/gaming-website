@@ -3,6 +3,8 @@ import Link from "next/link";
 import { getAllGames } from "@/lib/games";
 import GameGrid from "@/components/game/GameGrid";
 import AdSlot from "@/components/ads/AdSlot";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
+import { CollectionPageSchema } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
   title: "Free Brain Games Online — Puzzle & Mind Training Games",
@@ -83,7 +85,18 @@ export default function BrainGamesPage() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8 space-y-10">
-
+      <CollectionPageSchema
+        name="Brain Games — Free Online Logic & Memory Games"
+        description="Free brain training games — logic, memory, math, and pattern puzzles. No download."
+        url="/brain-games"
+        games={topBrain}
+      />
+      <Breadcrumbs
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Brain Games", url: "/brain-games" },
+        ]}
+      />
       {/* Hero */}
       <div className="bg-gradient-to-r from-cyan-900/60 to-teal-900/60 border border-cyan-500/20 rounded-2xl p-6 sm:p-10">
         <div className="max-w-2xl">

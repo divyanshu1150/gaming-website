@@ -3,6 +3,8 @@ import Link from "next/link";
 import { getAllGames } from "@/lib/games";
 import GameGrid from "@/components/game/GameGrid";
 import AdSlot from "@/components/ads/AdSlot";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
+import { CollectionPageSchema } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
   title: "Free Online Puzzle Games — Play Instantly, No Download",
@@ -38,6 +40,18 @@ export default function PuzzleGamesPage() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8 space-y-10">
+      <CollectionPageSchema
+        name="Free Puzzle Games Online"
+        description="Play free puzzle games online — no download. Logic puzzles, brain teasers, sliding tiles, sudoku."
+        url="/puzzle-games"
+        games={games}
+      />
+      <Breadcrumbs
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Puzzle Games", url: "/puzzle-games" },
+        ]}
+      />
       <div className="bg-[#1a1a2e] rounded-2xl p-6 sm:p-8">
         <h1 className="text-white font-bold text-3xl sm:text-4xl mb-3">
           Free Online Puzzle Games
